@@ -92,6 +92,21 @@
   cursor: pointer;
 }
 
+.slideswiper{
+  
+  margin-right: 200px !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  color: #000 !important;
+  font-size: 16px;
+}
+
+.imagecaro{
+  width: 400px;
+  height: 50vh;
+}
+
 @media only screen and (max-width: 500px) {
   .pcontent {
     font-size: 18px;
