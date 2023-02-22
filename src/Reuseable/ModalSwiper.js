@@ -11,7 +11,7 @@ import "../style.css";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
-export default function ModalSwiper(props) {
+export default function ModalSwiper({ images }) {
   const [swiperRef, setSwiperRef] = useState(null);
 
   // let appendNumber = 4;
@@ -58,7 +58,14 @@ export default function ModalSwiper(props) {
         modules={[Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide className="slideswiper">
+        {images.map((img) => {
+          return (
+            <SwiperSlide className="slideswiper">
+              <img src={img} alt={img} className="imagecaro" />
+            </SwiperSlide>
+          );
+        })}
+        {/* <SwiperSlide className="slideswiper">
           <img src={props.imagecaro1} alt="" className="imagecaro" />
         </SwiperSlide>
         <SwiperSlide className="slideswiper">
@@ -72,7 +79,7 @@ export default function ModalSwiper(props) {
         </SwiperSlide>
         <SwiperSlide className="slideswiper">
           <img src={props.imagecaro5} alt="" className="imagecaro" />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );

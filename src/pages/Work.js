@@ -13,7 +13,7 @@ const Work = () => {
       <WorkContent/>
       <WorkGallery/>
       <WorkDownload/>
-      <WorkBrand/>
+      {/* <WorkBrand/> */}
     </>
   );
 };

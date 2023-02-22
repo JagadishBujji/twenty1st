@@ -92,19 +92,33 @@
   cursor: pointer;
 }
 
-.slideswiper{
-  
+.titlewithicon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.modaltitle {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.slideswiper {
   margin-right: 200px !important;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
   color: #000 !important;
   font-size: 16px;
 }
 
-.imagecaro{
+.imagecaro {
   width: 400px;
   height: 50vh;
+  filter: drop-shadow(9px 9px 18px rgba(0, 0, 0, 0.25));
 }
 
 @media only screen and (max-width: 500px) {

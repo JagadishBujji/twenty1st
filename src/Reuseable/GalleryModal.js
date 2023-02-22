@@ -4,6 +4,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import ModalSwiper from "./ModalSwiper";
+import CloseIcon from "@mui/icons-material/Close";
+import { fontSize } from "@mui/system";
 
 const style = {
   position: "absolute",
@@ -17,7 +19,7 @@ const style = {
   boxShadow: 24,
   p: 4,
   borderRadius: "10px",
-  borderRadius: "30px"
+  borderRadius: "30px",
 };
 
 export default function GalleryModal(props) {
@@ -41,15 +43,24 @@ export default function GalleryModal(props) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" sx={{mb:2}} variant="h4" component="h2">
-            {props.title}
-          </Typography>
+          <div className="row titlewithicon">
+            <Typography
+              id="modal-modal-title"
+              sx={{ mb: 2, fontSize: "30px", fontFamily: "Poppins", fontWeight: "600" }}
+              variant="h4"
+              component="h2"
+              className="modaltitle"
+            >
+              {props.title}
+            </Typography>
+            <CloseIcon
+              onClose={handleClose}
+              sx={{ fontSize: "40px", cursor: "pointer" }}
+            />
+          </div>
+
           <ModalSwiper
-            imagecaro1="../images/sf-1.jpg"
-            imagecaro2="../images/sf-2.jpg"
-            imagecaro3="../images/sf-3.jpg"
-            imagecaro4="../images/sf-4.jpg"
-            imagecaro5="../images/sf-5.jpg"
+            images={props.images}
           />
         </Box>
       </Modal>

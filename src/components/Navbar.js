@@ -1,5 +1,6 @@
 import React from "react";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { DarkMode } from "@mui/icons-material";
 
 
 const Navbar = () => {
@@ -125,6 +126,7 @@ const Navbar = () => {
                   alt="sun-icon"
                   className="sun-icon"
                 />
+              
               </a>
             </li>
           </ul>

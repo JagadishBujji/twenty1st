@@ -26,7 +26,7 @@ const Home = () => {
       <Content2/>
       <Testmonial/>
       <Faq/>
-      <BrandJourney />
+      {/* <BrandJourney /> */}
     </>
   );
 };
