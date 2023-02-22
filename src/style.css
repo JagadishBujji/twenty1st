@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+.WorkContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pcontent {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-weight: 700;
+  padding: 50px 10px;
+}
+
+.modalimage {
+  width: 400px;
+  cursor: pointer;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.sun {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  padding-left: 62px;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.workdownload {
+  margin-top: 50px;
+  padding: 10px 30px;
+}
+
+.download {
+  border-radius: 20px;
+  background: #000000;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 40px;
+}
+.download:hover {
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  border: 2px solid #000000;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.our {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.workbrand {
+  padding: 80px 0;
+  background: #000000;
+  line-height: 1.5;
+  background-image: url(../public/images/footer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.workjour {
+  font-size: 35px;
+  color: #ffff;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.workdesign {
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .pcontent {
+    font-size: 18px;
+  }
+  .modalimage {
+    width: 270px;
+    cursor: pointer;
+    height: 300px;
+  }
+  .gallery {
+    margin: 0;
+  }
+  .sun {
+    font-size: 20px;
+    padding-left: 0;
+  }
+
+  .bottom {
+    margin-bottom: 15px;
+  }
+  .workbrand {
+    padding: 50px 0;
+  }
+  .workjour {
+    font-size: 14px;
+  }
+  .workdesign {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
