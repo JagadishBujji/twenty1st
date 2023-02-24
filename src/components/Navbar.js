@@ -1,7 +1,6 @@
 import React from "react";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { DarkMode } from "@mui/icons-material";
-
 
 const Navbar = () => {
   return (
@@ -56,7 +55,7 @@ const Navbar = () => {
                             Brand Identity
                             <br /> Packaging
                           </p>
-                          <ArrowRightAltIcon sx={{color: "#000"}}/>
+                          <ArrowRightAltIcon sx={{ color: "#000" }} />
                         </div>
                       </div>
                     </a>
@@ -70,7 +69,7 @@ const Navbar = () => {
                             Website development
                             <br /> Social media marketing
                           </p>
-                          <ArrowRightAltIcon sx={{color: "#000"}}/>
+                          <ArrowRightAltIcon sx={{ color: "#000" }} />
                         </div>
                       </div>
                     </a>
@@ -84,7 +83,7 @@ const Navbar = () => {
                             Print
                             <br /> TV media
                           </p>
-                          <ArrowRightAltIcon sx={{color: "#000"}}/>
+                          <ArrowRightAltIcon sx={{ color: "#000" }} />
                         </div>
                       </div>
                     </a>
@@ -98,7 +97,7 @@ const Navbar = () => {
                             TV Commercials
                             <br /> Social Media Commercials
                           </p>
-                          <ArrowRightAltIcon sx={{color: "#000"}}/>
+                          <ArrowRightAltIcon sx={{ color: "#000" }} />
                         </div>
                       </div>
                     </a>
@@ -126,7 +125,6 @@ const Navbar = () => {
                   alt="sun-icon"
                   className="sun-icon"
                 />
-              
               </a>
             </li>
           </ul>
