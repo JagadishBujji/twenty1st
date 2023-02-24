@@ -103,8 +103,10 @@ body {
   padding: 30px 40px;
 } */
 .dropdown-menu {
-  left: -754px;
-  width: 1262px;
+  position: fixed !important;
+  top: 60px;
+  left: 0;
+  width: 100%;
   padding: 20px;
   border: none;
   border-bottom: 1px solid #000;
@@ -728,8 +730,5 @@ body {
   }
   .faq .accordion .card .card-header h5 button {
     font-size: 14px;
-  }
-  .dropdown-menu {
-    width: 315px;
   }
 }
