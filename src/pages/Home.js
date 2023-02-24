@@ -19,13 +19,13 @@ const Home = () => {
       <ClientSlider />
       <Content1 />
       <FloatingElement />
-      <Accordion/>
+      <Accordion />
       <Communication />
       <Project />
       <Map />
-      <Content2/>
-      <Testmonial/>
-      <Faq/>
+      <Content2 />
+      <Testmonial />
+      <Faq />
       {/* <BrandJourney /> */}
     </>
   );
