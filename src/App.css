@@ -73,12 +73,12 @@ body {
   transition-duration: 0.5s;
 }
 
-#contact:hover {
+/* #contact:hover {
   border: 1px solid #000000;
   color: #000;
-  /* background-color: #fff; */
+  background-color: #fff;
   box-shadow: inset 300px 0 0 0 #fff;
-}
+} */
 
 /* service navbar */
 /* .dropdown {
@@ -172,11 +172,55 @@ body {
 }
 
 .clientlogo {
-  width: 100px;
-  height: 50px;
+  width: 100px !important;
+  height: auto;
   margin: auto;
-  padding: 5px;
+  /* padding: 5px; */
 }
+
+.owl-theme,
+button.owl-prev:hover {
+  background: none;
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+/* .owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+:hover {
+  background: none;
+  color: #000000;
+  border: none;
+  outline: none;
+} */
+
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+button.owl-next span {
+  font-size: 40px;
+}
+button.owl-prev span {
+  font-size: 40px;
+}
+
+/* .owl-theme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 .client-slider {
   /* margin-top: 40px; */
@@ -185,6 +229,7 @@ body {
   /* padding-bottom: 20px; */
   margin: 10px 30px;
   padding: 10px 70px;
+  overflow-x: hidden;
 }
 
 .silder-client {
@@ -236,7 +281,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 40px 0;
   line-height: 1.3;
 }
 
@@ -297,7 +342,7 @@ body {
 }
 
 .col-md-4 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .card-para2 {
@@ -368,7 +413,7 @@ body {
 .details1::before {
   position: absolute;
   content: "";
-  width: 47%;
+  width: 44%;
   height: 2px;
   background: #ed1c24;
   bottom: -10px;
@@ -598,7 +643,7 @@ body {
 
 .footer {
   background-color: #ffff;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 .footer-link {
@@ -652,6 +697,7 @@ body {
   margin-bottom: 0;
   margin-left: 10px;
   color: #000000;
+  line-height: 1.2;
 }
 .add:hover {
   text-decoration: none;
@@ -672,7 +718,7 @@ body {
   font-family: "Poppins", sans-serif;
   text-align: justify;
   margin-left: 10px;
-  font-size: 50px;
+  font-size: 45px;
   /* margin-top: 5px; */
 }
 
@@ -689,6 +735,14 @@ body {
   margin-bottom: 20px;
 }
 
+.acc {
+  padding: 30px 10;
+}
+
+.col-md-3{
+  padding: 0 40px;
+}
+
 /* footer  */
 
 @media only screen and (max-width: 500px) {
@@ -699,7 +753,7 @@ body {
     padding: 10px 4px;
   }
   .clientlogo {
-    width: 90px;
+    width: 90px !important;
     height: 30px;
   }
   .content1 {
@@ -731,4 +785,93 @@ body {
   .faq .accordion .card .card-header h5 button {
     font-size: 14px;
   }
+  .owl-carousel .owl-nav button.owl-prev {
+    top: -20px;
+  }
+  .owl-carousel .owl-nav button.owl-next {
+    top: -20px;
+  }
+  .circle-desi {
+    width: 20px;
+    height: 20px;
+  }
+  .desi {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .card-img {
+    padding: 20px 0;
+  }
 }
+/* @media only screen and (min-width: 768px) {
+  .logo-img {
+    width: 200px;
+  }
+  .navbar {
+    padding: 10px 80px;
+    border-bottom: 1px solid #000000;
+  }
+  .clientlogo {
+    width: 100px !important;
+    height: auto;
+    margin: auto;
+  }
+  .content1 {
+    font-size: 40px;
+    padding: 40px 13px;
+  }
+
+  .sus {
+    font-size: 40px;
+  }
+
+  .card-head1,
+  .card-head2 {
+    
+    font-size: 28px;
+  }
+  .card-para1 {
+    font-size: 18px;
+  }
+  .card-para2 {
+    font-size: 18px;
+  }
+  .card-head3 {
+   
+    font-size: 28px;
+  }
+  .design {
+    font-size: 14px;
+  }
+  .faq .accordion .card .card-header h5 button {
+    font-size: 30px;
+  }
+  .owl-carousel .owl-nav button.owl-prev {
+    top: 5px;
+  }
+  .owl-carousel .owl-nav button.owl-next {
+    top: 5px;
+  }
+  .circle-desi {
+    width: 20px;
+    height: 20px;
+  }
+  .desi {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .card-img {
+    padding: 20px 0;
+  }
+  .num,
+  .deli {
+    font-size: 45px;
+  }
+  .count {
+    font-size: 36px;
+  }
+  .details1,
+  .details2 {
+    font-size: 35px;
+  }
+} */

@@ -4,7 +4,7 @@ import React from "react";
 const Accordion = () => {
   return (
     <>
-      <div className="p-5 container">
+      <div className=" acc container">
         <div className="row m-0">
           <div className="col-md-7">
             <div className="row de">

@@ -1,61 +1,67 @@
 import React from "react";
-
-import { useEffect } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const ClientSlider = () => {
-  const settings = {
-    // dots: true,
-    infinite: true,
-    // speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    draggable: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: true,
-  };
-
   return (
     <>
       <div className="silder-client">
-        <Slider {...settings} arrows className="container client-slider">
-          <div>
+        <OwlCarousel
+          className="owl-theme container "
+          // items={5}
+          dots={false}
+          loop
+          margin={10}
+          nav
+          autoPlay={true}
+          responsive={{
+            200: {
+              items: 2,
+            },
+            600: {
+              items: 3,
+            },
+            900: {
+              items: 5,
+            },
+            
+          }}
+        >
+          <div class="item ">
             <img src="../images/zus.png" alt="" className="clientlogo" />
           </div>
-          <div>
+          <div class="item">
             <img src="../images/wink.png" alt="" className="clientlogo" />
           </div>
-          <div>
+          <div class="item">
             <img src="../images/wfs.png" alt="" className="clientlogo" />
           </div>
-          <div>
+          <div class="item">
             <img src="../images/test ocean.png" alt="" className="clientlogo" />
           </div>
-          <div>
+          <div class="item">
             <img src="../images/sf.png" alt="" className="clientlogo" />
           </div>
-          <div>
+          <div class="item">
             <img src="../images/rkr.png" alt="" className="clientlogo" />
           </div>
-          <div>
+          <div class="item">
             <img src="../images/organic.png" alt="" className="clientlogo" />
           </div>
-          <div>
+          <div class="item">
             <img src="../images/murugan.png" alt="" className="clientlogo" />
           </div>
-          <div>
+          <div class="item">
             <img src="../images/maamis.png" alt="" className="clientlogo" />
           </div>
-          <div>
+          <div class="item">
             <img src="../images/kvp2.png" alt="" className="clientlogo" />
           </div>
-          <div>
+          <div class="item">
             <img src="../images/jarvis.png" alt="" className="clientlogo" />
           </div>
-        </Slider>
+        </OwlCarousel>
       </div>
     </>
   );
