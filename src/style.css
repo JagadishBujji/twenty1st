@@ -200,8 +200,53 @@ input[type="submit"]:hover {
   font-family: "Poppins", sans-serif;
 }
 
-.star{
+.star {
   color: #ed1c24;
+}
+
+.sri-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.Location {
+  padding: 30px 0;
+  margin: auto;
+  position: relative;
+}
+.bang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalarea {
+  margin-left: 30px;
+}
+
+.area {
+  text-align: justify;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.addres {
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.map-location {
+  padding: 40px 0;
+  margin: auto;
 }
 /* Contact */
 
@@ -234,5 +279,47 @@ input[type="submit"]:hover {
   .workdesign {
     padding: 5px 10px;
     font-size: 12px;
+  }
+  .area {
+    text-align: center;
+  }
+  .addres {
+    text-align: center;
+  }
+  .totalarea {
+    margin-left: 0px;
+  }
+  .svg {
+    display: none;
+  }
+  .deli,
+  .num {
+    font-size: 18px;
+  }
+  .count {
+    font-size: 16px;
+  }
+  .details1,
+  .details2 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .details1::before {
+    width: 87%;
+  }
+  .circle,
+  .star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .say,
+  .founder {
+    text-align: center;
+  }
+  .faq .accordion .card .card-body{
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

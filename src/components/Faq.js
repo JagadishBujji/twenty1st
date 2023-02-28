@@ -3,12 +3,12 @@ const Faq = () => {
   return (
     <>
       <div className="row container-fluid faq-overall">
-        <div className="col-md-7">
+        <div className="col-md-7 p-0">
           <section class="faq-main ">
             <section class="faq">
               <div class="container">
                 <div class="row">
-                  <div class="col-xl-12 col-lg-12">
+                  <div class="col-xl-12 col-lg-12 p-0">
                     <div class="accordion" id="accordionExample">
                       <div class="card">
                         <div class="card-header">

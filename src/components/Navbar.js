@@ -27,6 +27,11 @@ const Navbar = () => {
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav ml-auto">
+            {/* <li class="nav-item">
+              <a class="nav-link " href="#">
+                Blog
+              </a>
+            </li> */}
             <li class="nav-item ">
               <a class="nav-link" href="work">
                 Work <span class="sr-only">(current)</span>
@@ -108,11 +113,11 @@ const Navbar = () => {
                 
               </div> */}
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <a class="nav-link " href="#">
                 Blog
               </a>
-            </li>
+            </li> */}
             <li class="nav-item ">
               <a class="nav-link " href="contact" id="contact">
                 Contact
