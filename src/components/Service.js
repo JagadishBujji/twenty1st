@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 
-const Accordion = () => {
+const Service = () => {
+  useEffect(() => {}, []);
+
   return (
     <>
       <div className=" acc container">
@@ -86,4 +91,4 @@ const Accordion = () => {
   );
 };
 
-export default Accordion;
+export default Service;

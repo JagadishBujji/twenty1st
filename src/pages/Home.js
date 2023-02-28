@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion from "../components/Accordion";
+import Service from "../components/Service";
 import Banner from "../components/Banner";
 import BrandJourney from "../components/BrandJourney";
 import ClientSlider from "../components/ClientSlider";
@@ -19,7 +19,7 @@ const Home = () => {
       <ClientSlider />
       <Content1 />
       <FloatingElement />
-      <Accordion />
+      <Service />
       <Communication />
       <Project />
       <Map />
