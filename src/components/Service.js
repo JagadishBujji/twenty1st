@@ -7,7 +7,7 @@ import { Controller, Scene } from "react-scrollmagic";
 
 const Service = () => {
   const [sidebarTop, setSidebarTop] = useState(undefined);
-  const [isPin, setIsPin] = useState(true);
+  const [isPin, setIsPin] = useState(false);
 
   useEffect(() => {
     const chatEl = document.querySelector(".sidebar").getBoundingClientRect();
@@ -50,83 +50,104 @@ const Service = () => {
                     <span className="circle-desi"></span>
                   </span>{" "}
                   <h1 className="desi">Design</h1>
-                  {/* <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul> */}
                 </div>
+                <ul className="ser">
+                  <li>Brand Identity </li>
+                  <li>Packaging</li>
+                  <li>UI/UX design</li>
+                  <li>Brand assets/collateral</li>
+                  <li>Visual + Motion design</li>
+                </ul>
               </div>
-              <div className="col-md-5"></div>
+              <div className="col-md-5">
+                <img
+                  src="../images/ANIMATION-01.png"
+                  alt=""
+                  className="an-image"
+                />
+              </div>
             </div>
           </Scene>
 
           <Scene duration={300} pin={isPin}>
-            <div className="row m-0">
+            <div className="row m-0 sidebar">
               <div className="col-md-7">
                 <div className="row de">
                   <span className="dashed">
                     <span className="circle-desi"></span>
                   </span>{" "}
                   <h1 className="desi">Digital & Social</h1>
-                  {/* <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul> */}
                 </div>
+                <ul className="ser">
+                  <li>Brand Identity </li>
+                  <li>Packaging</li>
+                  <li>UI/UX design</li>
+                  <li>Brand assets/collateral</li>
+                  <li>Visual + Motion design</li>
+                </ul>
               </div>
-              <div className="col-md-5"></div>
+              <div className="col-md-5">
+                <img
+                  src="../images/ANIMATION-01.png"
+                  alt=""
+                  className="an-image"
+                />
+              </div>
             </div>
           </Scene>
 
           <Scene duration={300} pin={isPin}>
-            <div className="row m-0">
+            <div className="row m-0 sidebar">
               <div className="col-md-7">
                 <div className="row de">
                   <span className="dashed">
                     <span className="circle-desi"></span>
                   </span>{" "}
                   <h1 className="desi">Digital & Social</h1>
-                  {/* <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul> */}
                 </div>
+                <ul className="ser">
+                  <li>Brand Identity </li>
+                  <li>Packaging</li>
+                  <li>UI/UX design</li>
+                  <li>Brand assets/collateral</li>
+                  <li>Visual + Motion design</li>
+                </ul>
               </div>
-              <div className="col-md-5"></div>
+
+              <div className="col-md-5">
+                <img
+                  src="../images/ANIMATION-01.png"
+                  alt=""
+                  className="an-image"
+                />
+              </div>
             </div>
           </Scene>
 
           <Scene duration={300} pin={isPin}>
-            <div className="row m-0">
+            <div className="row m-0 sidebar">
               <div className="col-md-7">
                 <div className="row de">
                   <span className="dashed">
                     <span className="circle-desi"></span>
                   </span>{" "}
                   <h1 className="desi">Films & Production</h1>
-                  {/* <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul> */}
                 </div>
+                <ul className="ser">
+                  <li>Brand Identity </li>
+                  <li>Packaging</li>
+                  <li>UI/UX design</li>
+                  <li>Brand assets/collateral</li>
+                  <li>Visual + Motion design</li>
+                </ul>
               </div>
-              <div className="col-md-5"></div>
+              <div className="col-md-5">
+                <img
+                  src="../images/ANIMATION-01.png"
+                  alt=""
+                  className="an-image"
+                />
+              </div>
             </div>
           </Scene>
         </Controller>
@@ -136,3 +157,12 @@ const Service = () => {
 };
 
 export default Service;
+{
+  /* <ul>
+                    <li>Brand Identity </li>
+                    <li>Packaging</li>
+                    <li>UI/UX design</li>
+                    <li>Brand assets/collateral</li>
+                    <li>Visual + Motion design</li>
+                  </ul> */
+}

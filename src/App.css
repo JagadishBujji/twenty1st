@@ -736,6 +736,20 @@ button.owl-prev span {
   border: 1px dashed #000000;
   border-radius: 50%;
   padding: 10px;
+  animation: mymove 6s linear infinite;
+}
+
+@keyframes mymove {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sidebar{
+  padding: 60px 0;
 }
 
 .de {
@@ -751,6 +765,19 @@ button.owl-prev span {
 
 .col-md-3 {
   padding: 0 40px;
+}
+
+.ser {
+  list-style-type: none;
+  line-height: 3;
+  text-align: left;
+  padding-left: 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+.an-image{
+  width: 100%;
+
 }
 
 /* footer  */
