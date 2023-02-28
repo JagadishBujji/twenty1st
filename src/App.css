@@ -736,7 +736,7 @@ button.owl-prev span {
   border: 1px dashed #000000;
   border-radius: 50%;
   padding: 10px;
-  animation: mymove 6s linear infinite;
+  animation: mymove 10s linear infinite;
 }
 
 @keyframes mymove {
