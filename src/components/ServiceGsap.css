@@ -1,0 +1,39 @@
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("../../public/images/art.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+} */
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.pinned .content {
+  opacity: 1;
+}
+
+.sidebar {
+  transform: translate(0px, 0px) !important;
+}

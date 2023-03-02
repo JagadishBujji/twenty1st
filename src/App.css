@@ -748,9 +748,9 @@ button.owl-prev span {
   }
 }
 
-.sidebar{
+/* .sidebar {
   padding: 60px 0;
-}
+} */
 
 .de {
   display: flex;
@@ -775,9 +775,8 @@ button.owl-prev span {
   font-family: "Poppins", sans-serif;
 }
 
-.an-image{
+.an-image {
   width: 100%;
-
 }
 
 /* footer  */

@@ -11,6 +11,10 @@ import FloatingElement from "../components/FloatingElement";
 import Map from "../components/Map";
 import Project from "../components/Project";
 import Testmonial from "../components/Testmonial";
+import ServiceGsap from "../components/ServiceGsap";
+import ServiceScrollMagic from "../components/ServiceScrollMagic";
+import ServiceScrollTrigger from "../components/ServiceScrollTrigger";
+import ServiceSM from "../components/ServiceSM";
 
 const Home = () => {
   return (
@@ -18,8 +22,12 @@ const Home = () => {
       <Banner />
       <ClientSlider />
       <Content1 />
-      <FloatingElement />
-      <Service />
+      {/* <FloatingElement /> */}
+      {/* <Service /> */}
+      <ServiceScrollMagic />
+      {/* <ServiceSM /> */}
+      {/* <ServiceGsap /> */}
+      {/* <ServiceScrollTrigger /> */}
       <Communication />
       <Project />
       <Map />
