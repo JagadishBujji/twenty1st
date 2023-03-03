@@ -15,6 +15,7 @@ import ServiceGsap from "../components/ServiceGsap";
 import ServiceScrollMagic from "../components/ServiceScrollMagic";
 import ServiceScrollTrigger from "../components/ServiceScrollTrigger";
 import ServiceSM from "../components/ServiceSM";
+import ServiceScroller from "../components/ServiceScoller";
 
 const Home = () => {
   return (
@@ -24,10 +25,11 @@ const Home = () => {
       <Content1 />
       {/* <FloatingElement /> */}
       {/* <Service /> */}
-      <ServiceScrollMagic />
+      {/* <ServiceScrollMagic /> */}
       {/* <ServiceSM /> */}
       {/* <ServiceGsap /> */}
       {/* <ServiceScrollTrigger /> */}
+      <ServiceScroller />
       <Communication />
       <Project />
       <Map />
