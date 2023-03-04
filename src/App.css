@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
 
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: #ed1c24;
+  /* --text-secondary: royalblue; */
+  --accent: purple;
+}
+[data-theme="dark"] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: #ed1c24;
+  /* --text-secondary: grey; */
+  --accent: darkred;
+}
+
 body {
+  background: var(--background);
   font-family: "Poppins", sans-serif;
 }
 
@@ -68,18 +84,22 @@ body {
   color: #ed1c24;
 } */
 
+.nav-link {
+  color: var(--text-primary) !important;
+}
+
 .sun-icon {
   width: 30px;
 }
 
 #contact {
-  background: #000000;
-  color: #ffff;
+  background: var(--text-primary);
+  color: var(--background) !important;
   border-radius: 5px;
   width: 100%;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
-  box-shadow: inset 0 0 0 0 #fff;
+  box-shadow: inset 0 0 0 0 var(--background);
   transition-duration: 0.5s;
 }
 
@@ -120,6 +140,7 @@ body {
   padding: 20px;
   border: none;
   border-bottom: 1px solid #000;
+  background: var(--background);
 }
 
 .digital {
@@ -221,9 +242,11 @@ button.owl-prev:hover {
 
 button.owl-next span {
   font-size: 40px;
+  color: var(--text-primary);
 }
 button.owl-prev span {
   font-size: 40px;
+  color: var(--text-primary);
 }
 
 /* .owl-theme{
@@ -257,6 +280,7 @@ button.owl-prev span {
   justify-content: center;
   align-items: center;
   line-height: 1.3;
+  color: var(--text-primary);
 }
 
 .floatingelement {
@@ -300,6 +324,7 @@ button.owl-prev span {
   text-align: justify;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  color: var(--text-primary);
 }
 
 .card-img {
@@ -396,14 +421,14 @@ button.owl-prev span {
 }
 
 .deli {
-  color: #000000;
+  color: var(--text-primary);
   font-size: 40px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 
 .count {
-  color: #000000;
+  color: var(--text-primary);
   font-size: 26px;
   /* font-weight: 600; */
   /* font-family: "Poppins", sans-serif; */
@@ -415,7 +440,7 @@ button.owl-prev span {
 
 .details1 {
   font-size: 28px;
-  color: #000000;
+  color: var(--text-primary);
   font-weight: 600;
   position: relative;
   padding: 10px;
@@ -431,7 +456,7 @@ button.owl-prev span {
 
 .details2 {
   font-size: 28px;
-  color: #000000;
+  color: var(--text-primary);
   font-weight: 600;
   padding: 10px;
 }
@@ -450,7 +475,7 @@ button.owl-prev span {
   width: 15px;
   height: 15px;
   background: #ff0000;
-  border: 1px solid #000000;
+  border: 1px solid var(--text-primary);
   border-radius: 50%;
   margin-right: 5px;
 }
@@ -475,7 +500,7 @@ button.owl-prev span {
 }
 
 .founder {
-  color: #000000;
+  color: var(--text-primary);
   font-size: 18px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -508,7 +533,7 @@ button.owl-prev span {
 
 .fa-chevron-left,
 .fa-chevron-right {
-  color: #000000;
+  color: var(--text-primary);
   font-size: 30px;
 }
 
@@ -530,6 +555,7 @@ button.owl-prev span {
 .faq .accordion .card {
   border: none;
   margin-bottom: 45px;
+  background: var(--background);
 }
 
 .faq .accordion .card:not(:first-of-type) .card-header:first-child {
@@ -548,7 +574,7 @@ button.owl-prev span {
 }
 
 .faq .accordion .card .card-header h5 button {
-  color: #023118;
+  color: var(--text-primary);
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
@@ -558,7 +584,7 @@ button.owl-prev span {
   width: 100%;
   /* color: rgba(30, 48, 86, 0.8); */
   text-align: left;
-  background: #fff;
+  background: var(--background);
   font-family: "Poppins", sans-serif;
   /* -webkit-box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
   box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1); */
@@ -574,7 +600,7 @@ button.owl-prev span {
   width: 20px;
   height: 20px;
   /* background-color: #159c4a; */
-  color: #000;
+  color: var(--text-primary);
   text-align: center;
   /* border: 1px solid #159c4a; */
   border-radius: 5px;
@@ -587,7 +613,7 @@ button.owl-prev span {
 }
 
 .faq .accordion .card .card-header h5 button.collapsed {
-  background: #fff;
+  background: var(--background);
   border-radius: 0px;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -596,7 +622,8 @@ button.owl-prev span {
 
 .faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
   content: "-";
-  color: #000;
+  /* color: #000; */
+  color: var(--text-primary);
   /* background: #159c4a; */
 }
 
@@ -609,7 +636,8 @@ button.owl-prev span {
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 23px;
-  color: #5c6861;
+  /* color: #5c6861; */
+  color: var(--text-primary);
   line-height: 30px;
   font-size: 14px;
   text-align: justify;
@@ -643,6 +671,7 @@ button.owl-prev span {
 
 .copyright {
   margin-top: 10px;
+  color: var(--text-primary);
 }
 
 .social-row {
@@ -652,16 +681,16 @@ button.owl-prev span {
 }
 
 .footer {
-  background-color: #ffff;
+  background: var(--background);
   padding: 20px 0;
 }
 
 .footer-link {
-  color: #000000;
+  color: var(--text-primary);
   padding: 10px 0;
 }
 .footer-link:hover {
-  color: #000000;
+  color: var(--text-primary);
   text-decoration: none;
 }
 
@@ -673,7 +702,7 @@ button.owl-prev span {
 
 .link-head {
   font-size: 24px;
-  color: #000000;
+  color: var(--text-primary);
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   text-align: justify;
@@ -706,19 +735,19 @@ button.owl-prev span {
 .add {
   margin-bottom: 0;
   margin-left: 10px;
-  color: #000000;
+  color: var(--text-primary);
   line-height: 1.2;
 }
 .add:hover {
   text-decoration: none;
-  color: #000000;
+  color: var(--text-primary);
 }
 
 .circle-desi {
   width: 40px;
   height: 40px;
   background: #ff0000;
-  border: 1px solid #000000;
+  border: 1px solid var(--text-primary);
   border-radius: 50%;
   display: block;
 }
@@ -729,11 +758,12 @@ button.owl-prev span {
   text-align: justify;
   margin-left: 10px;
   font-size: 45px;
+  color: var(--text-primary);
   /* margin-top: 5px; */
 }
 
 .dashed {
-  border: 1px dashed #000000;
+  border: 1px dashed var(--text-primary);
   border-radius: 50%;
   padding: 10px;
   animation: mymove 10s linear infinite;

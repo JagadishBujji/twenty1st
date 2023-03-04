@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../context/theme-context";
 
 const Footer = () => {
+  const { isDarkMode } = useContext(ThemeContext);
+
   return (
     <>
       <div className="row m-0 footer">
         <div className="col-md-3">
-          <img src="../images/Twentyblack.png" alt="" className="footer-logo" />
-          {/* <img src="../images/Twentywhite.png" alt="" className="footer-logo" /> */}
+          {isDarkMode ? (
+            <img
+              src="../images/Twentywhite.png"
+              alt=""
+              className="footer-logo"
+            />
+          ) : (
+            <img
+              src="../images/Twentyblack.png"
+              alt=""
+              className="footer-logo"
+            />
+          )}
+
           <div className="row social-row">
             <a href="">
               <img

@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
 
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: #ed1c24;
+  /* --text-secondary: royalblue; */
+  --accent: purple;
+  --design_img: url(../public/images/footer_white.png);
+}
+[data-theme="dark"] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: #ed1c24;
+  /* --text-secondary: grey; */
+  --accent: darkred;
+  --design_img: url(../public/images/footer.png);
+}
+
 .WorkContent {
   display: flex;
   justify-content: center;
@@ -12,6 +29,7 @@
   text-align: justify;
   font-weight: 700;
   padding: 50px 10px;
+  color: var(--text-primary);
 }
 
 .modalimage {
@@ -28,6 +46,7 @@
   text-align: justify;
   padding-left: 62px;
   margin-bottom: 20px;
+  color: var(--text-primary);
 }
 
 .gallery {
@@ -64,13 +83,15 @@
   font-family: "Poppins", sans-serif;
   margin-top: 30px;
   margin-bottom: 30px;
+  color: var(--text-primary);
 }
 
 .workbrand {
   padding: 80px 0;
-  background: #000000;
+  /* background: #000000; */
+  background: var(--text-primary);
   line-height: 1.5;
-  background-image: url(../public/images/footer.png);
+  background-image: var(--design_img);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -78,7 +99,7 @@
 
 .workjour {
   font-size: 35px;
-  color: #ffff;
+  color: var(--background);
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
@@ -130,6 +151,7 @@
   padding: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
+  color: var(--text-primary);
 }
 
 .br {
@@ -178,12 +200,13 @@ input[type="submit"] {
   color: #ed1c24;
   padding: 10px 20px;
   margin: 8px 0;
-  border: 1px solid #000000;
+  border: 1px solid var(--text-primary);
   border-radius: 4px;
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  background: var(--background);
 }
 
 input[type="submit"]:hover {
@@ -198,6 +221,7 @@ input[type="submit"]:hover {
   font-size: 20px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+  color: var(--text-primary);
 }
 
 .star {
@@ -235,6 +259,7 @@ input[type="submit"]:hover {
   text-align: justify;
   font-size: 26px;
   font-weight: 600;
+  color: var(--text-primary);
 }
 
 .addres {
@@ -242,6 +267,7 @@ input[type="submit"]:hover {
   font-size: 16px;
   font-weight: 500;
   line-height: 2;
+  color: var(--text-primary);
 }
 
 .map-location {
@@ -318,7 +344,7 @@ input[type="submit"]:hover {
   .founder {
     text-align: center;
   }
-  .faq .accordion .card .card-body{
+  .faq .accordion .card .card-body {
     padding-left: 30px;
     padding-right: 30px;
   }

@@ -1,20 +1,39 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import { ThemeContext } from "../context/theme-context";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import { DarkMode } from "@mui/icons-material";
+import WbSunnyIcon from "@mui/icons-material/WbSunny";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
+
+  const toggleThemeMode = () => {
+    toggleTheme();
+    // to change css variables
+    const body = document.querySelector("body");
+    const isDarkMode = body.getAttribute("data-theme") === "dark";
+    body.setAttribute("data-theme", isDarkMode ? "light" : "dark");
+  };
+
+  // useEffect(() => {
+  //   console.log("darkM: ", isDarkMode);
+  // }, [isDarkMode]);
+
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light   container-fluid ">
-        <a class="navbar-brand" href="/">
+      <nav className="navbar navbar-expand-lg navbar-light container-fluid ">
+        <Link className="navbar-brand" to={"/"}>
+          {/* <a className="navbar-brand" href="/"> */}
           <img
             src="../images/twentyonestlogo.png"
             alt="logo"
             className="logo-img"
           />
-        </a>
+          {/* </a> */}
+        </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarTogglerDemo01"
@@ -22,37 +41,36 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav ml-auto">
-            {/* <li class="nav-item">
-              <a class="nav-link " href="#">
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul className="navbar-nav ml-auto">
+            {/* <li className="nav-item">
+              <a className="nav-link " href="#">
                 Blog
               </a>
             </li> */}
-            <li class="nav-item ">
-              <a class="nav-link" href="work">
-                Work <span class="sr-only">(current)</span>
-              </a>
+            <li className="nav-item">
+              <Link className="nav-link" to={"work"}>
+                Work <span className="sr-only">(current)</span>
+              </Link>
             </li>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a
-                class="nav-link  dropdown-toggle"
+                className="nav-link  dropdown-toggle"
                 id="navbarDropdown"
                 role="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-                href="#"
               >
                 Service
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <div className="row">
                   <div className="col-md-3">
-                    <a href="" className="submenu ">
+                    <a href="#" className="submenu ">
                       <div className="card digital green">
                         <h4 className="design1">Design</h4>
                         <div className="row iocn-arr">
@@ -66,7 +84,7 @@ const Navbar = () => {
                     </a>
                   </div>
                   <div className="col-md-3">
-                    <a href="" className="submenu ">
+                    <a href="#" className="submenu ">
                       <div className="card digital yellow">
                         <h4 className="design1">Digital & Social</h4>
                         <div className="row iocn-arr">
@@ -80,7 +98,7 @@ const Navbar = () => {
                     </a>
                   </div>
                   <div className="col-md-3">
-                    <a href="" className="submenu ">
+                    <a href="#" className="submenu ">
                       <div className="card digital purpul">
                         <h4 className="design1"> Advertising</h4>
                         <div className="row iocn-arr">
@@ -94,7 +112,7 @@ const Navbar = () => {
                     </a>
                   </div>
                   <div className="col-md-3">
-                    <a href="" className="submenu ">
+                    <a href="#" className="submenu ">
                       <div className="card digital red">
                         <h4 className="design1">Films & Production</h4>
                         <div className="row iocn-arr">
@@ -109,28 +127,36 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              {/* <div class="dropdown-content">
+              {/* <div className="dropdown-content">
                 
               </div> */}
             </li>
-            {/* <li class="nav-item">
-              <a class="nav-link " href="#">
+            {/* <li className="nav-item">
+              <a className="nav-link " href="#">
                 Blog
               </a>
             </li> */}
-            <li class="nav-item ">
-              <a class="nav-link " href="contact" id="contact">
+            <li className="nav-item">
+              <Link className="nav-link" to="contact" id="contact">
                 Contact
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">
-                <img
-                  src="../images/sun.png"
-                  alt="sun-icon"
-                  className="sun-icon"
-                />
-              </a>
+            {/* light-mode & dark-mode */}
+            <li className="nav-item" onClick={toggleThemeMode}>
+              {isDarkMode ? (
+                <div className="nav-link" key={"sun"}>
+                  {/* <img
+                    src="../images/sun.png"
+                    alt="sun-icon"
+                    className="sun-icon"
+                  /> */}
+                  <WbSunnyIcon sx={{ color: "#fff" }} />
+                </div>
+              ) : (
+                <div className="nav-link" key={"moon"}>
+                  <DarkModeIcon />
+                </div>
+              )}
             </li>
           </ul>
         </div>

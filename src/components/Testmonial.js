@@ -1,5 +1,5 @@
 import React from "react";
-const Testmonial = () => {
+const Testmonial = ({ isDarkMode }) => {
   return (
     <>
       <div
@@ -29,7 +29,19 @@ const Testmonial = () => {
           <div class="carousel-item  active">
             <div className="row">
               <div className="col-md-5 image-square">
-                <img src="../images/gsquare(2).png" alt="" className="square" />
+                {isDarkMode ? (
+                  <img
+                    src="../images/gsquare_white.png"
+                    alt=""
+                    className="square"
+                  />
+                ) : (
+                  <img
+                    src="../images/gsquare(2).png"
+                    alt=""
+                    className="square"
+                  />
+                )}
               </div>
               <div className="col-md-7">
                 <div className="row circle">
@@ -55,7 +67,19 @@ const Testmonial = () => {
           <div class="carousel-item">
             <div className="row">
               <div className="col-md-5 image-square">
-                <img src="../images/gsquare(2).png" alt="" className="square" />
+                {isDarkMode ? (
+                  <img
+                    src="../images/gsquare_white.png"
+                    alt=""
+                    className="square"
+                  />
+                ) : (
+                  <img
+                    src="../images/gsquare(2).png"
+                    alt=""
+                    className="square"
+                  />
+                )}
               </div>
               <div className="col-md-7">
                 <div className="row circle">
@@ -81,7 +105,19 @@ const Testmonial = () => {
           <div class="carousel-item">
             <div className="row">
               <div className="col-md-5 image-square">
-                <img src="../images/gsquare(2).png" alt="" className="square" />
+                {isDarkMode ? (
+                  <img
+                    src="../images/gsquare_white.png"
+                    alt=""
+                    className="square"
+                  />
+                ) : (
+                  <img
+                    src="../images/gsquare(2).png"
+                    alt=""
+                    className="square"
+                  />
+                )}
               </div>
               <div className="col-md-7">
                 <div className="row circle">

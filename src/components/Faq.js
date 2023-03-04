@@ -1,5 +1,5 @@
 import React from "react";
-const Faq = () => {
+const Faq = ({ isDarkMode }) => {
   return (
     <>
       <div className="row container-fluid faq-overall">
@@ -103,7 +103,11 @@ const Faq = () => {
           </section>
         </div>
         <div className="col-md-5">
-          <img src="../images/ANIMATION-01.png" alt="" className="faq" />
+          {isDarkMode ? (
+            <img src="../images/question_white.png" alt="" className="faq" />
+          ) : (
+            <img src="../images/ANIMATION-01.png" alt="" className="faq" />
+          )}
         </div>
       </div>
     </>

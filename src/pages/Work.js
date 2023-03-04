@@ -10,9 +10,9 @@ const Work = () => {
   return (
     <>
       <WorkBanner />
-      <WorkContent/>
-      <WorkGallery/>
-      <WorkDownload/>
+      <WorkContent />
+      <WorkGallery />
+      <WorkDownload />
       {/* <WorkBrand/> */}
     </>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Service from "../components/Service";
 import Banner from "../components/Banner";
 import BrandJourney from "../components/BrandJourney";
@@ -16,12 +16,15 @@ import ServiceScrollMagic from "../components/ServiceScrollMagic";
 import ServiceScrollTrigger from "../components/ServiceScrollTrigger";
 import ServiceSM from "../components/ServiceSM";
 import ServiceScroller from "../components/ServiceScoller";
+import { ThemeContext } from "../context/theme-context";
+import ClientSliderDM from "../components/ClientSliderDM";
 
 const Home = () => {
+  const { isDarkMode } = useContext(ThemeContext);
   return (
     <>
       <Banner />
-      <ClientSlider />
+      {isDarkMode ? <ClientSliderDM /> : <ClientSlider />}
       <Content1 />
       {/* <FloatingElement /> */}
       {/* <Service /> */}
@@ -34,8 +37,8 @@ const Home = () => {
       <Project />
       <Map />
       <Content2 />
-      <Testmonial />
-      <Faq />
+      <Testmonial isDarkMode={isDarkMode} />
+      <Faq isDarkMode={isDarkMode} />
       {/* <BrandJourney /> */}
     </>
   );

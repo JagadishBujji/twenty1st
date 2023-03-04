@@ -32,160 +32,160 @@ const Service = () => {
     },
   });
 
-  useEffect(() => {
-    const controller = new ScrollMagic.Controller();
-    const section1Element = section1Ref.current;
-    const section2Element = section2Ref.current;
-    const section3Element = section3Ref.current;
-    const section4Element = section4Ref.current;
+  // useEffect(() => {
+  //   const controller = new ScrollMagic.Controller();
+  //   const section1Element = section1Ref.current;
+  //   const section2Element = section2Ref.current;
+  //   const section3Element = section3Ref.current;
+  //   const section4Element = section4Ref.current;
 
-    if (
-      section1Element &&
-      section2Element &&
-      section3Element &&
-      section4Element
-    ) {
-      const scene1 = new ScrollMagic.Scene({
-        triggerElement: section1Element,
-        triggerHook: "0.1", // start
-        duration: section.sec1.duration, // end
-      })
-        .setPin(section1Element)
-        .on("enter", () => {
-          console.log("Scene 1 entered!");
-          setSection((prevState) => {
-            return {
-              ...prevState,
-              sec1: {
-                duration: "100%",
-                content: true,
-              },
-            };
-          });
-        })
-        .on("leave", () => {
-          console.log("Scene 1 left!");
-          // setSection((prevState) => {
-          //   return {
-          //     ...prevState,
-          //     sec1: {
-          //       duration: "0%",
-          //       content: false,
-          //     },
-          //   };
-          // });
-          // check whether its height is less, then set everything to 0% again
-        });
+  //   if (
+  //     section1Element &&
+  //     section2Element &&
+  //     section3Element &&
+  //     section4Element
+  //   ) {
+  //     const scene1 = new ScrollMagic.Scene({
+  //       triggerElement: section1Element,
+  //       triggerHook: "0.1", // start
+  //       duration: section.sec1.duration, // end
+  //     })
+  //       .setPin(section1Element)
+  //       .on("enter", () => {
+  //         console.log("Scene 1 entered!");
+  //         setSection((prevState) => {
+  //           return {
+  //             ...prevState,
+  //             sec1: {
+  //               duration: "100%",
+  //               content: true,
+  //             },
+  //           };
+  //         });
+  //       })
+  //       .on("leave", () => {
+  //         console.log("Scene 1 left!");
+  //         // setSection((prevState) => {
+  //         //   return {
+  //         //     ...prevState,
+  //         //     sec1: {
+  //         //       duration: "0%",
+  //         //       content: false,
+  //         //     },
+  //         //   };
+  //         // });
+  //         // check whether its height is less, then set everything to 0% again
+  //       });
 
-      const scene2 = new ScrollMagic.Scene({
-        triggerElement: section2Element,
-        triggerHook: "0.1",
-        duration: section.sec2.duration,
-      })
-        .setPin(section2Element)
-        .on("enter", () => {
-          console.log("Scene 2 entered!");
-          setSection((prevState) => {
-            return {
-              ...prevState,
-              sec2: {
-                duration: "100%",
-                content: true,
-              },
-            };
-          });
-        })
-        .on("leave", () => {
-          console.log("Scene 2 left!");
-          // setSection((prevState) => {
-          //   return {
-          //     ...prevState,
-          //     sec2: {
-          //       duration: "0%",
-          //       content: false,
-          //     },
-          //   };
-          // });
-        });
+  //     const scene2 = new ScrollMagic.Scene({
+  //       triggerElement: section2Element,
+  //       triggerHook: "0.1",
+  //       duration: section.sec2.duration,
+  //     })
+  //       .setPin(section2Element)
+  //       .on("enter", () => {
+  //         console.log("Scene 2 entered!");
+  //         setSection((prevState) => {
+  //           return {
+  //             ...prevState,
+  //             sec2: {
+  //               duration: "100%",
+  //               content: true,
+  //             },
+  //           };
+  //         });
+  //       })
+  //       .on("leave", () => {
+  //         console.log("Scene 2 left!");
+  //         // setSection((prevState) => {
+  //         //   return {
+  //         //     ...prevState,
+  //         //     sec2: {
+  //         //       duration: "0%",
+  //         //       content: false,
+  //         //     },
+  //         //   };
+  //         // });
+  //       });
 
-      const scene3 = new ScrollMagic.Scene({
-        triggerElement: section3Element,
-        triggerHook: "0.1",
-        duration: section.sec3.duration,
-      })
-        .setPin(section3Element)
-        .on("enter", () => {
-          console.log("Scene 3 entered!");
-          setSection((prevState) => {
-            return {
-              ...prevState,
-              // sec2: {
-              //   duration: "0%",
-              //   content: false,
-              // },
-              sec3: {
-                duration: "100%",
-                content: true,
-              },
-            };
-          });
-        })
-        .on("leave", () => {
-          console.log("Scene 3 left!");
-          // setSection((prevState) => {
-          //   return {
-          //     ...prevState,
-          //     sec3: {
-          //       duration: "0%",
-          //       content: false,
-          //     },
-          //   };
-          // });
-        });
+  //     const scene3 = new ScrollMagic.Scene({
+  //       triggerElement: section3Element,
+  //       triggerHook: "0.1",
+  //       duration: section.sec3.duration,
+  //     })
+  //       .setPin(section3Element)
+  //       .on("enter", () => {
+  //         console.log("Scene 3 entered!");
+  //         setSection((prevState) => {
+  //           return {
+  //             ...prevState,
+  //             // sec2: {
+  //             //   duration: "0%",
+  //             //   content: false,
+  //             // },
+  //             sec3: {
+  //               duration: "100%",
+  //               content: true,
+  //             },
+  //           };
+  //         });
+  //       })
+  //       .on("leave", () => {
+  //         console.log("Scene 3 left!");
+  //         // setSection((prevState) => {
+  //         //   return {
+  //         //     ...prevState,
+  //         //     sec3: {
+  //         //       duration: "0%",
+  //         //       content: false,
+  //         //     },
+  //         //   };
+  //         // });
+  //       });
 
-      const scene4 = new ScrollMagic.Scene({
-        triggerElement: section4Element,
-        triggerHook: "0.1",
-        duration: section.sec4.duration,
-      })
-        .setPin(section4Element)
-        .on("enter", () => {
-          console.log("Scene 4 entered!");
-          setSection((prevState) => {
-            return {
-              ...prevState,
-              sec4: {
-                duration: "100%",
-                content: true,
-              },
-            };
-          });
-        })
-        .on("leave", () => {
-          console.log("Scene 4 left!");
-          // setSection((prevState) => {
-          //   return {
-          //     ...prevState,
-          //     sec4: {
-          //       duration: "0%",
-          //       content: false,
-          //     },
-          //   };
-          // });
-        });
+  //     const scene4 = new ScrollMagic.Scene({
+  //       triggerElement: section4Element,
+  //       triggerHook: "0.1",
+  //       duration: section.sec4.duration,
+  //     })
+  //       .setPin(section4Element)
+  //       .on("enter", () => {
+  //         console.log("Scene 4 entered!");
+  //         setSection((prevState) => {
+  //           return {
+  //             ...prevState,
+  //             sec4: {
+  //               duration: "100%",
+  //               content: true,
+  //             },
+  //           };
+  //         });
+  //       })
+  //       .on("leave", () => {
+  //         console.log("Scene 4 left!");
+  //         // setSection((prevState) => {
+  //         //   return {
+  //         //     ...prevState,
+  //         //     sec4: {
+  //         //       duration: "0%",
+  //         //       content: false,
+  //         //     },
+  //         //   };
+  //         // });
+  //       });
 
-      controller.addScene([scene1, scene2, scene3, scene4]);
-    }
+  //     controller.addScene([scene1, scene2, scene3, scene4]);
+  //   }
 
-    return () => {
-      controller.destroy(true);
-    };
-  }, [
-    section.sec1.duration,
-    section.sec2.duration,
-    section.sec3.duration,
-    section.sec4.duration,
-  ]);
+  //   return () => {
+  //     controller.destroy(true);
+  //   };
+  // }, [
+  //   section.sec1.duration,
+  //   section.sec2.duration,
+  //   section.sec3.duration,
+  //   section.sec4.duration,
+  // ]);
 
   return (
     <>
@@ -248,7 +248,7 @@ const Service = () => {
               <span className="dashed">
                 <span className="circle-desi"></span>
               </span>{" "}
-              <h1 className="desi">Digital & Social</h1>
+              <h1 className="desi">Advertising</h1>
             </div>
             {section.sec3.content && (
               <ul className="ser">

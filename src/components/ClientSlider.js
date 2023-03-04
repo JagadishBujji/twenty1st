@@ -25,7 +25,6 @@ const ClientSlider = () => {
             900: {
               items: 5,
             },
-            
           }}
         >
           <div class="item ">
