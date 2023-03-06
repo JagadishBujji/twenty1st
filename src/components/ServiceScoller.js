@@ -5,7 +5,7 @@ export default function Service() {
   const Ref2 = useRef(null);
   const Ref3 = useRef(null);
   const Ref4 = useRef(null);
-  const [active, setActive] = useState("");
+  // const [active, setActive] = useState("");
   const [content1, setContent1] = useState(false);
   const [content2, setContent2] = useState(false);
   const [content3, setContent3] = useState(false);
@@ -76,7 +76,7 @@ export default function Service() {
   return (
     <div className="py-5 container d-flex flex-wrap justify-content-end">
       {/* content div */}
-      <div className="w-25">
+      <div className="w-50">
         {services.map((service, index) => (
           <div>
             <div
@@ -84,7 +84,7 @@ export default function Service() {
               style={{ position: "sticky", top: "1.5rem" }}
             >
               <h2
-                className="text-left"
+                className="text-left h2-bolder"
                 style={
                   index
                     ? {
@@ -104,6 +104,7 @@ export default function Service() {
                 style={{
                   display: service.active ? "block" : "none",
                   marginBottom: "30rem",
+                  fontSize: "2rem",
                 }}
               >
                 {service.contents.map((val) => (
@@ -121,7 +122,21 @@ export default function Service() {
       {/* img container */}
       <div className="w-50">
         <div className="p-3" style={{ position: "sticky", top: "10%" }}>
-          <img className="img-fluid" src={content1 ? content2 ? content3 ? content4 ? "../images/film_white.gif" : "../images/digital_white.gif" : "../images/design_white.gif" : "../images/advertising_white.gif" : "" } />
+          <img
+            alt=""
+            className="img-fluid"
+            src={
+              content1
+                ? content2
+                  ? content3
+                    ? content4
+                      ? "../images/film_white.gif"
+                      : "../images/digital_white.gif"
+                    : "../images/design_white.gif"
+                  : "../images/advertising_white.gif"
+                : ""
+            }
+          />
         </div>
       </div>
     </div>
