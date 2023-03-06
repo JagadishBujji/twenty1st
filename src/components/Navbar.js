@@ -3,10 +3,11 @@ import { ThemeContext } from "../context/theme-context";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
+  const navigate = useNavigate();
 
   const toggleThemeMode = () => {
     toggleTheme();
@@ -69,8 +70,11 @@ const Navbar = () => {
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <div className="row">
-                  <div className="col-md-3">
-                    <a href="#" className="submenu ">
+                  <div
+                    className="col-md-3"
+                    onClick={() => navigate("services#design")}
+                  >
+                    <div className="submenu">
                       <div className="card digital green">
                         <h4 className="design1">Design</h4>
                         <div className="row iocn-arr">
@@ -81,10 +85,13 @@ const Navbar = () => {
                           <ArrowRightAltIcon sx={{ color: "#000" }} />
                         </div>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div className="col-md-3">
-                    <a href="#" className="submenu ">
+                  <div
+                    className="col-md-3"
+                    onClick={() => navigate("services#digital-social")}
+                  >
+                    <div className="submenu ">
                       <div className="card digital yellow">
                         <h4 className="design1">Digital & Social</h4>
                         <div className="row iocn-arr">
@@ -95,10 +102,13 @@ const Navbar = () => {
                           <ArrowRightAltIcon sx={{ color: "#000" }} />
                         </div>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div className="col-md-3">
-                    <a href="#" className="submenu ">
+                  <div
+                    className="col-md-3"
+                    onClick={() => navigate("services#advertising")}
+                  >
+                    <div className="submenu ">
                       <div className="card digital purpul">
                         <h4 className="design1"> Advertising</h4>
                         <div className="row iocn-arr">
@@ -109,10 +119,13 @@ const Navbar = () => {
                           <ArrowRightAltIcon sx={{ color: "#000" }} />
                         </div>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div className="col-md-3">
-                    <a href="#" className="submenu ">
+                  <div
+                    className="col-md-3"
+                    onClick={() => navigate("services#dfilms-production")}
+                  >
+                    <div className="submenu ">
                       <div className="card digital red">
                         <h4 className="design1">Films & Production</h4>
                         <div className="row iocn-arr">
@@ -123,7 +136,7 @@ const Navbar = () => {
                           <ArrowRightAltIcon sx={{ color: "#000" }} />
                         </div>
                       </div>
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -355,3 +355,12 @@ input[type="submit"]:hover {
   position: sticky;
   top: 10%;
 }
+
+.text-left {
+  color: var(--text-primary);
+}
+
+.h2-bolder {
+  font-size: 5rem;
+  font-weight: 1000;
+}
