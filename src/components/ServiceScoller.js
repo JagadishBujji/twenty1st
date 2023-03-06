@@ -76,31 +76,37 @@ export default function Service() {
   return (
     <div className="py-5 container d-flex flex-wrap justify-content-end">
       {/* content div */}
-      <div className="w-25">
+      <div className="w-30">
         {services.map((service, index) => (
           <div>
             <div
               ref={service.ref}
               style={{ position: "sticky", top: "1.5rem" }}
             >
-              <h2
-                className="text-left"
-                style={
-                  index
-                    ? {
-                        marginBottom: services[index - 1].active
-                          ? service.active
-                            ? 0
-                            : "35rem"
-                          : 0,
-                      }
-                    : { marginBottom: 0 }
-                }
-              >
-                {service.title}
-              </h2>
+              <div className="row overallscrool">
+                <span className="dashed">
+                  <span className="circle-desi"></span>
+                </span>
+                <h2
+                  className="text-left Headingservices"
+                  style={
+                    index
+                      ? {
+                          marginBottom: services[index - 1].active
+                            ? service.active
+                              ? 0
+                              : "35rem"
+                            : 0,
+                        }
+                      : { marginBottom: 0 }
+                  }
+                >
+                  {service.title}
+                </h2>
+              </div>
+
               <ul
-                className="text-left"
+                className="text-left ul-list"
                 style={{
                   display: service.active ? "block" : "none",
                   marginBottom: "30rem",
@@ -121,7 +127,20 @@ export default function Service() {
       {/* img container */}
       <div className="w-50">
         <div className="p-3" style={{ position: "sticky", top: "10%" }}>
-          <img className="img-fluid" src={content1 ? content2 ? content3 ? content4 ? "../images/film_white.gif" : "../images/digital_white.gif" : "../images/design_white.gif" : "../images/advertising_white.gif" : "" } />
+          <img
+            className="img-fluid"
+            src={
+              content1
+                ? content2
+                  ? content3
+                    ? content4
+                      ? "../images/film_white.gif"
+                      : "../images/digital_white.gif"
+                    : "../images/design_white.gif"
+                  : "../images/advertising_white.gif"
+                : ""
+            }
+          />
         </div>
       </div>
     </div>
