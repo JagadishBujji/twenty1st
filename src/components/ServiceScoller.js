@@ -84,7 +84,20 @@ export default function Service() {
               style={{ position: "sticky", top: "1.5rem" }}
             >
               <div className="row overallscrool">
-                <span className="dashed">
+                <span
+                  className="dashed"
+                  style={
+                    index
+                      ? {
+                          marginBottom: services[index - 1].active
+                            ? service.active
+                              ? 0
+                              : "35rem"
+                            : 0,
+                        }
+                      : { marginBottom: 0 }
+                  }
+                >
                   <span className="circle-desi"></span>
                 </span>
                 <h2
