@@ -13,25 +13,25 @@ export default function Service() {
 
   const services = [
     {
-      title: "Advertising",
+      title: " Design",
       contents: ["Brand Identity", "Packaging", "UI/UX design"],
       ref: Ref1,
       active: content1,
     },
     {
-      title: "Design",
+      title: "Digital & Social",
       contents: ["Brand Identity", "Packaging", "UI/UX design", "Testing"],
       ref: Ref2,
       active: content2,
     },
     {
-      title: "Digital & Social",
+      title: " Advertising",
       contents: ["Brand Identity", "Packaging", "UI/UX design"],
       ref: Ref3,
       active: content3,
     },
     {
-      title: "Film",
+      title: "Films & Production",
       contents: ["Brand Identity", "Packaging", "UI/UX design", "Dummy"],
       ref: Ref4,
       active: content4,
