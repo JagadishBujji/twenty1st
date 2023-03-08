@@ -54,6 +54,7 @@ export default function ModalSwiper({ images }) {
         pagination={{
           type: "fraction",
         }}
+        autoplay={true}
         navigation={true}
         modules={[Navigation]}
         className="mySwiper"

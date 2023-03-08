@@ -18,15 +18,17 @@ import ServiceSM from "../components/ServiceSM";
 import ServiceScroller from "../components/ServiceScoller";
 import { ThemeContext } from "../context/theme-context";
 import ClientSliderDM from "../components/ClientSliderDM";
+import BannerDark from "../components/BannerDark";
+import MapDark from "../components/MapDark";
 
 const Home = () => {
   const { isDarkMode } = useContext(ThemeContext);
   return (
     <>
-      <Banner />
+      {isDarkMode ? <BannerDark /> : <Banner />}
       {isDarkMode ? <ClientSliderDM /> : <ClientSlider />}
       <Content1 />
-      {/* <FloatingElement /> */}
+      <FloatingElement />
       {/* <Service /> */}
       {/* <ServiceScrollMagic /> */}
       {/* <ServiceSM /> */}
@@ -35,7 +37,7 @@ const Home = () => {
       <ServiceScroller />
       <Communication />
       <Project />
-      <Map />
+      {isDarkMode ? <MapDark /> : <Map />}
       <Content2 />
       <Testmonial isDarkMode={isDarkMode} />
       <Faq isDarkMode={isDarkMode} />
