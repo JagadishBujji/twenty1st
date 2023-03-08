@@ -31,7 +31,7 @@ const WorkGallery = () => {
 
   return (
     <>
-      <div className="row  container gallery">
+      <div className="row container gallery">
         <div className="col-md-6 bottom">
           <h2 className="sun">Sundaram Finance</h2>
 
@@ -50,7 +50,7 @@ const WorkGallery = () => {
           />
         </div>
       </div>
-      <div className="row  container gallery">
+      <div className="row container gallery">
         <div className="col-md-6 bottom">
           <h2 className="sun">DIYA Robotics</h2>
           <GalleryModal

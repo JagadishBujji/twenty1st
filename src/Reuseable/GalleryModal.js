@@ -46,7 +46,12 @@ export default function GalleryModal(props) {
           <div className="row titlewithicon">
             <Typography
               id="modal-modal-title"
-              sx={{ mb: 2, fontSize: "30px", fontFamily: "Poppins", fontWeight: "600" }}
+              sx={{
+                mb: 2,
+                fontSize: "30px",
+                fontFamily: "Poppins",
+                fontWeight: "600",
+              }}
               variant="h4"
               component="h2"
               className="modaltitle"
@@ -54,14 +59,12 @@ export default function GalleryModal(props) {
               {props.title}
             </Typography>
             <CloseIcon
-              onClose={handleClose}
+              onClick={handleClose}
               sx={{ fontSize: "40px", cursor: "pointer" }}
             />
           </div>
 
-          <ModalSwiper
-            images={props.images}
-          />
+          <ModalSwiper images={props.images} />
         </Box>
       </Modal>
     </div>
