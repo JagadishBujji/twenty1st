@@ -183,3 +183,53 @@ export default function Service() {
 {
   /* <lottie-player src="https://lottie.host/99712c59-6faf-4f57-b99f-a677ef072863/sK8I4xgucN.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player> */
 }
+
+// white
+
+{
+  /* <lottie-player
+  src="https://lottie.host/9f01ebd8-e4d8-472c-bcb8-20d01840475b/Q9myD1u5hJ.json"
+  background="transparent"
+  speed="1"
+  style={{ width: "100%", height: "100%" }}
+  loop
+  autoplay
+></lottie-player>; */
+}
+
+// digital
+
+{
+  /* <lottie-player
+  src="https://lottie.host/bc307ead-2453-494b-bc41-4243b49d769b/7NB4rMlcqM.json"
+  background="transparent"
+  speed="1"
+  style="width: 300px; height: 300px;"
+  loop
+  autoplay
+></lottie-player>; */
+}
+
+// ad
+
+{
+  /* <lottie-player
+  src="https://lottie.host/fcc3d30b-350a-41a0-8d93-525364b4991f/or8pRzUNA9.json"
+  background="transparent"
+  speed="1"
+  style="width: 300px; height: 300px;"
+  loop
+  autoplay
+></lottie-player>; */
+}
+
+// filim
+
+{/* <lottie-player
+  src="https://lottie.host/ff671dcc-cfd8-49e8-bcc7-f177b83de89a/UPos21u6F6.json"
+  background="transparent"
+  speed="1"
+  style="width: 300px; height: 300px;"
+  loop
+  autoplay
+></lottie-player>; */}
