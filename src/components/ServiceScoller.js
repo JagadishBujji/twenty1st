@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
+import { NavHashLink } from "react-router-hash-link";
 
-export default function Service() {
+export default function Service(props) {
   const Ref1 = useRef(null);
   const Ref2 = useRef(null);
   const Ref3 = useRef(null);
   const Ref4 = useRef(null);
   // const [active, setActive] = useState("");
-  const [content1, setContent1] = useState(false);
+  const [content1, setContent1] = useState(props?.service ? true : false);
   const [content2, setContent2] = useState(false);
   const [content3, setContent3] = useState(false);
   const [content4, setContent4] = useState(false);
@@ -14,27 +15,51 @@ export default function Service() {
   const services = [
     {
       title: " Design",
+      para: "In this fast paced technology driven world, we believe in taking a step back in design as the way forward. We adopt a human approach to aesthetics and functional design that evokes an emotional response.",
+      caption:
+        "Our design expertise extends to the following services we offer",
+      footer:
+        "We bring design to life through animation and motion graphics that can be leveraged for various applications such as training, marketing communications etc",
       contents: ["Brand Identity", "Packaging", "UI/UX design"],
       ref: Ref1,
       active: content1,
+      path: "#design"
     },
     {
       title: "Digital & Social",
+      para: "In this fast paced technology driven world, we believe in taking a step back in design as the way forward. We adopt a human approach to aesthetics and functional design that evokes an emotional response.",
+      caption:
+        "Our design expertise extends to the following services we offer",
+      footer:
+        "We bring design to life through animation and motion graphics that can be leveraged for various applications such as training, marketing communications etc",
       contents: ["Brand Identity", "Packaging", "UI/UX design", "Testing"],
       ref: Ref2,
       active: content2,
+      path: "#digital-social"
     },
     {
       title: " Advertising",
+      para: "In this fast paced technology driven world, we believe in taking a step back in design as the way forward. We adopt a human approach to aesthetics and functional design that evokes an emotional response.",
+      caption:
+        "Our design expertise extends to the following services we offer",
+      footer:
+        "We bring design to life through animation and motion graphics that can be leveraged for various applications such as training, marketing communications etc",
       contents: ["Brand Identity", "Packaging", "UI/UX design"],
       ref: Ref3,
       active: content3,
+      path: "#advertising"
     },
     {
       title: "Films & Production",
+      para: "In this fast paced technology driven world, we believe in taking a step back in design as the way forward. We adopt a human approach to aesthetics and functional design that evokes an emotional response.",
+      caption:
+        "Our design expertise extends to the following services we offer",
+      footer:
+        "We bring design to life through animation and motion graphics that can be leveraged for various applications such as training, marketing communications etc",
       contents: ["Brand Identity", "Packaging", "UI/UX design", "Dummy"],
       ref: Ref4,
       active: content4,
+      path: "#films-production"
     },
   ];
 
@@ -117,19 +142,28 @@ export default function Service() {
                   {service.title}
                 </h2>
               </div>
-
-              <ul
-                className="text-left ul-list"
+              <div
                 style={{
                   display: service.active ? "block" : "none",
                   marginBottom: "30rem",
-                  fontSize: "2rem",
                 }}
               >
-                {service.contents.map((val) => (
-                  <li>{val}</li>
-                ))}
-              </ul>
+                {props?.service && <>
+                  <p className="Paraservices">{service.para}</p>
+                  <p className="Captionservices">{service.caption}</p>
+                </>}
+                <ul
+                  className="text-left ul-list"
+                  style={{
+                    fontSize: "2rem",
+                  }}
+                >
+                  {service.contents.map((val) => (
+                    <li>{val}</li>
+                  ))}
+                </ul>
+                { props?.service && <p className="Footerservices">{service.footer}</p> }
+              </div>
             </div>
             <div
               className="p-3"
@@ -225,11 +259,13 @@ export default function Service() {
 
 // filim
 
-{/* <lottie-player
+{
+  /* <lottie-player
   src="https://lottie.host/ff671dcc-cfd8-49e8-bcc7-f177b83de89a/UPos21u6F6.json"
   background="transparent"
   speed="1"
   style="width: 300px; height: 300px;"
   loop
   autoplay
-></lottie-player>; */}
+></lottie-player>; */
+}
