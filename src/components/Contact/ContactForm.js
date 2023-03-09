@@ -1,4 +1,22 @@
 const ContactForm = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    window.Email.send({
+      SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
+      To: "ksanjay00197@gmail.com",
+      From: "ksanjay00197@gmail.com",
+      Subject: "This is the subject test",
+      Body: "And this is the body test",
+      Attachments: [
+        {
+          name: "smtpjs.png",
+          path: "https://networkprogramming.files.wordpress.com/2017/11/smtpjs.png",
+        },
+      ],
+    }).then((message) => alert(message));
+  };
+
   return (
     <>
       <div className="row  m-auto container">
@@ -53,7 +71,7 @@ const ContactForm = () => {
               cols="50"
             ></textarea>
             <br />
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" onClick={sendEmail} />
           </form>
         </div>
       </div>
