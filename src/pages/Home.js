@@ -34,7 +34,7 @@ const Home = () => {
       {/* <ServiceSM /> */}
       {/* <ServiceGsap /> */}
       {/* <ServiceScrollTrigger /> */}
-      <ServiceScroller />
+      <ServiceScroller isDarkMode={isDarkMode} />
       <Communication />
       <Project />
       {isDarkMode ? <MapDark /> : <Map />}
