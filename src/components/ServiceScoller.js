@@ -23,7 +23,7 @@ export default function Service(props) {
       contents: ["Brand Identity", "Packaging", "UI/UX design"],
       ref: Ref1,
       active: content1,
-      path: "#design"
+      id: "design"
     },
     {
       title: "Digital & Social",
@@ -35,7 +35,7 @@ export default function Service(props) {
       contents: ["Brand Identity", "Packaging", "UI/UX design", "Testing"],
       ref: Ref2,
       active: content2,
-      path: "#digital-social"
+      id: "digital-social"
     },
     {
       title: " Advertising",
@@ -47,7 +47,7 @@ export default function Service(props) {
       contents: ["Brand Identity", "Packaging", "UI/UX design"],
       ref: Ref3,
       active: content3,
-      path: "#advertising"
+      id: "advertising"
     },
     {
       title: "Films & Production",
@@ -59,7 +59,7 @@ export default function Service(props) {
       contents: ["Brand Identity", "Packaging", "UI/UX design", "Dummy"],
       ref: Ref4,
       active: content4,
-      path: "#films-production"
+      id: "films-production"
     },
   ];
 
@@ -126,6 +126,7 @@ export default function Service(props) {
                   <span className="circle-desi"></span>
                 </span>
                 <h2
+                  id={service.id}
                   className="text-left Headingservices"
                   style={
                     index
