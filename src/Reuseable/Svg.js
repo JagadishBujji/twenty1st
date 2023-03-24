@@ -17,7 +17,7 @@ const Svg = () => {
 {/* white */}
       <svg
         width="16"
-        height="588"
+        height="350"
         viewBox="0 0 16 588"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
