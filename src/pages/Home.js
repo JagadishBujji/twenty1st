@@ -20,6 +20,7 @@ import { ThemeContext } from "../context/theme-context";
 import ClientSliderDM from "../components/ClientSliderDM";
 import BannerDark from "../components/BannerDark";
 import MapDark from "../components/MapDark";
+import FloatingElementDm from "../components/FloatingElementDm";
 
 const Home = () => {
   const { isDarkMode } = useContext(ThemeContext);
@@ -28,7 +29,7 @@ const Home = () => {
       {isDarkMode ? <BannerDark /> : <Banner />}
       {isDarkMode ? <ClientSliderDM /> : <ClientSlider />}
       <Content1 />
-      <FloatingElement />
+      {isDarkMode ? <FloatingElementDm />: <FloatingElement />}
       {/* <Service /> */}
       {/* <ServiceScrollMagic /> */}
       {/* <ServiceSM /> */}
