@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { NavHashLink } from "react-router-hash-link";
+// import { NavHashLink } from "react-router-hash-link";
 import Advertise from "./services/Advertise";
 import AdvertiseDark from "./services/AdvertiseDark";
 import Design from "./services/Design";

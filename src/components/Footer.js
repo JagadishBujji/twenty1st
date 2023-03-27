@@ -9,48 +9,97 @@ const Footer = () => {
       <div className="row m-0 footer">
         <div className="col-md-3">
           {isDarkMode ? (
-            <img
-              src="../images/Twentywhite.png"
-              alt=""
-              className="footer-logo"
-            />
+            <>
+              <img
+                src="../images/Twentyblack (2).png"
+                alt=""
+                className="footer-logo"
+              />
+              <div className="row social-row">
+                <a href="">
+                  <img
+                    src="../images/facebook (2).png"
+                    alt=""
+                    className="social-link"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="../images/instagram (2).png"
+                    alt=""
+                    className="social-link"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="../images/twitter (2).png"
+                    alt=""
+                    className="social-link"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="../images/linkedin (2).png"
+                    alt=""
+                    className="social-link"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="../images/youtube (2).png"
+                    alt=""
+                    className="social-link"
+                  />
+                </a>
+              </div>
+            </>
           ) : (
-            <img
-              src="../images/Twentyblack.png"
-              alt=""
-              className="footer-logo"
-            />
+            <>
+              <img
+                src="../images/Twentyblack.png"
+                alt=""
+                className="footer-logo"
+              />
+              <div className="row social-row">
+                <a href="">
+                  <img
+                    src="../images/facebook.png"
+                    alt=""
+                    className="social-link"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="../images/instagram.png"
+                    alt=""
+                    className="social-link"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="../images/twitter.png"
+                    alt=""
+                    className="social-link"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="../images/linkedin.png"
+                    alt=""
+                    className="social-link"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="../images/youtube.png"
+                    alt=""
+                    className="social-link"
+                  />
+                </a>
+              </div>
+            </>
           )}
 
-          <div className="row social-row">
-            <a href="">
-              <img
-                src="../images/facebook.png"
-                alt=""
-                className="social-link"
-              />
-            </a>
-            <a href="">
-              <img
-                src="../images/instagram.png"
-                alt=""
-                className="social-link"
-              />
-            </a>
-            <a href="">
-              <img src="../images/twitter.png" alt="" className="social-link" />
-            </a>
-            <a href="">
-              <img
-                src="../images/linkedin.png"
-                alt=""
-                className="social-link"
-              />
-            </a>
-            <a href="">
-              <img src="../images/youtube.png" alt="" className="social-link" />
-            </a>
-          </div>
           <p className="copyright">
             <b>
               <i class="far fa-copyright"></i>
@@ -128,24 +177,49 @@ const Footer = () => {
                 Bukit Batok West Avenue 6, #11-234, Singapore 650116.
               </p>
             </li> */}
-            <li className="contact-details">
-              <img
-                src="../images/envalope.png"
-                alt="icon"
-                className="footericon"
-              />
-              <p className="add">team@twentyonest.in</p>
-            </li>
-            <li className="contact-details">
-              <img
-                src="../images/phone.png"
-                alt="icon"
-                className="footericon"
-              />
-              <a className="add" href="tel:98418 35301">
-                +91 98418 35301
-              </a>
-            </li>
+            {isDarkMode ? (
+              <>
+                <li className="contact-details">
+                  <img
+                    src="../images/envalope (2).png"
+                    alt="icon"
+                    className="footericon"
+                  />
+                  <p className="add">team@twentyonest.in</p>
+                </li>
+                <li className="contact-details">
+                  <img
+                    src="../images/phone (2).png"
+                    alt="icon"
+                    className="footericon"
+                  />
+                  <a className="add" href="tel:98418 35301">
+                    +91 98418 35301
+                  </a>
+                </li>
+              </>
+            ) : (
+              <>
+                <li className="contact-details">
+                  <img
+                    src="../images/envalope.png"
+                    alt="icon"
+                    className="footericon"
+                  />
+                  <p className="add">team@twentyonest.in</p>
+                </li>
+                <li className="contact-details">
+                  <img
+                    src="../images/phone.png"
+                    alt="icon"
+                    className="footericon"
+                  />
+                  <a className="add" href="tel:98418 35301">
+                    +91 98418 35301
+                  </a>
+                </li>
+              </>
+            )}
           </ul>
         </div>
       </div>
