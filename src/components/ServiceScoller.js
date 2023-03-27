@@ -109,7 +109,7 @@ export default function Service(props) {
   return (
     <div className="py-5 container d-flex flex-wrap justify-content-end">
       {/* content div */}
-      <div className="w-50">
+      <div className={props.service ? "w-100" : "w-100 w-lg-50"}>
         {services.map((service, index) => (
           <div>
             <div
@@ -176,6 +176,27 @@ export default function Service(props) {
                 {props?.service && (
                   <p className="Footerservices">{service.footer}</p>
                 )}
+                <div className="d-lg-none mobile-images">
+                  {!props.service ? (
+                    content1 ? (
+                      content2 ? (
+                        content3 ? (
+                          content4 ? (
+                            <Film />
+                          ) : (
+                            <Advertise />
+                          )
+                        ) : (
+                          <DigitalSocial />
+                        )
+                      ) : (
+                        <Design />
+                      )
+                    ) : (
+                      <></>
+                    )) : (<></>)
+                  }
+                </div>
               </div>
             </div>
             <div
@@ -186,7 +207,7 @@ export default function Service(props) {
         ))}
       </div>
       {/* img container */}
-      <div className="w-50">
+      <div className={props.service ? "d-none" : "w-50 d-none d-lg-block"}>
         <div className="p-3" style={{ position: "sticky", top: "10%" }}>
           {/* <img
             alt=""
@@ -236,7 +257,7 @@ export default function Service(props) {
               <Design />
             )
           ) : (
-            ""
+            <></>
           )}
         </div>
       </div>

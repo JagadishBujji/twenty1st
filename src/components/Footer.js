@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <div className="row m-0 footer">
-        <div className="col-md-3">
+        <div className="col-lg-3">
           {isDarkMode ? (
             <>
               <img
@@ -108,7 +108,7 @@ const Footer = () => {
             </b>
           </p>
         </div>
-        <div className="col-md-3">
+        <div className="col-lg-3">
           <h4 className="link-head">Links</h4>
           <ul className="Links">
             <li className="footerlink">
@@ -128,7 +128,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-md-3">
+        <div className="col-lg-3">
           <h4 className="link-head">Services</h4>
           <ul className="Links">
             <li className="footerlink">
@@ -153,7 +153,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-md-3">
+        <div className="col-lg-3">
           <h4 className="link-head">Contact Us</h4>
           <ul className="contact-link">
             {/* <li className="contact-details">
