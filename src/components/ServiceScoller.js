@@ -8,6 +8,7 @@ import DigitalSocial from "./services/DigitalSocial";
 import DigitalSocialDark from "./services/DigitalSocialDark";
 import Film from "./services/Film";
 import FilmDark from "./services/FlimDark";
+import SkeletonChildren from "./skeleton/Skeleton";
 
 export default function Service(props) {
   const Ref1 = useRef(null);
@@ -19,6 +20,21 @@ export default function Service(props) {
   const [content2, setContent2] = useState(false);
   const [content3, setContent3] = useState(false);
   const [content4, setContent4] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [serviceImages, setServiceImages] = useState({
+    dark: {
+      design: "",
+      digital: "",
+      advertise: "",
+      film: "",
+    },
+    light: {
+      design: "",
+      digital: "",
+      advertise: "",
+      film: "",
+    },
+  });
 
   const services = [
     {
@@ -70,7 +86,32 @@ export default function Service(props) {
       path: "#films-production",
     },
   ];
-
+  useEffect(() => {
+    setServiceImages({
+      dark: {
+        film: "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/filim%20black.gif?alt=media&token=896419a1-4ea0-4364-884b-c5acbada962e",
+        advertise:
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/advertising_1.gif?alt=media&token=893ad9d9-cf94-46bc-b743-59f7897bedd5",
+        digital:
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/Digital%20and%20Social%202.gif?alt=media&token=f50e7194-fa0f-4cfc-be15-66bb0d8ba8a0",
+        design:
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design%20black.gif?alt=media&token=1530a278-4cfa-4246-be11-efcb1f745bf3",
+      },
+      light: {
+        film: "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/film_white.gif?alt=media&token=e9a16853-02ad-478a-b4ce-3edc4d2ac1df",
+        advertise:
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/advertising_white.gif?alt=media&token=1b032487-3df5-4de4-87d3-7a4349bf1e91",
+        digital:
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/Digital%20and%20social.gif?alt=media&token=e1624fc8-6021-4520-a0f8-e9e2486b336c",
+        design:
+          "https://firebasestorage.googleapis.com/v0/b/react-getting-started-457da.appspot.com/o/design_white.gif?alt=media&token=9f30e6ea-7a6d-4fb1-a185-11df4aa5d553",
+      },
+    });
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
   useEffect(() => {
     function handleScroll() {
       const rect1 = Ref1.current.getBoundingClientRect();
@@ -207,15 +248,31 @@ export default function Service(props) {
               content2 ? (
                 content3 ? (
                   content4 ? (
-                    <FilmDark />
+                    // <FilmDark />
+                    <SkeletonChildren
+                      img={serviceImages.dark.film}
+                      isLoading={isLoading}
+                    />
                   ) : (
-                    <AdvertiseDark />
+                    // <AdvertiseDark />
+                    <SkeletonChildren
+                      img={serviceImages.dark.advertise}
+                      isLoading={isLoading}
+                    />
                   )
                 ) : (
-                  <DigitalSocialDark />
+                  // <DigitalSocialDark />
+                  <SkeletonChildren
+                    img={serviceImages.dark.digital}
+                    isLoading={isLoading}
+                  />
                 )
               ) : (
-                <DesignDark />
+                // <DesignDark />
+                <SkeletonChildren
+                  img={serviceImages.dark.design}
+                  isLoading={isLoading}
+                />
               )
             ) : (
               ""
@@ -224,15 +281,31 @@ export default function Service(props) {
             content2 ? (
               content3 ? (
                 content4 ? (
-                  <Film />
+                  // <Film />
+                  <SkeletonChildren
+                    img={serviceImages.light.film}
+                    isLoading={isLoading}
+                  />
                 ) : (
-                  <Advertise />
+                  // <Advertise />
+                  <SkeletonChildren
+                    img={serviceImages.light.advertise}
+                    isLoading={isLoading}
+                  />
                 )
               ) : (
-                <DigitalSocial />
+                // <DigitalSocial />
+                <SkeletonChildren
+                  img={serviceImages.light.digital}
+                  isLoading={isLoading}
+                />
               )
             ) : (
-              <Design />
+              // <Design />
+              <SkeletonChildren
+                img={serviceImages.light.design}
+                isLoading={isLoading}
+              />
             )
           ) : (
             ""
