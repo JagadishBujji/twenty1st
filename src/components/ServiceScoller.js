@@ -1,5 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavHashLink } from "react-router-hash-link";
+import Advertise from "./services/Advertise";
+import AdvertiseDark from "./services/AdvertiseDark";
+import Design from "./services/Design";
+import DesignDark from "./services/DesignDark";
+import DigitalSocial from "./services/DigitalSocial";
+import DigitalSocialDark from "./services/DigitalSocialDark";
+import Film from "./services/Film";
+import FilmDark from "./services/FlimDark";
 
 export default function Service(props) {
   const Ref1 = useRef(null);
@@ -149,10 +157,12 @@ export default function Service(props) {
                   marginBottom: "30rem",
                 }}
               >
-                {props?.service && <>
-                  <p className="Paraservices">{service.para}</p>
-                  <p className="Captionservices">{service.caption}</p>
-                </>}
+                {props?.service && (
+                  <>
+                    <p className="Paraservices">{service.para}</p>
+                    <p className="Captionservices">{service.caption}</p>
+                  </>
+                )}
                 <ul
                   className="text-left ul-list"
                   style={{
@@ -163,7 +173,9 @@ export default function Service(props) {
                     <li>{val}</li>
                   ))}
                 </ul>
-                { props?.service && <p className="Footerservices">{service.footer}</p> }
+                {props?.service && (
+                  <p className="Footerservices">{service.footer}</p>
+                )}
               </div>
             </div>
             <div
@@ -176,7 +188,7 @@ export default function Service(props) {
       {/* img container */}
       <div className="w-50">
         <div className="p-3" style={{ position: "sticky", top: "10%" }}>
-          <img
+          {/* <img
             alt=""
             className="img-fluid"
             src={
@@ -185,12 +197,47 @@ export default function Service(props) {
                   ? content3
                     ? content4
                       ? "../images/film_white.gif"
+                      : "../images/advertising_white.gif"
                       : "../images/digital_white.gif"
                     : "../images/design_white.gif"
-                  : "../images/advertising_white.gif"
                 : ""
             }
-          />
+          /> */}
+          {props.isDarkMode ? (
+            content1 ? (
+              content2 ? (
+                content3 ? (
+                  content4 ? (
+                    <FilmDark />
+                  ) : (
+                    <AdvertiseDark />
+                  )
+                ) : (
+                  <DigitalSocialDark />
+                )
+              ) : (
+                <DesignDark />
+              )
+            ) : (
+              ""
+            )
+          ) : content1 ? (
+            content2 ? (
+              content3 ? (
+                content4 ? (
+                  <Film />
+                ) : (
+                  <Advertise />
+                )
+              ) : (
+                <DigitalSocial />
+              )
+            ) : (
+              <Design />
+            )
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>
