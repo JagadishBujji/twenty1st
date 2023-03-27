@@ -787,9 +787,18 @@ button.owl-prev span {
 }
 
 .Headingservices {
-  font-size: 52px;
+  font-size: 26px;
   font-weight: 900;
   font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (min-width: 992px) {
+  .Headingservices {
+    font-size: 52px;
+  }
+  .w-lg-50 {
+    width: 50% !important;
+  }
 }
 
 .Paraservices,

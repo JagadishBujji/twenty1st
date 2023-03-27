@@ -4,6 +4,7 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Link, useNavigate } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
@@ -72,71 +73,95 @@ const Navbar = () => {
                 <div className="row">
                   <div
                     className="col-md-3"
-                    onClick={() => navigate("services#design")}
+                    // onClick={() => navigate("services#design")}
                   >
-                    <div className="submenu">
-                      <div className="card digital green">
-                        <h4 className="design1">Design</h4>
-                        <div className="row iocn-arr">
-                          <p className="pack">
-                            Brand Identity
-                            <br /> Packaging
-                          </p>
-                          <ArrowRightAltIcon sx={{ color: "#000" }} />
+                    <NavHashLink
+                      style={{ textDecoration: "none" }}
+                      smooth
+                      to="/services#design"
+                    >
+                      <div className="submenu">
+                        <div className="card digital green">
+                          <h4 className="design1">Design</h4>
+                          <div className="row iocn-arr">
+                            <p className="pack">
+                              Brand Identity
+                              <br /> Packaging
+                            </p>
+                            <ArrowRightAltIcon sx={{ color: "#000" }} />
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </NavHashLink>
                   </div>
                   <div
                     className="col-md-3"
-                    onClick={() => navigate("services#digital-social")}
+                    // onClick={() => navigate("services#digital-social")}
                   >
-                    <div className="submenu ">
-                      <div className="card digital yellow">
-                        <h4 className="design1">Digital & Social</h4>
-                        <div className="row iocn-arr">
-                          <p className="pack">
-                            Website development
-                            <br /> Social media marketing
-                          </p>
-                          <ArrowRightAltIcon sx={{ color: "#000" }} />
+                    <NavHashLink
+                      style={{ textDecoration: "none" }}
+                      smooth
+                      to="/services#digital-social"
+                    >
+                      <div className="submenu ">
+                        <div className="card digital yellow">
+                          <h4 className="design1">Digital & Social</h4>
+                          <div className="row iocn-arr">
+                            <p className="pack">
+                              Website development
+                              <br /> Social media marketing
+                            </p>
+                            <ArrowRightAltIcon sx={{ color: "#000" }} />
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </NavHashLink>
                   </div>
                   <div
                     className="col-md-3"
-                    onClick={() => navigate("services#advertising")}
+                    // onClick={() => navigate("services#advertising")}
                   >
-                    <div className="submenu ">
-                      <div className="card digital purpul">
-                        <h4 className="design1"> Advertising</h4>
-                        <div className="row iocn-arr">
-                          <p className="pack">
-                            Print
-                            <br /> TV media
-                          </p>
-                          <ArrowRightAltIcon sx={{ color: "#000" }} />
+                    <NavHashLink
+                      style={{ textDecoration: "none" }}
+                      smooth
+                      to="/services#advertising"
+                    >
+                      <div className="submenu ">
+                        <div className="card digital purpul">
+                          <h4 className="design1"> Advertising</h4>
+                          <div className="row iocn-arr">
+                            <p className="pack">
+                              Print
+                              <br /> TV media
+                            </p>
+                            <ArrowRightAltIcon sx={{ color: "#000" }} />
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </NavHashLink>
                   </div>
                   <div
                     className="col-md-3"
-                    onClick={() => navigate("services#films-production")}
+                    // onClick={() => navigate("services#films-production")}
                   >
-                    <div className="submenu ">
-                      <div className="card digital red">
-                        <h4 className="design1">Films & Production</h4>
-                        <div className="row iocn-arr">
-                          <p className="pack">
-                            TV Commercials
-                            <br /> Social Media Commercials
-                          </p>
-                          <ArrowRightAltIcon sx={{ color: "#000" }} />
+                    <NavHashLink
+                      style={{ textDecoration: "none" }}
+                      smooth
+                      to="/services#films-production"
+                    >
+                      <div className="submenu ">
+                        <div className="card digital red">
+                          <h4 className="design1">Films & Production</h4>
+                          <div className="row iocn-arr">
+                            <p className="pack">
+                              TV Commercials
+                              <br /> Social Media Commercials
+                            </p>
+                            <ArrowRightAltIcon sx={{ color: "#000" }} />
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </NavHashLink>
                   </div>
                 </div>
               </div>

@@ -47,7 +47,7 @@ export default function Service(props) {
       contents: ["Brand Identity", "Packaging", "UI/UX design"],
       ref: Ref1,
       active: content1,
-      path: "#design",
+      id: "design"
     },
     {
       title: "Digital & Social",
@@ -59,7 +59,7 @@ export default function Service(props) {
       contents: ["Brand Identity", "Packaging", "UI/UX design", "Testing"],
       ref: Ref2,
       active: content2,
-      path: "#digital-social",
+      id: "digital-social"
     },
     {
       title: " Advertising",
@@ -71,7 +71,7 @@ export default function Service(props) {
       contents: ["Brand Identity", "Packaging", "UI/UX design"],
       ref: Ref3,
       active: content3,
-      path: "#advertising",
+      id: "advertising"
     },
     {
       title: "Films & Production",
@@ -83,7 +83,7 @@ export default function Service(props) {
       contents: ["Brand Identity", "Packaging", "UI/UX design", "Dummy"],
       ref: Ref4,
       active: content4,
-      path: "#films-production",
+      id: "films-production"
     },
   ];
   useEffect(() => {
@@ -150,7 +150,7 @@ export default function Service(props) {
   return (
     <div className="py-5 container d-flex flex-wrap justify-content-end">
       {/* content div */}
-      <div className="w-50">
+      <div className={props.service ? "w-100" : "w-100 w-lg-50"}>
         {services.map((service, index) => (
           <div>
             <div
@@ -175,6 +175,7 @@ export default function Service(props) {
                   <span className="circle-desi"></span>
                 </span>
                 <h2
+                  id={service.id}
                   className="text-left Headingservices"
                   style={
                     index
@@ -216,6 +217,27 @@ export default function Service(props) {
                 {props?.service && (
                   <p className="Footerservices">{service.footer}</p>
                 )}
+                <div className="d-lg-none mobile-images">
+                  {!props.service ? (
+                    content1 ? (
+                      content2 ? (
+                        content3 ? (
+                          content4 ? (
+                            <Film />
+                          ) : (
+                            <Advertise />
+                          )
+                        ) : (
+                          <DigitalSocial />
+                        )
+                      ) : (
+                        <Design />
+                      )
+                    ) : (
+                      <></>
+                    )) : (<></>)
+                  }
+                </div>
               </div>
             </div>
             <div
@@ -226,7 +248,7 @@ export default function Service(props) {
         ))}
       </div>
       {/* img container */}
-      <div className="w-50">
+      <div className={props.service ? "d-none" : "w-50 d-none d-lg-block"}>
         <div className="p-3" style={{ position: "sticky", top: "10%" }}>
           {/* <img
             alt=""
@@ -308,7 +330,7 @@ export default function Service(props) {
               />
             )
           ) : (
-            ""
+            <></>
           )}
         </div>
       </div>
