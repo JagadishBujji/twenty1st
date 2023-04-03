@@ -20,6 +20,10 @@ const style = {
   p: 4,
   borderRadius: "10px",
   borderRadius: "30px",
+  "@media only screen and (max-width: 500px)": {
+    width: 300,
+    height: 300,
+  },
 };
 
 export default function GalleryModal(props) {
@@ -51,6 +55,9 @@ export default function GalleryModal(props) {
                 fontSize: "30px",
                 fontFamily: "Poppins",
                 fontWeight: "600",
+                "@media only screen and (max-width: 500px)": {
+                  fontSize: "16px",
+                },
               }}
               variant="h4"
               component="h2"
@@ -60,7 +67,13 @@ export default function GalleryModal(props) {
             </Typography>
             <CloseIcon
               onClick={handleClose}
-              sx={{ fontSize: "40px", cursor: "pointer" }}
+              sx={{
+                fontSize: "40px",
+                cursor: "pointer",
+                "@media only screen and (max-width: 500px)": {
+                  fontSize: "16px",
+                },
+              }}
             />
           </div>
 

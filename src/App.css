@@ -811,7 +811,8 @@ button.owl-prev span {
 }
 
 .Footerservices {
-  font-family: Poppins;font-family: "Poppins", sans-serif;
+  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
   text-align: left;
@@ -821,7 +822,7 @@ button.owl-prev span {
 .ul-list {
   list-style-type: none;
   font-size: 24px;
-  padding-left: 51px;
+  padding-left: 56px;
 }
 .ul-list li {
   margin-bottom: 10px;
@@ -920,6 +921,13 @@ button.owl-prev span {
   }
   .card-img {
     padding: 20px 0;
+  }
+  .ul-list li {
+    font-size: 18px;
+  }
+  .overallscrool {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 /* @media only screen and (min-width: 768px) {
