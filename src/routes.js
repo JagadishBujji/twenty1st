@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import HomeLayout from "./pages/HomeLayout";
 import Work from "./pages/Work";
+import Services from "./pages/Services";
 
 // ----------------------------------------------------------------------
 
@@ -16,7 +17,7 @@ export default function Router() {
       element: <HomeLayout />,
       children: [
         { path: "/", element: <Home /> },
-        { path: "services", element: <Service service /> },
+        { path: "services", element: <Services/> },
         { path: "work", element: <Work /> },
         { path: "contact", element: <Contact /> },
       ],

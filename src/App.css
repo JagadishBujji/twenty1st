@@ -448,7 +448,7 @@ button.owl-prev span {
 .details1::before {
   position: absolute;
   content: "";
-  width: 44%;
+  width: 558px;
   height: 2px;
   background: #ed1c24;
   bottom: -10px;
@@ -581,7 +581,7 @@ button.owl-prev span {
   padding: 0 30px 0 70px;
   /* height: 80px; */
   display: block;
-  width: 100%;
+  width: 80%;
   /* color: rgba(30, 48, 86, 0.8); */
   text-align: left;
   background: var(--background);
@@ -656,7 +656,7 @@ button.owl-prev span {
 .footer-logo {
   /* width: 231px;
   height: 192px; */
-  width: 40%;
+  width: 25%;
   margin-bottom: 15px;
 }
 
@@ -682,7 +682,7 @@ button.owl-prev span {
 
 .footer {
   background: var(--background);
-  padding: 20px 0;
+  padding: 10px 40px;
 }
 
 .footer-link {
@@ -699,6 +699,8 @@ button.owl-prev span {
   line-height: 1;
   letter-spacing: 1px;
 }
+
+
 
 .link-head {
   font-size: 24px;
@@ -763,7 +765,7 @@ button.owl-prev span {
 }
 
 .dashed {
-  border: 1px dashed var(--text-primary);
+  border: 0.1px dashed var(--text-primary);
   border-radius: 50%;
   padding: 10px;
   animation: mymove 10s linear infinite;

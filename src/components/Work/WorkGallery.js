@@ -101,10 +101,10 @@ const WorkGallery = () => {
           />
         </div>
         <div className="col-md-6 bottom">
-          <h2 className="sun">Adithya Kamaraj Hospital</h2>
+          <h2 className="sun">Aditya Kamaraja Hospital</h2>
           <GalleryModal
             modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/AKH-100.jpg?alt=media&token=0810fc00-2f35-44db-8065-c6a7c7f11ec9"
-            title="Adithya Kamaraj Hospital"
+            title="Aditya Kamaraja Hospital"
             images={hospitalImages}
           />
         </div>

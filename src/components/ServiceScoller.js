@@ -44,10 +44,16 @@ export default function Service(props) {
         "Our design expertise extends to the following services we offer",
       footer:
         "We bring design to life through animation and motion graphics that can be leveraged for various applications such as training, marketing communications etc",
-      contents: ["Brand Identity", "Packaging", "UI/UX design"],
+      contents: [
+        "Brand Identity",
+        "Packaging",
+        "UI/UX design",
+        " Brand assets/collateral",
+        " Visual + Motion design",
+      ],
       ref: Ref1,
       active: content1,
-      id: "design"
+      id: "design",
     },
     {
       title: "Digital & Social",
@@ -56,10 +62,14 @@ export default function Service(props) {
         "Our design expertise extends to the following services we offer",
       footer:
         "We bring design to life through animation and motion graphics that can be leveraged for various applications such as training, marketing communications etc",
-      contents: ["Brand Identity", "Packaging", "UI/UX design", "Testing"],
+      contents: [
+        "Website & Mobile app development",
+        " Social media marketing",
+        "Performance marketing",
+      ],
       ref: Ref2,
       active: content2,
-      id: "digital-social"
+      id: "digital-social",
     },
     {
       title: " Advertising",
@@ -68,10 +78,16 @@ export default function Service(props) {
         "Our design expertise extends to the following services we offer",
       footer:
         "We bring design to life through animation and motion graphics that can be leveraged for various applications such as training, marketing communications etc",
-      contents: ["Brand Identity", "Packaging", "UI/UX design"],
+      contents: [
+        "Print",
+        "Electronic - TV & Radio",
+        "OOH",
+        "Media planning & buying",
+        " Public Relations",
+      ],
       ref: Ref3,
       active: content3,
-      id: "advertising"
+      id: "advertising",
     },
     {
       title: "Films & Production",
@@ -80,10 +96,10 @@ export default function Service(props) {
         "Our design expertise extends to the following services we offer",
       footer:
         "We bring design to life through animation and motion graphics that can be leveraged for various applications such as training, marketing communications etc",
-      contents: ["Brand Identity", "Packaging", "UI/UX design", "Dummy"],
+      contents: ["TVCs", "Corporate films", " Social media commercials", "Product, food and fashion photography"],
       ref: Ref4,
       active: content4,
-      id: "films-production"
+      id: "films-production",
     },
   ];
   useEffect(() => {
@@ -235,8 +251,10 @@ export default function Service(props) {
                       )
                     ) : (
                       <></>
-                    )) : (<></>)
-                  }
+                    )
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </div>
             </div>

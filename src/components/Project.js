@@ -4,7 +4,7 @@ const Project = () => {
     <>
       <div>
         <p className="project">
-          <span className="num">100+</span>
+          <span className="num">100+ </span>
           <span className="deli">projects delivered</span>
           <br />
           <span className="count">and counting....</span>{" "}
