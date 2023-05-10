@@ -2,13 +2,22 @@ import { useContext } from "react";
 import { ThemeContext } from "../../context/theme-context";
 import Svg from "../../Reuseable/Svg";
 
-const ContactLocation = () => {
+const ContactLocation = ({ setCurrectCity }) => {
   const { isDarkMode } = useContext(ThemeContext);
   return (
     <>
       <div className="row  container Location">
         <div className="col-md-5">
-          <div className="row bang">
+          <div
+            className="row bang"
+            onClick={() =>
+              setCurrectCity({
+                city: "chennai",
+                lat: 13.0296,
+                lng: 80.17598,
+              })
+            }
+          >
             {isDarkMode ? (
               <img
                 src="../images/sri-ranganathasvamy_white.png"
@@ -34,7 +43,16 @@ const ContactLocation = () => {
             </div>
           </div>
 
-          <div className="row bang">
+          <div
+            className="row bang"
+            onClick={() =>
+              setCurrectCity({
+                city: "bangalore",
+                lat: 12.9477,
+                lng: 77.61715,
+              })
+            }
+          >
             {isDarkMode ? (
               <img src="../images/city_white.png" alt="" className="sri-img" />
             ) : (
@@ -42,7 +60,7 @@ const ContactLocation = () => {
             )}
 
             <div className="totalarea">
-              <h2 className="area">BANGLORE</h2>
+              <h2 className="area">BANGALORE</h2>
               <p className="addres">
                 Novel Business Park, #57,13th
                 <br />
@@ -50,7 +68,7 @@ const ContactLocation = () => {
                 <br />
                 Koramangala,Bengaluru,
                 <br />
-                Karnataka 560 030
+                Karnataka - 560 030
               </p>
             </div>
           </div>
@@ -59,7 +77,16 @@ const ContactLocation = () => {
           <Svg />
         </div>
         <div className="col-md-5 sing">
-          <div className="row bang">
+          <div
+            className="row bang"
+            onClick={() =>
+              setCurrectCity({
+                city: "singapore",
+                lat: 13.0296,
+                lng: 80.17598,
+              })
+            }
+          >
             {isDarkMode ? (
               <img
                 src="../images/merlion_white.png"

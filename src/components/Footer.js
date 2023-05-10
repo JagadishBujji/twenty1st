@@ -112,20 +112,25 @@ const Footer = () => {
           <h4 className="link-head">Links</h4>
           <ul className="Links">
             <li className="footerlink">
-              <a href="" className="footer-link">
+              <a href="https://twentyonest.in/work" className="footer-link">
                 Works
               </a>
             </li>
-            <li className="footerlink">
+            {/* <li className="footerlink">
               <a href="" className="footer-link">
                 About us
               </a>
-            </li>
+            </li> */}
             <li className="footerlink">
+              <a href="https://twentyonest.in/contact" className="footer-link">
+                Contact us
+              </a>
+            </li>
+            {/* <li className="footerlink">
               <a href="" className="footer-link">
                 Blog
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="col-lg-3">

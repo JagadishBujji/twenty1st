@@ -810,6 +810,7 @@ button.owl-prev span {
   font-size: 20px;
   font-weight: 400;
   text-align: justify;
+  color: var(--text-primary);
 }
 
 .Footerservices {
@@ -819,6 +820,7 @@ button.owl-prev span {
   font-weight: 400;
   text-align: left;
   width: 75%;
+  color: var(--text-primary);
 }
 
 .ul-list {
