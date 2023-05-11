@@ -654,7 +654,7 @@ button.owl-prev span {
 .footer-logo {
   /* width: 231px;
   height: 192px; */
-  width: 25%;
+  width: 30%;
   margin-bottom: 15px;
 }
 
@@ -680,7 +680,7 @@ button.owl-prev span {
 
 .footer {
   background: var(--background);
-  padding: 10px 40px;
+  padding: 40px 40px 20px;
 }
 
 .footer-link {
