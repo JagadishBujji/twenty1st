@@ -3,8 +3,10 @@ const Content2 = () => {
   return (
     <>
       <div>
-        <p className="details1">Food | Finance | Healthcare | Real estate</p>{" "}
-        <p className="details2">e-commerce| Education | Hospitality</p>
+        <p className="details">
+          <span className="d-inline-block">Food | Finance | Healthcare | Real estate</span>
+        </p>
+        <p className="details">e-commerce| Education | Hospitality</p>
       </div>
     </>
   );

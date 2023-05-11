@@ -108,7 +108,7 @@ const Footer = () => {
             </b>
           </p>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 pt-md-5">
           <h4 className="link-head">Links</h4>
           <ul className="Links">
             <li className="footerlink">
@@ -133,7 +133,7 @@ const Footer = () => {
             </li> */}
           </ul>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 pt-md-5">
           <h4 className="link-head">Services</h4>
           <ul className="Links">
             <li className="footerlink">
@@ -158,7 +158,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 pt-md-5">
           <h4 className="link-head">Contact Us</h4>
           <ul className="contact-link">
             {/* <li className="contact-details">

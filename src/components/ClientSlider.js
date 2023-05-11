@@ -27,38 +27,38 @@ const ClientSlider = () => {
             },
           }}
         >
-          <div class="item ">
-            <img src="../images/zus.png" alt="" className="clientlogo" />
+          <div class="item">
+            <div style={{ backgroundImage: "url(../images/zus.png)" }}></div>
           </div>
           <div class="item">
-            <img src="../images/wink.png" alt="" className="clientlogo" />
+           <div style={{ backgroundImage: "url(../images/wink.png)" }}></div>
           </div>
           <div class="item">
-            <img src="../images/wfs.png" alt="" className="clientlogo" />
+            <div style={{ backgroundImage: "url(../images/wfs.png)" }}></div>
           </div>
           <div class="item">
-            <img src="../images/test ocean.png" alt="" className="clientlogo" />
+            <div style={{ backgroundImage: "url(../images/testocean.png)" }}></div>
           </div>
           <div class="item">
-            <img src="../images/sf.png" alt="" className="clientlogo" />
+            <div style={{ backgroundImage: "url(../images/sf.png)" }}></div>
           </div>
           <div class="item">
-            <img src="../images/rkr.png" alt="" className="clientlogo" />
+            <div style={{ backgroundImage: "url(../images/rkr.png)" }}></div>
           </div>
           <div class="item">
-            <img src="../images/organic.png" alt="" className="clientlogo" />
+            <div style={{ backgroundImage: "url(../images/organic.png)" }}></div>
           </div>
           <div class="item">
-            <img src="../images/murugan.png" alt="" className="clientlogo" />
+            <div style={{ backgroundImage: "url(../images/murugan.png)" }}></div>
           </div>
           <div class="item">
-            <img src="../images/maamis.png" alt="" className="clientlogo" />
+            <div style={{ backgroundImage: "url(../images/maamis.png)" }}></div>
           </div>
           <div class="item">
-            <img src="../images/kvp2.png" alt="" className="clientlogo" />
+            <div style={{ backgroundImage: "url(../images/kvp2.png)" }}></div>
           </div>
           <div class="item">
-            <img src="../images/jarvis.png" alt="" className="clientlogo" />
+            <div style={{ backgroundImage: "url(../images/jarvis.png)" }}></div>
           </div>
         </OwlCarousel>
       </div>

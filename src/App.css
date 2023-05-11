@@ -223,7 +223,7 @@ button.owl-prev:hover {
 .owl-carousel .owl-nav button.owl-prev {
   position: absolute;
   left: 0;
-  top: 10px;
+  top: -20px;
 }
 /* .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next,
@@ -237,7 +237,7 @@ button.owl-prev:hover {
 .owl-carousel .owl-nav button.owl-next {
   position: absolute;
   right: 0;
-  top: 10px;
+  top: -20px;
 }
 
 button.owl-next span {
@@ -266,7 +266,15 @@ button.owl-prev span {
 }
 
 .silder-client {
-  padding: 0 30px;
+  padding: 50px 30px 30px;
+}
+
+.silder-client .item > div {
+  width: 150px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .content1 {
@@ -438,27 +446,16 @@ button.owl-prev span {
   width: 100%;
 }
 
-.details1 {
-  font-size: 28px;
-  color: var(--text-primary);
-  font-weight: 600;
-  position: relative;
-  padding: 10px;
-}
-.details1::before {
-  position: absolute;
-  content: "";
-  width: 558px;
-  height: 2px;
-  background: #ed1c24;
-  bottom: -10px;
-}
-
-.details2 {
+.details {
   font-size: 28px;
   color: var(--text-primary);
   font-weight: 600;
   padding: 10px;
+  margin: 0;
+}
+.details span {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ed1c24;
 }
 
 /* testmonial */
@@ -571,6 +568,7 @@ button.owl-prev span {
 
 .faq .accordion .card .card-header h5 {
   padding: 0;
+  background: #fff;
 }
 
 .faq .accordion .card .card-header h5 button {
@@ -656,7 +654,7 @@ button.owl-prev span {
 .footer-logo {
   /* width: 231px;
   height: 192px; */
-  width: 25%;
+  width: 30%;
   margin-bottom: 15px;
 }
 
@@ -682,7 +680,7 @@ button.owl-prev span {
 
 .footer {
   background: var(--background);
-  padding: 10px 40px;
+  padding: 40px 40px 20px;
 }
 
 .footer-link {

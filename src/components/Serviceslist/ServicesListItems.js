@@ -5,7 +5,7 @@ const ServicesListItems = () => {
   return (
     <>
       <div className="px-5">
-        <div className="row m-0 sidebar py-3 px-3">
+        <div className="row m-0 sidebar py-5 px-3" id="design">
           <div className="col-md-12">
             <div class="card">
               <div class="card-header service-brand">
@@ -251,6 +251,22 @@ const ServicesListItems = () => {
             </div>
           </div>
         </div>
+        {/* <div className="row m-0 sidebar py-5 px-3" id="digital-social">
+          <div className="col-md-12">
+            <div className="row de">
+              <span className="dashed">
+                <span className="circle-desi"></span>
+              </span>{" "}
+              <h1 className="desi">Digital & Social</h1>
+            </div>
+            <p className="text-justify">
+              The world is constantly evolving with respect to how customers
+              behave and their purchase decision is often expedited by
+              evaluating brands digitally. As a brand, it is now imperative to
+              have a strong digital presence to capture customer interest and be
+              a part of his/her decision making. We got you covered in going
+              digital, the right way!
+            </p> */}
 
         <div className="row m-0 sidebar py-3  px-3">
           <div className="col-md-12">
@@ -413,8 +429,7 @@ const ServicesListItems = () => {
             </div>
           </div>
         </div>
-
-        <div className="row m-0 sidebar py-3 px-3">
+        <div className="row m-0 sidebar py-5 px-3" id="advertising">
           <div className="col-md-12">
             <div class="card">
               <div class="card-header service-brand ">
@@ -664,8 +679,7 @@ const ServicesListItems = () => {
             </div>
           </div>
         </div>
-
-        <div className="row m-0 sidebar py-3 px-3">
+        <div className="row m-0 sidebar py-5 px-3" id="films-production">
           <div className="col-md-12">
             <div class="card">
               <div class="card-header service-brand ">
@@ -684,9 +698,7 @@ const ServicesListItems = () => {
                   </button>
                 </h5>
               </div>
-              <div
-                style={{ display: active === "film" ? "block" : "none" }}
-              >
+              <div style={{ display: active === "film" ? "block" : "none" }}>
                 <div class="card-body service-body">
                   <p className="text-justify">
                     Your brand story is just a call away from being produced by
