@@ -844,7 +844,7 @@ button.owl-prev span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .acc {
