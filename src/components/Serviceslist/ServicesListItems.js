@@ -3,7 +3,7 @@ const ServicesListItems = () => {
     <>
       {" "}
       <div className="px-5">
-        <div className="row m-0 sidebar py-5 px-3">
+        <div className="row m-0 sidebar py-5 px-3" id="design">
           <div className="col-md-12">
             <div className="row de">
               <span className="dashed">
@@ -73,7 +73,7 @@ const ServicesListItems = () => {
             </p>
           </div>
         </div>
-        <div className="row m-0 sidebar py-5 px-3">
+        <div className="row m-0 sidebar py-5 px-3" id="digital-social">
           <div className="col-md-12">
             <div className="row de">
               <span className="dashed">
@@ -124,7 +124,7 @@ const ServicesListItems = () => {
           </p> */}
           </div>
         </div>
-        <div className="row m-0 sidebar py-5 px-3">
+        <div className="row m-0 sidebar py-5 px-3" id="advertising">
           <div className="col-md-12">
             <div className="row de">
               <span className="dashed">
@@ -198,7 +198,7 @@ const ServicesListItems = () => {
           </p> */}
           </div>
         </div>
-        <div className="row m-0 sidebar py-5 px-3">
+        <div className="row m-0 sidebar py-5 px-3" id="films-production">
           <div className="col-md-12">
             <div className="row de">
               <span className="dashed">

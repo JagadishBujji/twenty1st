@@ -77,7 +77,7 @@ const Navbar = () => {
                   >
                     <NavHashLink
                       style={{ textDecoration: "none" }}
-                      smooth
+                      smooth={true}
                       to="/services#design"
                     >
                       <div className="submenu">
@@ -100,7 +100,7 @@ const Navbar = () => {
                   >
                     <NavHashLink
                       style={{ textDecoration: "none" }}
-                      smooth
+                      smooth={true}
                       to="/services#digital-social"
                     >
                       <div className="submenu ">
@@ -123,7 +123,7 @@ const Navbar = () => {
                   >
                     <NavHashLink
                       style={{ textDecoration: "none" }}
-                      smooth
+                      smooth={true}
                       to="/services#advertising"
                     >
                       <div className="submenu ">
@@ -146,7 +146,7 @@ const Navbar = () => {
                   >
                     <NavHashLink
                       style={{ textDecoration: "none" }}
-                      smooth
+                      smooth={true}
                       to="/services#films-production"
                     >
                       <div className="submenu ">
