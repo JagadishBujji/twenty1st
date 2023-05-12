@@ -62,7 +62,9 @@ export default function ModalSwiper({ images }) {
         {images.map((img) => {
           return (
             <SwiperSlide className="slideswiper">
-              <img src={img} alt={img} className="imagecaro" />
+              <div style={{ width: "900px", height: "600px", margin: "auto" }}>
+                <img src={img} alt={img} className="imagecaro" />
+              </div>
             </SwiperSlide>
           );
         })}

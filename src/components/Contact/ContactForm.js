@@ -74,7 +74,7 @@ const ContactForm = () => {
     <>
       <div className="row  m-auto container">
         <div className="col-md-12">
-          <form className="w-75 text-left">
+          <form className="d-flex flex-wrap m-auto w-75 text-left">
             <label htmlFor="name" className="label">
               Name<span className="star">&lowast;</span>
             </label>
@@ -117,7 +117,7 @@ const ContactForm = () => {
             </label>
             <textarea id="message" name="message" rows="4" cols="50"></textarea>
             <br />
-            <input type="submit" value="Submit" onClick={sendSubscribeMail} />
+            <input className="m-auto" type="submit" value="Submit" onClick={sendSubscribeMail} />
           </form>
         </div>
       </div>

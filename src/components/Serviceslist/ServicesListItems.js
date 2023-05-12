@@ -13,7 +13,7 @@ const ServicesListItems = () => {
   return (
     <>
       <div className="px-5">
-        <div className="row m-0 sidebar py-5 px-3" id="design">
+        <div className="row m-0 sidebar py-1 px-3" id="design">
           <div className="col-md-12">
             <div class="card">
               <div class="card-header service-brand">
@@ -260,7 +260,7 @@ const ServicesListItems = () => {
           </div>
         </div>
         <div
-          className="row m-0 sidebar py-3 px-3"
+          className="row m-0 sidebar py-1 px-3"
           id="digital-social"
           // onFocus={() => setActive("digital-social")}
         >
@@ -428,7 +428,7 @@ const ServicesListItems = () => {
             </div>
           </div>
         </div>
-        <div className="row m-0 sidebar py-5 px-3" id="advertising">
+        <div className="row m-0 sidebar py-1 px-3" id="advertising">
           <div className="col-md-12">
             <div class="card">
               <div class="card-header service-brand ">
@@ -678,7 +678,7 @@ const ServicesListItems = () => {
             </div>
           </div>
         </div>
-        <div className="row m-0 sidebar py-5 px-3" id="films-production">
+        <div className="row m-0 sidebar py-1 px-3" id="films-production">
           <div className="col-md-12">
             <div class="card">
               <div class="card-header service-brand ">

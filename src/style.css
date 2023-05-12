@@ -126,10 +126,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.slideswiper {
-  margin-right: 200px !important;
-}
-
 .swiper-button-next,
 .swiper-button-prev {
   color: #000 !important;
@@ -137,11 +133,27 @@
 }
 
 .imagecaro {
-  width: 480px;
-  height: 330px;
+  width: 100%;
+  height: auto;
   /* width: 400px;
   height: 19rem; */
   filter: drop-shadow(9px 9px 18px rgba(0, 0, 0, 0.25));
+}
+
+.css-11lsehb {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  background: rgb(0,0,0, 50%) !important;
+}
+
+.css-cobz2m-MuiSvgIcon-root {
+  color: #fff !important;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  color: #fff !important;
 }
 
 /* Contact */
@@ -406,7 +418,7 @@ input[type="submit"]:hover {
 }
 
 .service-brand {
-  background: #fff;
+  background: none;
   border-bottom: none;
   border: none !important;
   display: flex;
@@ -415,7 +427,7 @@ input[type="submit"]:hover {
 }
 
 .services-button {
-  color: #000;
+  color: var(--text-primary);
   text-decoration: none;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
@@ -431,6 +443,7 @@ input[type="submit"]:hover {
 }
 
 .service-body {
+  color: var(--text-primary);
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -438,5 +451,6 @@ input[type="submit"]:hover {
 }
 
 .card {
+  background: none;
   border: none;
 }
