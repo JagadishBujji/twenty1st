@@ -389,7 +389,8 @@ input[type="submit"]:hover {
 }
 
 .text-justify {
-  font-size: 22px;
+  font-size: 20px;
+
 }
 
 .ser li {
@@ -402,6 +403,42 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 .brandlist:hover {
-  color: #ed1c24;
+  color: #000;
   cursor: pointer;
+}
+
+.service-brand {
+  background: #fff;
+  border-bottom: none;
+  border: none !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.services-button {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+.services-button:hover {
+  color: #ed1c24;
+  text-decoration: none;
+}
+.services-button:focus {
+  /* color: #ed1c24; */
+  text-decoration: none;
+}
+
+.service-body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.card {
+  border: none;
 }

@@ -14,7 +14,7 @@ const Faq = ({ isDarkMode }) => {
                         <div class="card-header">
                           <h5 class="mb-0">
                             <button
-                              class="btn btn-link collapsed"
+                              class="btn btn-link collapsed w-auto"
                               type="button"
                               data-toggle="collapse"
                               data-target="#collapseOne"
@@ -33,10 +33,9 @@ const Faq = ({ isDarkMode }) => {
                           data-parent="#accordionExample"
                         >
                           <div class="card-body">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer.
+                            To put it simply, optimal consistency and frequency
+                            of communication across channels relevant to your
+                            audiences gives you best results.
                           </div>
                         </div>
                       </div>
@@ -45,14 +44,14 @@ const Faq = ({ isDarkMode }) => {
                         <div class="card-header">
                           <h5 class="mb-0">
                             <button
-                              class="btn btn-link collapsed"
+                              class="btn btn-link collapsed w-auto"
                               type="button"
                               data-toggle="collapse"
                               data-target="#collapse4"
                               aria-expanded="false"
                               aria-controls="collapseThree"
                             >
-                              Where can I get some?
+                              What is my brand voice
                             </button>
                           </h5>
                         </div>
@@ -61,25 +60,27 @@ const Faq = ({ isDarkMode }) => {
                           class="collapse"
                           data-parent="#accordionExample"
                         >
-                          <div class="card-body">
-                            There are many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration
-                            in some form, by injected humour
+                          <div class="card-body ">
+                            Well, imagine how your friend will describe you as a
+                            person. Likewise, your audiences can attribute a
+                            unique personality to your brand based on
+                            consistency in the way your brand behaves and
+                            communicates!
                           </div>
                         </div>
                       </div>
                       <div class="card">
-                        <div class="card-header">
+                        <div class="card-header ">
                           <h5 class="mb-0">
                             <button
-                              class="btn btn-link collapsed"
+                              class="btn btn-link collapsed w-auto"
                               type="button"
                               data-toggle="collapse"
                               data-target="#collapse5"
                               aria-expanded="false"
                               aria-controls="collapseThree"
                             >
-                              Where can I get some?
+                              When should I reposition my brand?
                             </button>
                           </h5>
                         </div>
@@ -89,9 +90,13 @@ const Faq = ({ isDarkMode }) => {
                           data-parent="#accordionExample"
                         >
                           <div class="card-body">
-                            There are many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration
-                            in some form, by injected humour
+                            Customer preferences keep evolving with time. Hence,
+                            the key is to understand the evolution of design,
+                            aesthetics, marketing communications, customer
+                            experiences etc. and evaluate your brand relevance
+                            for the present as well as the future. This is a
+                            useful way to measure if a repositioning strategy is
+                            necessary for your brand.
                           </div>
                         </div>
                       </div>
