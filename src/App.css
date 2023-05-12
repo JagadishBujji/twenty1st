@@ -698,8 +698,6 @@ button.owl-prev span {
   letter-spacing: 1px;
 }
 
-
-
 .link-head {
   font-size: 24px;
   color: var(--text-primary);
@@ -765,9 +763,9 @@ button.owl-prev span {
 .dashed {
   border: 0.1px dashed var(--text-primary);
   border-radius: 50%;
-  padding: 10px;
+  padding: 8px;
   animation: mymove 10s linear infinite;
-  margin-right: 8px;
+  margin-right: 23px;
 }
 
 @keyframes mymove {
