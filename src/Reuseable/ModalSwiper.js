@@ -47,7 +47,7 @@ export default function ModalSwiper({ images }) {
     <>
       <Swiper
         onSwiper={setSwiperRef}
-        slidesPerView={3}
+        slidesPerView={1}
         loop={true}
         centeredSlides={true}
         spaceBetween={60}

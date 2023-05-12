@@ -59,7 +59,7 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/Brand identity.gif "
+                                  src="../images/Brand identity.gif"
                                   alt=""
                                   style={{
                                     width: "40px",

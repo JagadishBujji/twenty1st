@@ -190,7 +190,7 @@ const Footer = () => {
                     alt="icon"
                     className="footericon"
                   />
-                  <p className="add">team@twentyonest.in</p>
+                  <p className="add">hey@twentyonest.in</p>
                 </li>
                 <li className="contact-details">
                   <img
@@ -198,8 +198,8 @@ const Footer = () => {
                     alt="icon"
                     className="footericon"
                   />
-                  <a className="add" href="tel:98418 35301">
-                    +91 98418 35301
+                  <a className="add" href="tel:9840151021">
+                    +91 98401 51021
                   </a>
                 </li>
               </>
@@ -211,7 +211,7 @@ const Footer = () => {
                     alt="icon"
                     className="footericon"
                   />
-                  <p className="add">team@twentyonest.in</p>
+                  <p className="add">hey@twentyonest.in</p>
                 </li>
                 <li className="contact-details">
                   <img
@@ -219,8 +219,8 @@ const Footer = () => {
                     alt="icon"
                     className="footericon"
                   />
-                  <a className="add" href="tel:98418 35301">
-                    +91 98418 35301
+                  <a className="add" href="tel:9840151021">
+                    +91 98401 51021
                   </a>
                 </li>
               </>
