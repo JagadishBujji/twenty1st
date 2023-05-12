@@ -81,7 +81,7 @@ const Navbar = () => {
                       to="/services#design"
                     >
                       <div className="submenu">
-                        <div className="card digital green">
+                        <div className="card digital" style={{ background: "#d4d4d4" }}>
                           <h4 className="design1">Design</h4>
                           <div className="row iocn-arr">
                             <p className="pack">
@@ -104,7 +104,7 @@ const Navbar = () => {
                       to="/services#digital-social"
                     >
                       <div className="submenu ">
-                        <div className="card digital yellow">
+                        <div className="card digital" style={{ background: "#fdf6e8" }}>
                           <h4 className="design1">Digital & Social</h4>
                           <div className="row iocn-arr">
                             <p className="pack">
@@ -127,8 +127,8 @@ const Navbar = () => {
                       to="/services#advertising"
                     >
                       <div className="submenu ">
-                        <div className="card digital purpul">
-                          <h4 className="design1"> Advertising</h4>
+                        <div className="card digital" style={{ background: "#faf4ff" }} >
+                          <h4 className="design1">Advertising</h4>
                           <div className="row iocn-arr">
                             <p className="pack">
                               Print
@@ -150,7 +150,7 @@ const Navbar = () => {
                       to="/services#films-production"
                     >
                       <div className="submenu ">
-                        <div className="card digital red">
+                        <div className="card digital" style={{ background: "#f4c2c2" }}>
                           <h4 className="design1">Films & Production</h4>
                           <div className="row iocn-arr">
                             <p className="pack">

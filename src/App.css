@@ -747,7 +747,7 @@ button.owl-prev span {
   width: 40px;
   height: 40px;
   background: #ff0000;
-  border: 1px solid var(--text-primary);
+  /* border: 1px solid var(--text-primary); */
   border-radius: 50%;
   display: block;
 }
