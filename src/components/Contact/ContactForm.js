@@ -74,7 +74,7 @@ const ContactForm = () => {
     <>
       <div className="row  m-auto container">
         <div className="col-md-12">
-          <form>
+          <form className="w-75 text-left">
             <label htmlFor="name" className="label">
               Name<span className="star">&lowast;</span>
             </label>
@@ -112,11 +112,9 @@ const ContactForm = () => {
               <option value="Advesting">Advesting</option>
               <option value="Filims & Production">Filims & Production</option>
             </select>
-            <p>
-              <label className="label" htmlFor="message">
-                Comments
-              </label>
-            </p>
+            <label className="label" htmlFor="message">
+              Comments
+            </label>
             <textarea id="message" name="message" rows="4" cols="50"></textarea>
             <br />
             <input type="submit" value="Submit" onClick={sendSubscribeMail} />

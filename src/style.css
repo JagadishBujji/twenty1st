@@ -147,7 +147,7 @@
 /* Contact */
 
 .Contactitle {
-  font-size: 50px;
+  font-size: 100px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   padding: 20px;
@@ -161,36 +161,15 @@
 }
 
 input[type="text"],
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-}
-input[type="tel"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 20px;
-
-  font-family: "Poppins", sans-serif;
-}
+input[type="tel"],
+select,
 textarea {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 0 30px;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 16px;
   box-sizing: border-box;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
@@ -217,17 +196,27 @@ input[type="submit"]:hover {
 }
 
 .label {
-  display: flex;
+  position: relative;
+  margin: 0;
+  /* display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center; */
   font-size: 20px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: var(--text-primary);
 }
 
-.star {
+.label::after {
+  position: absolute;
+  content: '*';
   color: #ed1c24;
+  top: 0;
+  right: -15px;
+}
+
+.star {
+  display: none;
 }
 
 .sri-img {
@@ -279,6 +268,16 @@ input[type="submit"]:hover {
 }
 /* Contact */
 
+@media only screen and (max-width: 1200px) {
+  .Contactitle {
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .Contactitle {
+    font-size: 50px;
+  }
+}
 @media only screen and (max-width: 500px) {
   .pcontent {
     font-size: 18px;
