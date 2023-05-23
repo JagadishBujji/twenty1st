@@ -31,13 +31,13 @@ const Testmonial = ({ isDarkMode }) => {
               <div className="col-md-5 image-square">
                 {isDarkMode ? (
                   <img
-                    src="../images/gsquare_white.png"
+                    src="images/gsquare_white.png"
                     alt=""
                     className="square"
                   />
                 ) : (
                   <img
-                    src="../images/gsquare(2).png"
+                    src="images/gsquare(2).png"
                     alt=""
                     className="square"
                   />
@@ -69,13 +69,13 @@ const Testmonial = ({ isDarkMode }) => {
               <div className="col-md-5 image-square">
                 {isDarkMode ? (
                   <img
-                    src="../images/gsquare_white.png"
+                    src="images/gsquare_white.png"
                     alt=""
                     className="square"
                   />
                 ) : (
                   <img
-                    src="../images/gsquare(2).png"
+                    src="images/gsquare(2).png"
                     alt=""
                     className="square"
                   />
