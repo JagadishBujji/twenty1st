@@ -125,7 +125,7 @@ export default function Service(props) {
         digital:
           "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/Digital%20and%20social.gif?alt=media&token=e1624fc8-6021-4520-a0f8-e9e2486b336c",
         design:
-          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design_1.gif?alt=media&token=90322dfd-6f99-4436-9476-8304d4206747",
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design%2Fdesign-transparent-gif.gif?alt=media&token=29ed50c3-71f5-4f30-a7f4-5b8a5de4cfba",
       },
     });
     const timer = setTimeout(() => {
