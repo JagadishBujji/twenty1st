@@ -116,7 +116,7 @@ export default function Service(props) {
         digital:
           "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/Digital%20and%20Social%202.gif?alt=media&token=f50e7194-fa0f-4cfc-be15-66bb0d8ba8a0",
         design:
-          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design%20black.gif?alt=media&token=00d0a61f-0fa7-42cd-ba73-4233f48880e5",
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design%20black.gif?alt=media&token=65238efb-6ead-413c-a8fc-ac8c638e0158",
       },
       light: {
         film: "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/film_white.gif?alt=media&token=e9a16853-02ad-478a-b4ce-3edc4d2ac1df",
@@ -125,7 +125,7 @@ export default function Service(props) {
         digital:
           "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/Digital%20and%20social.gif?alt=media&token=e1624fc8-6021-4520-a0f8-e9e2486b336c",
         design:
-          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design.gif?alt=media&token=79aec860-075f-4219-a15c-5964a13de428",
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design_1.gif?alt=media&token=90322dfd-6f99-4436-9476-8304d4206747",
       },
     });
     const timer = setTimeout(() => {
