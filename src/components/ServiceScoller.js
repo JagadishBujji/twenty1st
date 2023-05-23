@@ -96,7 +96,12 @@ export default function Service(props) {
         "Our design expertise extends to the following services we offer",
       footer:
         "We bring design to life through animation and motion graphics that can be leveraged for various applications such as training, marketing communications etc",
-      contents: ["TVCs", "Corporate films", " Social media commercials", "Product, food and fashion photography"],
+      contents: [
+        "TVCs",
+        "Corporate films",
+        " Social media commercials",
+        "Product, food and fashion photography",
+      ],
       ref: Ref4,
       active: content4,
       id: "films-production",
@@ -120,7 +125,8 @@ export default function Service(props) {
         digital:
           "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/Digital%20and%20social.gif?alt=media&token=e1624fc8-6021-4520-a0f8-e9e2486b336c",
         design:
-          "https://firebasestorage.googleapis.com/v0/b/react-getting-started-457da.appspot.com/o/design_white.gif?alt=media&token=9f30e6ea-7a6d-4fb1-a185-11df4aa5d553",
+          // "https://firebasestorage.googleapis.com/v0/b/react-getting-started-457da.appspot.com/o/design_white.gif?alt=media&token=9f30e6ea-7a6d-4fb1-a185-11df4aa5d553",
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design%2Fdesign-transparent-gif.gif?alt=media&token=29ed50c3-71f5-4f30-a7f4-5b8a5de4cfba",
       },
     });
     const timer = setTimeout(() => {
