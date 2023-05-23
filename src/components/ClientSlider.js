@@ -31,13 +31,15 @@ const ClientSlider = () => {
             <div style={{ backgroundImage: "url(../images/zus.png)" }}></div>
           </div>
           <div class="item">
-           <div style={{ backgroundImage: "url(../images/wink.png)" }}></div>
+            <div style={{ backgroundImage: "url(../images/wink.png)" }}></div>
           </div>
           <div class="item">
             <div style={{ backgroundImage: "url(../images/wfs.png)" }}></div>
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/testocean.png)" }}></div>
+            <div
+              style={{ backgroundImage: "url(../images/testocean.png)" }}
+            ></div>
           </div>
           <div class="item">
             <div style={{ backgroundImage: "url(../images/sf.png)" }}></div>
@@ -46,10 +48,14 @@ const ClientSlider = () => {
             <div style={{ backgroundImage: "url(../images/rkr.png)" }}></div>
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/organic.png)" }}></div>
+            <div
+              style={{ backgroundImage: "url(../images/organic.png)" }}
+            ></div>
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/murugan.png)" }}></div>
+            <div
+              style={{ backgroundImage: "url(../images/murugan.png)" }}
+            ></div>
           </div>
           <div class="item">
             <div style={{ backgroundImage: "url(../images/maamis.png)" }}></div>

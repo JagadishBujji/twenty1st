@@ -16,35 +16,55 @@ const Footer = () => {
                 className="footer-logo"
               />
               <div className="row social-row">
-                <a href="">
+                <a
+                  href="https://www.facebook.com/TwentyOnest?mibextid=ZbWKwL"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="../images/facebook (2).png"
                     alt=""
                     className="social-link"
                   />
                 </a>
-                <a href="">
+                <a
+                  href="https://instagram.com/twenty_onest?igshid=MTIyMzRjYmRlZg=="
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="../images/instagram (2).png"
                     alt=""
                     className="social-link"
                   />
                 </a>
-                <a href="">
+                <a
+                  href="https://twitter.com/twenty_onest"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="../images/twitter (2).png"
                     alt=""
                     className="social-link"
                   />
                 </a>
-                <a href="">
+                <a
+                  href="https://www.linkedin.com/company/twenty-onest/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="../images/linkedin (2).png"
                     alt=""
                     className="social-link"
                   />
                 </a>
-                <a href="">
+                <a
+                  href="https://youtube.com/@twentyonest"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="../images/youtube (2).png"
                     alt=""
@@ -61,35 +81,55 @@ const Footer = () => {
                 className="footer-logo"
               />
               <div className="row social-row">
-                <a href="">
+                <a
+                  href="https://www.facebook.com/TwentyOnest?mibextid=ZbWKwL"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="../images/facebook.png"
                     alt=""
                     className="social-link"
                   />
                 </a>
-                <a href="">
+                <a
+                  href="https://instagram.com/twenty_onest?igshid=MTIyMzRjYmRlZg=="
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="../images/instagram.png"
                     alt=""
                     className="social-link"
                   />
                 </a>
-                <a href="">
+                <a
+                  href="https://twitter.com/twenty_onest"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="../images/twitter.png"
                     alt=""
                     className="social-link"
                   />
                 </a>
-                <a href="">
+                <a
+                  href="https://www.linkedin.com/company/twenty-onest/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="../images/linkedin.png"
                     alt=""
                     className="social-link"
                   />
                 </a>
-                <a href="">
+                <a
+                  href="https://youtube.com/@twentyonest"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="../images/youtube.png"
                     alt=""
@@ -143,17 +183,17 @@ const Footer = () => {
             </li>
             <li className="footerlink">
               <a href="" className="footer-link">
-                DIGITAL & SOCIAL
+                Digital & Social
               </a>
             </li>
             <li className="footerlink">
               <a href="" className="footer-link">
-                ADVERTISING
+                Advertising
               </a>
             </li>
             <li className="footerlink">
               <a href="" className="footer-link">
-                FILMS & PRODUCTION
+                Films & Production
               </a>
             </li>
           </ul>
@@ -190,7 +230,7 @@ const Footer = () => {
                     alt="icon"
                     className="footericon"
                   />
-                  <p className="add">team@twentyonest.in</p>
+                  <p className="add">hey@twentyonest.in</p>
                 </li>
                 <li className="contact-details">
                   <img
@@ -198,8 +238,8 @@ const Footer = () => {
                     alt="icon"
                     className="footericon"
                   />
-                  <a className="add" href="tel:98418 35301">
-                    +91 98418 35301
+                  <a className="add" href="tel:9840151021">
+                    +91 98401 51021
                   </a>
                 </li>
               </>
@@ -211,7 +251,7 @@ const Footer = () => {
                     alt="icon"
                     className="footericon"
                   />
-                  <p className="add">team@twentyonest.in</p>
+                  <p className="add">hey@twentyonest.in</p>
                 </li>
                 <li className="contact-details">
                   <img
@@ -219,8 +259,8 @@ const Footer = () => {
                     alt="icon"
                     className="footericon"
                   />
-                  <a className="add" href="tel:98418 35301">
-                    +91 98418 35301
+                  <a className="add" href="tel:9840151021">
+                    +91 98401 51021
                   </a>
                 </li>
               </>

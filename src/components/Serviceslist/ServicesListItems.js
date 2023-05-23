@@ -1,11 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
-const ServicesListItems = () => {
+const ServicesListItems = ({ isDarkMode }) => {
   const [active, setActive] = useState("design");
+
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    setActive(hash.substring(1));
+  }, [hash]);
+
+  const handleClick = (id) => {
+    setActive((prevState) => {
+      if (prevState === id) {
+        return "";
+      }
+      return id;
+    });
+  };
+
   return (
     <>
       <div className="px-5">
-        <div className="row m-0 sidebar py-5 px-3" id="design">
+        <div className="row m-0 sidebar py-1 px-3" id="design">
           <div className="col-md-12">
             <div class="card">
               <div class="card-header service-brand">
@@ -13,7 +30,7 @@ const ServicesListItems = () => {
                   <button
                     class="btn btn-link collapsed services-button"
                     type="button"
-                    onClick={() => setActive("design")}
+                    onClick={() => handleClick("design")}
                   >
                     <div className="row de">
                       <span className="dashed">
@@ -51,8 +68,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/Brand identity.gif "
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/brand_identity_black.gif"
+                                      : "../images/brand_identity_white.gif"
+                                  }
+                                  alt="Brand Identity"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -91,8 +112,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/package.gif "
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/package_black.gif"
+                                      : "../images/package_white.gif"
+                                  }
+                                  alt="Packaging"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -118,7 +143,6 @@ const ServicesListItems = () => {
                         </div>
                       </li>
                       <li className="brandlist">
-                        {" "}
                         <div class="card">
                           <div class="card-header service-brand ">
                             <h5 class="mb-0">
@@ -131,8 +155,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/ui ux.gif"
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/ui_ux_black.gif"
+                                      : "../images/ui_ux_white.gif"
+                                  }
+                                  alt="UI/UX Design"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -159,7 +187,6 @@ const ServicesListItems = () => {
                         </div>
                       </li>
                       <li className="brandlist">
-                        {" "}
                         <div class="card">
                           <div class="card-header service-brand ">
                             <h5 class="mb-0">
@@ -172,8 +199,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/Brand assets.gif"
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/brand_assets_black.gif"
+                                      : "../images/brand_assets_white.gif"
+                                  }
+                                  alt="Brand assets/collateral"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -213,8 +244,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/motion graphics.gif "
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/motion_graphics_black.gif"
+                                      : "../images/motion_graphics_white.gif"
+                                  }
+                                  alt="Visual + Motion design"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -251,24 +286,7 @@ const ServicesListItems = () => {
             </div>
           </div>
         </div>
-        {/* <div className="row m-0 sidebar py-5 px-3" id="digital-social">
-          <div className="col-md-12">
-            <div className="row de">
-              <span className="dashed">
-                <span className="circle-desi"></span>
-              </span>{" "}
-              <h1 className="desi">Digital & Social</h1>
-            </div>
-            <p className="text-justify">
-              The world is constantly evolving with respect to how customers
-              behave and their purchase decision is often expedited by
-              evaluating brands digitally. As a brand, it is now imperative to
-              have a strong digital presence to capture customer interest and be
-              a part of his/her decision making. We got you covered in going
-              digital, the right way!
-            </p> */}
-
-        <div className="row m-0 sidebar py-3  px-3">
+        <div className="row m-0 sidebar py-1 px-3" id="digital-social">
           <div className="col-md-12">
             <div class="card">
               <div class="card-header service-brand ">
@@ -276,7 +294,7 @@ const ServicesListItems = () => {
                   <button
                     class="btn btn-link collapsed services-button"
                     type="button"
-                    onClick={() => setActive("digital")}
+                    onClick={() => handleClick("digital-social")}
                   >
                     <div className="row de">
                       <span className="dashed">
@@ -287,7 +305,11 @@ const ServicesListItems = () => {
                   </button>
                 </h5>
               </div>
-              <div style={{ display: active === "digital" ? "block" : "none" }}>
+              <div
+                style={{
+                  display: active === "digital-social" ? "block" : "none",
+                }}
+              >
                 <div class="card-body service-body">
                   <p className="text-justify">
                     The world is constantly evolving with respect to how
@@ -312,8 +334,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/website1.gif "
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/website_black.gif"
+                                      : "../images/website_white.gif"
+                                  }
+                                  alt="Website & Mobile app development"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -354,8 +380,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/socialmedia.gif"
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/socialmedia_black.gif"
+                                      : "../images/socialmedia_white.gif"
+                                  }
+                                  alt="Social media marketing"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -395,7 +425,11 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/performance marketing.gif"
+                                  src={
+                                    isDarkMode
+                                      ? "../images/performance_marketing_black.gif"
+                                      : "../images/performance_marketing_white.gif"
+                                  }
                                   alt=""
                                   style={{
                                     width: "40px",
@@ -429,7 +463,7 @@ const ServicesListItems = () => {
             </div>
           </div>
         </div>
-        <div className="row m-0 sidebar py-5 px-3" id="advertising">
+        <div className="row m-0 sidebar py-1 px-3" id="advertising">
           <div className="col-md-12">
             <div class="card">
               <div class="card-header service-brand ">
@@ -437,7 +471,7 @@ const ServicesListItems = () => {
                   <button
                     class="btn btn-link collapsed services-button"
                     type="button"
-                    onClick={() => setActive("advertising")}
+                    onClick={() => handleClick("advertising")}
                   >
                     <div className="row de">
                       <span className="dashed">
@@ -480,8 +514,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/print.gif"
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/print_black.gif"
+                                      : "../images/print_white.gif"
+                                  }
+                                  alt="Print"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -522,8 +560,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/ElectronicTV&Radio.gif"
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/tv_black.gif"
+                                      : "../images/tv_white.gif"
+                                  }
+                                  alt="Electronic - TV & Radio"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -563,8 +605,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/OOH.gif"
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/ooh_black.gif"
+                                      : "../images/ooh_white.gif"
+                                  }
+                                  alt="OOH"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -604,8 +650,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/Mediaplanning&buying.gif"
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/media_planning_black.gif"
+                                      : "../images/media_planning_white.gif"
+                                  }
+                                  alt="Media planning & buying"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -643,7 +693,11 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/PublicRelations.gif"
+                                  src={
+                                    isDarkMode
+                                      ? "../images/public_relations_black.gif"
+                                      : "../images/public_relations_white.gif"
+                                  }
                                   alt=""
                                   style={{
                                     width: "40px",
@@ -679,7 +733,7 @@ const ServicesListItems = () => {
             </div>
           </div>
         </div>
-        <div className="row m-0 sidebar py-5 px-3" id="films-production">
+        <div className="row m-0 sidebar py-1 px-3" id="films-production">
           <div className="col-md-12">
             <div class="card">
               <div class="card-header service-brand ">
@@ -687,7 +741,7 @@ const ServicesListItems = () => {
                   <button
                     class="btn btn-link collapsed services-button"
                     type="button"
-                    onClick={() => setActive("film")}
+                    onClick={() => handleClick("films-production")}
                   >
                     <div className="row de">
                       <span className="dashed">
@@ -698,7 +752,11 @@ const ServicesListItems = () => {
                   </button>
                 </h5>
               </div>
-              <div style={{ display: active === "film" ? "block" : "none" }}>
+              <div
+                style={{
+                  display: active === "films-production" ? "block" : "none",
+                }}
+              >
                 <div class="card-body service-body">
                   <p className="text-justify">
                     Your brand story is just a call away from being produced by
@@ -727,8 +785,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/05Camera.gif"
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/tvc_black.gif"
+                                      : "../images/tvc_white.gif"
+                                  }
+                                  alt="TVCs"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -757,7 +819,6 @@ const ServicesListItems = () => {
                         </div>
                       </li>
                       <li className="brandlist">
-                        {" "}
                         <div class="card">
                           <div class="card-header service-brand ">
                             <h5 class="mb-0">
@@ -770,8 +831,12 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/05Camera.gif"
-                                  alt=""
+                                  src={
+                                    isDarkMode
+                                      ? "../images/corporate_black.gif"
+                                      : "../images/corporate_white.gif"
+                                  }
+                                  alt="Corporate films"
                                   style={{
                                     width: "40px",
                                     height: "40px",
@@ -813,7 +878,11 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/05Camera.gif"
+                                  src={
+                                    isDarkMode
+                                      ? "../images/smc_black.gif"
+                                      : "../images/smc_white.gif"
+                                  }
                                   alt=""
                                   style={{
                                     width: "40px",
@@ -856,7 +925,11 @@ const ServicesListItems = () => {
                                 aria-controls="collapseThree"
                               >
                                 <img
-                                  src="../images/05Camera.gif"
+                                  src={
+                                    isDarkMode
+                                      ? "../images/product_black.gif"
+                                      : "../images/product_white.gif"
+                                  }
                                   alt=""
                                   style={{
                                     width: "40px",

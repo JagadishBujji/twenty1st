@@ -126,10 +126,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.slideswiper {
-  margin-right: 200px !important;
-}
-
 .swiper-button-next,
 .swiper-button-prev {
   color: #000 !important;
@@ -137,17 +133,33 @@
 }
 
 .imagecaro {
-  width: 480px;
-  height: 330px;
+  width: 100%;
+  height: auto;
   /* width: 400px;
   height: 19rem; */
   filter: drop-shadow(9px 9px 18px rgba(0, 0, 0, 0.25));
 }
 
+.css-11lsehb {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  background: rgb(0,0,0, 50%) !important;
+}
+
+.css-cobz2m-MuiSvgIcon-root {
+  color: #fff !important;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  color: #fff !important;
+}
+
 /* Contact */
 
 .Contactitle {
-  font-size: 50px;
+  font-size: 100px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   padding: 20px;
@@ -161,36 +173,15 @@
 }
 
 input[type="text"],
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-}
-input[type="tel"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 20px;
-
-  font-family: "Poppins", sans-serif;
-}
+input[type="tel"],
+select,
 textarea {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 0 30px;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 16px;
   box-sizing: border-box;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
@@ -203,7 +194,7 @@ input[type="submit"] {
   padding: 10px 20px;
   margin: 8px 0;
   border: 1px solid var(--text-primary);
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
@@ -217,17 +208,27 @@ input[type="submit"]:hover {
 }
 
 .label {
-  display: flex;
+  position: relative;
+  margin: 0;
+  /* display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center; */
   font-size: 20px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: var(--text-primary);
 }
 
-.star {
+.label::after {
+  position: absolute;
+  content: '*';
   color: #ed1c24;
+  top: 0;
+  right: -15px;
+}
+
+.star {
+  display: none;
 }
 
 .sri-img {
@@ -279,6 +280,16 @@ input[type="submit"]:hover {
 }
 /* Contact */
 
+@media only screen and (max-width: 1200px) {
+  .Contactitle {
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .Contactitle {
+    font-size: 50px;
+  }
+}
 @media only screen and (max-width: 500px) {
   .pcontent {
     font-size: 18px;
@@ -390,7 +401,6 @@ input[type="submit"]:hover {
 
 .text-justify {
   font-size: 20px;
-
 }
 
 .ser li {
@@ -408,7 +418,7 @@ input[type="submit"]:hover {
 }
 
 .service-brand {
-  background: #fff;
+  background: none;
   border-bottom: none;
   border: none !important;
   display: flex;
@@ -417,7 +427,7 @@ input[type="submit"]:hover {
 }
 
 .services-button {
-  color: #000;
+  color: var(--text-primary);
   text-decoration: none;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
@@ -433,6 +443,7 @@ input[type="submit"]:hover {
 }
 
 .service-body {
+  color: var(--text-primary);
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -440,5 +451,6 @@ input[type="submit"]:hover {
 }
 
 .card {
+  background: none;
   border: none;
 }

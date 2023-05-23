@@ -96,7 +96,12 @@ export default function Service(props) {
         "Our design expertise extends to the following services we offer",
       footer:
         "We bring design to life through animation and motion graphics that can be leveraged for various applications such as training, marketing communications etc",
-      contents: ["TVCs", "Corporate films", " Social media commercials", "Product, food and fashion photography"],
+      contents: [
+        "TVCs",
+        "Corporate films",
+        " Social media commercials",
+        "Product, food and fashion photography",
+      ],
       ref: Ref4,
       active: content4,
       id: "films-production",
@@ -135,25 +140,25 @@ export default function Service(props) {
       const rect3 = Ref3.current.getBoundingClientRect();
       const rect4 = Ref4.current.getBoundingClientRect();
 
-      if (rect1.top < 100) {
+      if (rect1.top < 200) {
         setContent1(true);
       } else {
         setContent1(false);
       }
 
-      if (rect2.top < 100) {
+      if (rect2.top < 200) {
         setContent2(true);
       } else {
         setContent2(false);
       }
 
-      if (rect3.top < 100) {
+      if (rect3.top < 200) {
         setContent3(true);
       } else {
         setContent3(false);
       }
 
-      if (rect4.top < 100) {
+      if (rect4.top < 200) {
         setContent4(true);
       } else {
         setContent4(false);
@@ -171,7 +176,7 @@ export default function Service(props) {
           <div>
             <div
               ref={service.ref}
-              style={{ position: "sticky", top: "1.5rem" }}
+              style={{ position: "sticky", top: "7.5rem" }}
             >
               <div className="row overallscrool">
                 <span
