@@ -110,22 +110,22 @@ export default function Service(props) {
   useEffect(() => {
     setServiceImages({
       dark: {
-        film: "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/filim%20black.gif?alt=media&token=896419a1-4ea0-4364-884b-c5acbada962e",
+        film: "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/film%2Ffilm-for-black-bg.gif?alt=media&token=84f84148-f9a0-4895-bb6c-fe755277c313",
         advertise:
-          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/advertising_1.gif?alt=media&token=893ad9d9-cf94-46bc-b743-59f7897bedd5",
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/advertising%2Fadvertising-for-black-bg.gif?alt=media&token=5401a9eb-99a0-4a72-9903-f38f7bbf75cd",
         digital:
-          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/Digital%20and%20Social%202.gif?alt=media&token=f50e7194-fa0f-4cfc-be15-66bb0d8ba8a0",
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/digital%2Fdigital-for-black-bg.gif?alt=media&token=03cfb8b0-ee32-4730-a81d-1e6d24a185f5",
         design:
-          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design%20black.gif?alt=media&token=65238efb-6ead-413c-a8fc-ac8c638e0158",
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design%2Fdesign-for-black-bg.gif?alt=media&token=b062bd7b-c6ac-49a0-be8b-18a0daa9e549",
       },
       light: {
-        film: "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/film_white.gif?alt=media&token=e9a16853-02ad-478a-b4ce-3edc4d2ac1df",
+        film: "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/film%2Ffilm-for-white-bg.gif?alt=media&token=abef02b7-1a19-4962-8c23-03af37fe6260",
         advertise:
-          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/advertising_white.gif?alt=media&token=1b032487-3df5-4de4-87d3-7a4349bf1e91",
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/advertising%2Fadvertising-for-white-bg.gif?alt=media&token=d7851025-53fe-42fc-982f-cb26b660ce18",
         digital:
-          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/Digital%20and%20social.gif?alt=media&token=e1624fc8-6021-4520-a0f8-e9e2486b336c",
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/digital%2Fdigital-for-white-bg.gif?alt=media&token=f7ab926f-2b47-4e77-98f9-f4c2eb2452f0",
         design:
-          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design%2Fdesign-transparent-gif.gif?alt=media&token=29ed50c3-71f5-4f30-a7f4-5b8a5de4cfba",
+          "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/design%2Fdesign-for-white-bg.gif?alt=media&token=75b7154a-bd09-4fa9-86be-51a3e3a407cc",
       },
     });
     const timer = setTimeout(() => {
@@ -133,6 +133,7 @@ export default function Service(props) {
     }, 2000);
     return () => clearTimeout(timer);
   }, []);
+  
   useEffect(() => {
     function handleScroll() {
       const rect1 = Ref1.current.getBoundingClientRect();
