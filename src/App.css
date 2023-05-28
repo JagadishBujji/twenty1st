@@ -564,11 +564,11 @@ button.owl-prev span {
   border-radius: 10px;
   padding: 0;
   margin-bottom: 30px;
+  background: none;
 }
 
 .faq .accordion .card .card-header h5 {
   padding: 0;
-  background: #fff;
 }
 
 .faq .accordion .card .card-header h5 button {
@@ -822,7 +822,7 @@ button.owl-prev span {
 .ul-list {
   list-style-type: none;
   font-size: 24px;
-  padding-left: 56px;
+  padding-left: 67px;
 }
 .ul-list li {
   margin-bottom: 10px;

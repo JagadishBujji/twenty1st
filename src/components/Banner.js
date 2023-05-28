@@ -13,7 +13,14 @@ const Banner = () => {
     <>
       {/* white */}
 
-      <lottie-player
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/body%2Fheader-1.gif?alt=media&token=0c394cee-e1de-4c4f-86c1-ab1b50865c36"
+        alt="loader"
+        className="img-fluid"
+        style={{ height: "70vh" }}
+      />
+
+      {/* <lottie-player
         src="https://lottie.host/7b45dfa0-822b-43e4-814e-a099b460cac3/5D8uaczosa.json"
         background="transparent"
         speed="1"
@@ -23,7 +30,7 @@ const Banner = () => {
         }}
         loop
         autoplay
-      ></lottie-player>
+      ></lottie-player> */}
 
       {/* black */}
 

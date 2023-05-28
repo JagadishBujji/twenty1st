@@ -2,7 +2,7 @@ import React from "react";
 const Faq = ({ isDarkMode }) => {
   return (
     <>
-      <div className="row container-fluid faq-overall">
+      <div className="row container-fluid faq-overall align-items-center">
         <div className="col-md-7 p-0">
           <section class="faq-main ">
             <section class="faq">
@@ -69,7 +69,7 @@ const Faq = ({ isDarkMode }) => {
                           </div>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card m-0">
                         <div class="card-header ">
                           <h5 class="mb-0">
                             <button

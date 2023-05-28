@@ -29,7 +29,7 @@ const Home = () => {
       {isDarkMode ? <BannerDark /> : <Banner />}
       {isDarkMode ? <ClientSliderDM /> : <ClientSlider />}
       <Content1 />
-      {isDarkMode ? <FloatingElementDm />: <FloatingElement />}
+      {/* {isDarkMode ? <FloatingElementDm />: <FloatingElement />} */}
       {/* <Service /> */}
       {/* <ServiceScrollMagic /> */}
       {/* <ServiceSM /> */}
