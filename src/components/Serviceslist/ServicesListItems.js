@@ -276,11 +276,11 @@ const ServicesListItems = ({ isDarkMode }) => {
                       </li>
                     </ul>
                   </div>
-                  <p className="text-justify">
+                  {/* <p className="text-justify">
                     We bring design to life through animation and motion
                     graphics that can be leveraged for various applications such
                     as training, marketing communications etc
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

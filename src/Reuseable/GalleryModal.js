@@ -53,6 +53,7 @@ export default function GalleryModal(props) {
               id="modal-modal-title"
               sx={{
                 mb: 2,
+                color: "#fff",
                 fontSize: "30px",
                 fontFamily: "Poppins",
                 fontWeight: "600",

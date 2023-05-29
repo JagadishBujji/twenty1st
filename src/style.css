@@ -97,6 +97,25 @@
   background-size: cover;
 }
 
+@media only screen and (min-width: 768px) {
+  .workbrand {
+    background-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .workbrand {
+    background-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .workbrand {
+    background-size: 100%;
+    background-position: top;
+  }
+}
+
 .workjour {
   font-size: 35px;
   color: var(--background);

@@ -41,7 +41,7 @@ const WorkGallery = () => {
           <h2 className="sun">Sundaram Finance</h2>
 
           <GalleryModal
-            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/SF2.png?alt=media&token=bc7f12a9-cfd5-447e-a093-1bfbef667ada"
+            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/work%2FSF.png?alt=media&token=b97a098a-9a99-4849-a11a-dafb6fb98d41"
             title="Sundaram Finance"
             images={sundaramImages}
           />
@@ -49,7 +49,7 @@ const WorkGallery = () => {
         <div className="col-md-6 bottom">
           <h2 className="sun">Gsquare Housing</h2>
           <GalleryModal
-            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/pdfArtboard%201%402x.png?alt=media&token=46294e40-523f-4b11-b4f5-9146116757f8"
+            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/work%2FGSH.png?alt=media&token=c5a87612-2059-4665-bc2a-4e45017c23df"
             title="Gsquare Housing"
             images={gsquareImages}
           />
@@ -59,7 +59,7 @@ const WorkGallery = () => {
         <div className="col-md-6 bottom">
           <h2 className="sun">DIYA Robotics</h2>
           <GalleryModal
-            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/pdfArtboard%201%20copy%204%402x.png?alt=media&token=e131daa3-8197-475e-b3f3-bbe87e34a453"
+            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/work%2FDR.png?alt=media&token=9b7d4ab3-954e-42cd-9f7c-98714424605f"
             title="DIYA Robotics"
             images={diyaImages}
           />
@@ -67,7 +67,7 @@ const WorkGallery = () => {
         <div className="col-md-6 bottom">
           <h2 className="sun">RKR Dairy Products</h2>
           <GalleryModal
-            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/pdfArtboard%201%20copy%205%402x.png?alt=media&token=c1845cfe-3316-49f6-8660-3aa155551438"
+            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/work%2FRKR.png?alt=media&token=57c0f532-aa03-4aaf-bbbb-8390e0b24508"
             title="RKR Dairy Products"
             images={jalliImages}
           />
@@ -77,7 +77,7 @@ const WorkGallery = () => {
         <div className="col-md-6 bottom">
           <h2 className="sun">Arte Makeup Academy</h2>
           <GalleryModal
-            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/pdfArtboard%201%20copy%206%402x.png?alt=media&token=c9a916e3-7650-4204-baf4-6bb20769c2d2"
+            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/work%2FAMA.png?alt=media&token=d60f636f-7b24-4a30-b892-6ae04ac2c042"
             title="Arte Makeup Academy"
             images={ArteImages}
           />
@@ -85,7 +85,7 @@ const WorkGallery = () => {
         <div className="col-md-6 bottom">
           <h2 className="sun">KVP Dairy Farm</h2>
           <GalleryModal
-            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/pdfArtboard%201%20copy%207%402x.png?alt=media&token=6ad3ac41-ae5b-4f4f-88d5-7279d6659d35"
+            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/work%2FKVP.png?alt=media&token=f74d57a6-dbe5-4590-a248-0d4c06838502"
             title="KVP Dairy Farm"
             images={kvpImages}
           />
@@ -95,7 +95,7 @@ const WorkGallery = () => {
         <div className="col-md-6 bottom">
           <h2 className="sun">Swipe Right</h2>
           <GalleryModal
-            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/Arte%20Makeup%20Academy-100.jpg?alt=media&token=1afdf850-6cf9-483a-a570-1ed77151e401"
+            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/work%2FSR.png?alt=media&token=676372d5-5a5b-4244-b547-610c8bfe7f31"
             title="Swipe Right"
             images={swipeImages}
           />
@@ -103,7 +103,7 @@ const WorkGallery = () => {
         <div className="col-md-6 bottom">
           <h2 className="sun">Aditya Kamaraja Hospital</h2>
           <GalleryModal
-            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/AKH-100.jpg?alt=media&token=0810fc00-2f35-44db-8065-c6a7c7f11ec9"
+            modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/work%2FAKH.png?alt=media&token=f7326cbe-97ec-4aea-90f5-8f139a53a1e9"
             title="Aditya Kamaraja Hospital"
             images={hospitalImages}
           />
