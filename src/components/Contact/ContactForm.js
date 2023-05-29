@@ -74,7 +74,7 @@ const ContactForm = () => {
     <>
       <div className="row  m-auto container">
         <div className="col-md-12">
-          <form className="d-flex flex-wrap m-auto w-75 text-left">
+          <form className="d-flex flex-wrap m-auto w-100 text-left">
             <label htmlFor="name" className="label">
               Name<span className="star">&lowast;</span>
             </label>
