@@ -16,6 +16,7 @@ const FloatingElement = () => {
         <img
           alt="body"
           src="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/body%2Fbody.gif?alt=media&token=e5e0abc3-d422-481c-8865-52bf6ae3b1be"
+          style={{ width: "100%", height: "100%" }}
         />
       </div>
     </>

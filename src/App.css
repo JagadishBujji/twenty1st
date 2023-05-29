@@ -132,7 +132,7 @@ body {
   width: 1291px;
   padding: 30px 40px;
 } */
-.dropdown-menu {
+/* .dropdown-menu {
   position: fixed !important;
   top: 60px;
   left: 0;
@@ -141,6 +141,29 @@ body {
   border: none;
   border-bottom: 1px solid #000;
   background: var(--background);
+} */
+
+.dropdown {
+  position: relative;
+  display: contents;
+}
+
+.dropdown-toggle {
+  /* Your styles for the dropdown toggle button */
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid #000;
+  background: var(--background);
+  display: none;
 }
 
 .digital {
@@ -568,7 +591,7 @@ button.owl-prev span {
 
 .faq .accordion .card .card-header h5 {
   padding: 0;
-  background: #fff;
+  background: transparent;
 }
 
 .faq .accordion .card .card-header h5 button {
@@ -825,7 +848,8 @@ button.owl-prev span {
   padding-left: 56px;
 }
 .ul-list li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .w-30 {
@@ -916,7 +940,7 @@ button.owl-prev span {
     height: 20px;
   }
   .desi {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 0;
   }
   .card-img {
@@ -928,6 +952,31 @@ button.owl-prev span {
   .overallscrool {
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+
+.services-button {
+  padding: 0;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .ser {
+    padding-left: 10px;
+  }
+}
+
+/* Media query for laptop devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ser {
+    padding-left: 40px;
+  }
+}
+
+/* Media query for larger systems */
+@media (min-width: 1024px) {
+  .ser {
+    padding-left: 60px;
   }
 }
 /* @media only screen and (min-width: 768px) {

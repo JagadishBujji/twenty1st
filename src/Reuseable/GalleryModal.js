@@ -20,6 +20,7 @@ const style = {
   p: 4,
   borderRadius: "10px",
   borderRadius: "30px",
+
   "@media only screen and (max-width: 500px)": {
     width: 300,
     height: 300,

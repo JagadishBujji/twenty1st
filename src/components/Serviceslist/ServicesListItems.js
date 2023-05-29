@@ -21,7 +21,7 @@ const ServicesListItems = ({ isDarkMode }) => {
 
   return (
     <>
-      <div className="px-5">
+      <div className="servicelist">
         <div className="row m-0 sidebar py-1 px-3" id="design">
           <div className="col-md-12">
             <div class="card">
