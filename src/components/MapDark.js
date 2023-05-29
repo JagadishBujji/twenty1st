@@ -1,20 +1,51 @@
-import React from "react";
-const MapDark = () => {
+import React, { useEffect, useRef } from "react";
+const Map = () => {
+  const gifRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Start the GIF animation
+          gifRef.current.src = gifRef.current.dataset.src;
+        }
+      },
+      {
+        root: null, // Use the viewport as the root
+        threshold: 0.5, // Trigger at 50% visibility
+      }
+    );
+
+    // Observe the GIF element
+    if (gifRef.current) {
+      observer.observe(gifRef.current);
+    }
+
+    // Cleanup the observer when component unmounts
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <div className="map">
-        {/* <img className="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/map%2Ffinal%202.png?alt=media&token=a0f9a150-5f8b-43c6-b737-bf5478d45ade" alt="map" /> */}
-        <lottie-player
-          src="https://lottie.host/ac5b0fa2-4532-4ebf-9327-0322b6fb5580/eNyTPuakD6.json"
+        {/* <lottie-player
+          src="https://lottie.host/4cdab4fa-da84-474c-bba9-2095b256c9f2/Qwlox5oRiq.json"
           background="transparent"
           speed="1"
           style={{ width: "100%", height: "100%" }}
           loop
           autoplay
-        ></lottie-player>
+        ></lottie-player> */}
+        <img
+          ref={gifRef}
+          data-src="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/map%2Fmap.gif?alt=media&token=0c7bee0a-6a1f-47fb-854c-7a560f832331"
+          alt="Branch-Singapore, Chennai, Bangalore"
+          className="img-fluid"
+          style={{ height: "70vh", width: "150vh" }}
+        />
       </div>
     </>
   );
 };
 
-export default MapDark;
+export default Map;
