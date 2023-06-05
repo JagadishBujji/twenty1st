@@ -7,8 +7,8 @@ import ContactTitle from "../components/Contact/ContactTitle";
 const Contact = () => {
   const [currentCity, setCurrectCity] = useState({
     city: "chennai",
-    lat: 13.0296,
-    lng: 80.17598,
+    lat: 13.031557660741473,
+    lng: 80.21118112883538,
   });
 
   return (
@@ -16,7 +16,10 @@ const Contact = () => {
       <ContactTitle />
       <ContactForm />
       <ContactMap city={currentCity} />
-      <ContactLocation setCurrectCity={setCurrectCity} />
+      <ContactLocation
+        setCurrectCity={setCurrectCity}
+        currentCity={currentCity}
+      />
     </>
   );
 };

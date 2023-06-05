@@ -1,0 +1,35 @@
+.img-fluid {
+  /* Default styles for all screen sizes */
+  height: 70vh;
+  /* object-fit: cover; */
+  width: 100%;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 767px) {
+  /* Styles for mobile devices */
+  .img-fluid {
+    height: 30vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablets */
+  .img-fluid {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for laptops */
+  .img-fluid {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Styles for large screens */
+  .img-fluid {
+    height: 80vh;
+  }
+}

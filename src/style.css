@@ -87,14 +87,14 @@
 }
 
 .workbrand {
-  padding: 80px 0;
+  padding: 115px 0;
   /* background: #000000; */
   background: var(--text-primary);
   line-height: 1.5;
   background-image: var(--design_img);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 85%;
+  background-size: cover;
 }
 
 @media only screen and (min-width: 768px) {
@@ -135,8 +135,9 @@
 .titlewithicon {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
   padding: 0 25px;
+  color: #fff;
 }
 
 .modaltitle {
@@ -163,15 +164,18 @@
   width: 100% !important;
   height: 100% !important;
   border-radius: 0 !important;
-  background: rgb(0,0,0, 50%) !important;
+  background: rgb(0, 0, 0, 50%) !important;
+  overflow: auto;
 }
 
 .css-cobz2m-MuiSvgIcon-root {
   color: #fff !important;
 }
 
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
   color: #fff !important;
 }
 
@@ -240,7 +244,7 @@ input[type="submit"]:hover {
 
 .label::after {
   position: absolute;
-  content: '*';
+  content: "*";
   color: #ed1c24;
   top: 0;
   right: -15px;
@@ -337,10 +341,11 @@ input[type="submit"]:hover {
     margin-bottom: 15px;
   }
   .workbrand {
-    padding: 50px 0;
+    padding: 25px 0;
   }
   .workjour {
-    font-size: 14px;
+    font-size: 12px;
+    margin-top: 8px;
   }
   .workdesign {
     padding: 5px 10px;
@@ -360,8 +365,8 @@ input[type="submit"]:hover {
   }
 
   .imagecaro {
-    width: 400px;
-    height: 200px;
+    width: 28%;
+    height: auto;
   }
   .deli,
   .num {
@@ -389,6 +394,7 @@ input[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    display: none;
   }
   .say,
   .founder {
@@ -409,6 +415,8 @@ input[type="submit"]:hover {
     font-size: 16px !important;
   }
 }
+
+/* Common styles for all screen sizes */
 
 .sticky {
   /* position: -webkit-sticky; */
@@ -450,6 +458,7 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 0;
 }
 
 .services-button {
@@ -458,6 +467,8 @@ input[type="submit"]:hover {
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
+  white-space: break-spaces;
+  text-align: justify;
 }
 .services-button:hover {
   color: #ed1c24;
@@ -484,4 +495,72 @@ input[type="submit"]:hover {
 .silder-client .item img {
   aspect-ratio: 8/1;
   object-fit: contain;
+}
+.servicelist{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Responsive styles for mobile */
+
+@media (max-width: 576px) {
+  .h2-bolder {
+    font-size: 3rem;
+  }
+
+  .text-justify {
+    font-size: 16px;
+  }
+
+  .ser li {
+    font-size: 16px;
+  }
+
+  .services-button {
+    font-size: 14px;
+    white-space: break-spaces;
+    text-align: justify;
+  }
+
+  .service-body {
+    font-size: 14px;
+    padding: 0;
+  }
+ 
+}
+
+/* Responsive styles for laptops */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .h2-bolder {
+    font-size: 4rem;
+  }
+
+  .text-justify {
+    font-size: 18px;
+  }
+
+  .ser li {
+    font-size: 18px;
+  }
+
+  .services-button {
+    font-size: 18px;
+    white-space: break-spaces;
+    text-align: justify;
+  }
+
+  .service-body {
+    font-size: 16px;
+  }
+}
+
+/* Responsive styles for larger systems */
+
+@media (min-width: 1025px) {
+  /* Add your specific styles for larger systems here */
+  .service-brand{
+    padding: .75rem 1.25rem;
+    
+  }
 }

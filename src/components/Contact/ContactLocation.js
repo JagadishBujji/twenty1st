@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../../context/theme-context";
 import Svg from "../../Reuseable/Svg";
 
-const ContactLocation = ({ setCurrectCity }) => {
+const ContactLocation = ({ setCurrectCity, currentCity }) => {
   const { isDarkMode } = useContext(ThemeContext);
   return (
     <>
@@ -13,8 +13,8 @@ const ContactLocation = ({ setCurrectCity }) => {
             onClick={() =>
               setCurrectCity({
                 city: "chennai",
-                lat: 13.0296,
-                lng: 80.17598,
+                lat: 13.031557660741473,
+                lng: 80.21118112883538,
               })
             }
           >
@@ -48,8 +48,8 @@ const ContactLocation = ({ setCurrectCity }) => {
             onClick={() =>
               setCurrectCity({
                 city: "bangalore",
-                lat: 12.9477,
-                lng: 77.61715,
+                lat: 12.95181841773443,
+                lng: 77.60795137116463,
               })
             }
           >
@@ -82,8 +82,8 @@ const ContactLocation = ({ setCurrectCity }) => {
             onClick={() =>
               setCurrectCity({
                 city: "singapore",
-                lat: 13.0296,
-                lng: 80.17598,
+                lat: 13.031557660741473,
+                lng: 80.21118112883538,
               })
             }
           >

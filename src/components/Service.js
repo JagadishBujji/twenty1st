@@ -175,7 +175,7 @@ const Service = () => {
 
   return (
     <>
-      <div className="p-5 container">
+      <div className="py-5 container">
         {/* <Controller> */}
         {/* <Scene duration={100} pin={isPin} triggerHook={0.1}> */}
         <div className="row m-0 sidebar" ref={section1Ref}>

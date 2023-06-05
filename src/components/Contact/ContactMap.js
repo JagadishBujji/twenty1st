@@ -1,29 +1,6 @@
 import GoogleMapReact from "google-map-react";
-import { useEffect } from "react";
 
-// const AnyReactComponent = ({ text }) => (
-//   <div
-//     style={{
-//       position: "absolute",
-//       width: 20,
-//       height: 20,
-//       borderRadius: "50%",
-//       backgroundColor: "red",
-//       border: "2px solid white",
-//       textAlign: "center",
-//       color: "white",
-//       fontSize: 16,
-//       fontWeight: "bold",
-//       padding: 4,
-//       transform: "translate(-50%, -50%)",
-//       zIndex: 1,
-//     }}
-//   >
-//     {text}
-//   </div>
-// );
-
-const MapMarker = ({ lat, lng }) => (
+const MapMarker = ({ lat, lng, text }) => (
   <div style={{ position: "absolute", transform: "translate(-50%, -100%)" }}>
     <svg
       width="28"
@@ -39,14 +16,11 @@ const MapMarker = ({ lat, lng }) => (
       <circle cx="14" cy="14" r="9" fill="#FFFFFF" />
       <circle cx="14" cy="14" r="3" fill="#D23F31" />
     </svg>
+    <div style={{ fontWeight: "bold" }}>{text}</div>
   </div>
 );
 
 const ContactMap = ({ city }) => {
-  // useEffect(() => {
-  //   console.log("city: ", city);
-  // }, [city]);
-
   const defaultProps = {
     center: {
       lat: 13.0296,
@@ -55,14 +29,14 @@ const ContactMap = ({ city }) => {
     zoom: 12,
   };
 
-  const renderMarkers = (map, maps) => {
-    let marker = new maps.Marker({
-      position: { lat: city.lat, lng: city.lng },
-      map,
-      title: "Twentyone'st",
-    });
-    return marker;
-  };
+  // const renderMarkers = (map, maps) => {
+  //   let marker = new maps.Marker({
+  //     position: { lat: city.lat, lng: city.lng },
+  //     map,
+  //     title: "Twentyone'st",
+  //   });
+  //   return marker;
+  // };
 
   return (
     <>
@@ -70,26 +44,10 @@ const ContactMap = ({ city }) => {
         className="row map-location"
         style={{ height: "400px", width: "100%" }}
       >
-        {/* <iframe
-          src="https://my.atlistmaps.com/map/3979b996-a68a-42f5-8566-9e0c3048ed15?share=true"
-          allow="geolocation"
-          width="100%"
-          height="400px"
-          frameborder="0"
-          scrolling="no"
-          allowfullscreen
-        ></iframe> */}
-        {/* <iframe
-          src="http://maps.googleapis.com/maps/api/staticmap?center=-15.800513,-47.91378&zoom=11&size=200x200&sensor=false"
-          allow="geolocation"
-          width="100%"
-          height="400px"
-          frameborder="0"
-          scrolling="no"
-          allowfullscreen
-        ></iframe> */}
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyACFe2dyb9WOAvp5TTAqnFZpGLVd7wxbq0" }}
+          bootstrapURLKeys={{
+            key: "AIzaSyACFe2dyb9WOAvp5TTAqnFZpGLVd7wxbq0",
+          }}
           defaultCenter={defaultProps.center}
           defaultZoom={defaultProps.zoom}
           // onGoogleApiLoaded={({ map, maps }) => renderMarkers(map, maps)}
@@ -98,10 +56,8 @@ const ContactMap = ({ city }) => {
             lat: city.lat,
             lng: city.lng,
           }}
-          // onChange={(detail) => console.log("det: ", detail)}
-          // onDragEnd={(detail) => console.log("frag: ", detail)}
         >
-          <MapMarker lat={city.lat} lng={city.lng} />
+          <MapMarker lat={city.lat} lng={city.lng} text="Twentyone'st" />
         </GoogleMapReact>
       </div>
     </>
