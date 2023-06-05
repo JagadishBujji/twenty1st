@@ -8,12 +8,12 @@ const ClientSlider = () => {
     <>
       <div className="silder-client">
         <OwlCarousel
-          className="owl-theme container "
+          className="owl-theme container"
           // items={5}
           dots={false}
           loop
           margin={10}
-          nav
+          nav={false}
           autoPlay={true}
           responsive={{
             200: {
@@ -28,43 +28,40 @@ const ClientSlider = () => {
           }}
         >
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/zus.png)" }}></div>
+            <img className="" src="../images/zus.png" />
+            {/* <div style={{ backgroundImage: "url(../images/zus.png)" }}></div> */}
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/wink.png)" }}></div>
+            <img className="" src="../images/wink.png" />
+            {/* <div style={{ backgroundImage: "url(../images/wink.png)" }}></div> */}
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/wfs.png)" }}></div>
+            <img className="" src="../images/wfs.png" />
+            {/* <div style={{ backgroundImage: "url(../images/wfs.png)" }}></div> */}
           </div>
           <div class="item">
-            <div
-              style={{ backgroundImage: "url(../images/testocean.png)" }}
-            ></div>
+            <img className="" src="../images/testocean.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/sf.png)" }}></div>
+            <img className="" src="../images/sf.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/rkr.png)" }}></div>
+            <img className="" src="../images/rkr.png" />
           </div>
           <div class="item">
-            <div
-              style={{ backgroundImage: "url(../images/organic.png)" }}
-            ></div>
+            <img className="" src="../images/organic.png" />
           </div>
           <div class="item">
-            <div
-              style={{ backgroundImage: "url(../images/murugan.png)" }}
-            ></div>
+            <img className="" src="../images/murugan.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/maamis.png)" }}></div>
+            <img className="" src="../images/maamis.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/kvp2.png)" }}></div>
+            <img className="" src="../images/kvp2.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/jarvis.png)" }}></div>
+            <img className="" src="../images/jarvis.png" />
           </div>
         </OwlCarousel>
       </div>

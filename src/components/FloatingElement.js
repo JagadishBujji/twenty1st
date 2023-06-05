@@ -14,8 +14,13 @@ const FloatingElement = () => {
           autoplay
         ></lottie-player> */}
         <img
-          alt="body"
-          src="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/body%2Fbody.gif?alt=media&token=e5e0abc3-d422-481c-8865-52bf6ae3b1be"
+          className="img-fluid"
+          style={{
+            aspectRatio: "3/1",
+            objectFit: "cover",
+            objectPosition: "0 -13rem"
+          }}
+          src="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/body%2Ffloating.gif?alt=media&token=a3c96b57-f4c3-4f07-b6e8-ed5802755c17&_gl=1*v6nq3h*_ga*NjcxMjU2MjEuMTY4NTE3ODc2Nw..*_ga_CW55HF8NVT*MTY4NTkzMjM2Mi4yLjEuMTY4NTkzMjQ4Ny4wLjAuMA.."
         />
       </div>
     </>

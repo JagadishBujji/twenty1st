@@ -13,7 +13,7 @@ const ClientSliderDM = () => {
           dots={false}
           loop
           margin={10}
-          nav
+          nav={false}
           autoPlay={true}
           responsive={{
             200: {
@@ -28,37 +28,37 @@ const ClientSliderDM = () => {
           }}
         >
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/zus_white.png)" }}></div>
+            <img src="../images/zus_white.png" />
           </div>
           <div class="item">
-           <div style={{ backgroundImage: "url(../images/wink_white.png)" }}></div>
+            <img src="../images/wink_white.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/wfs_white.png)" }}></div>
+            <img src="../images/wfs_white.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/testocean_white.png)" }}></div>
+            <img src="../images/testocean_white.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/sf_white.png)" }}></div>
+            <img src="../images/sf_white.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/rkr_white.png)" }}></div>
+            <img src="../images/rkr_white.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/organic_white.png)" }}></div>
+            <img src="../images/organic_white.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/murugan_white.png)" }}></div>
+            <img src="../images/murugan_white.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/maamis_white.png)" }}></div>
+            <img src="../images/maamis_white.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/kvp2_white.png)" }}></div>
+            <img src="../images/kvp2_white.png" />
           </div>
           <div class="item">
-            <div style={{ backgroundImage: "url(../images/jarvis_white.png)" }}></div>
+            <img src="../images/jarvis_white.png" />
           </div>
         </OwlCarousel>
       </div>

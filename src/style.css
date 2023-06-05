@@ -293,6 +293,13 @@ input[type="submit"]:hover {
   color: var(--text-primary);
 }
 
+.map img {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+  object-position: 0 -20rem;
+}
+
 .map-location {
   padding: 40px 0;
   margin: auto;
@@ -472,4 +479,9 @@ input[type="submit"]:hover {
 .card {
   background: none;
   border: none;
+}
+
+.silder-client .item img {
+  aspect-ratio: 8/1;
+  object-fit: contain;
 }
