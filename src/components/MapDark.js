@@ -41,7 +41,7 @@ const Map = () => {
           data-src="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/map%2Fmap.gif?alt=media&token=0c7bee0a-6a1f-47fb-854c-7a560f832331"
           alt="Branch-Singapore, Chennai, Bangalore"
           className="img-fluid"
-          style={{ height: "70vh", width: "150vh" }}
+          // style={{ height: "70vh", width: "150vh" }}
         />
       </div>
     </>

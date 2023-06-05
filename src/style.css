@@ -298,10 +298,19 @@ input[type="submit"]:hover {
 }
 
 .map img {
-  height: 350px;
+  height: 450px;
   object-fit: cover;
   width: 100%;
-  object-position: 0 -20rem;
+  object-position: 0 -16rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .map img {
+    height: initial;
+    object-fit: cover;
+    object-position: 0 -5rem;
+    aspect-ratio: 4;
+  }
 }
 
 .map-location {
