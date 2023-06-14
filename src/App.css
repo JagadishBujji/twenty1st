@@ -561,7 +561,7 @@ button.owl-prev span {
 
 /* Faq */
 .faq {
-  width: 100%;
+  width: 80%;
 }
 
 .faq .section-title {
@@ -597,13 +597,13 @@ button.owl-prev span {
 
 .faq .accordion .card .card-header h5 button {
   color: var(--text-primary);
-  font-size: 30px;
+  font-size: 42px;
   font-weight: 600;
   text-decoration: none;
   padding: 0 30px 15px 70px;
   /* height: 80px; */
   display: block;
-  width: 80%;
+  width: 116%;
   /* color: rgba(30, 48, 86, 0.8); */
   text-align: left;
   background: var(--background);

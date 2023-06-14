@@ -80,7 +80,8 @@ const Faq = ({ isDarkMode }) => {
                               aria-expanded="false"
                               aria-controls="collapseThree"
                             >
-                              When should I reposition my brand?
+                              When should I reposition
+                              <br /> my brand?
                             </button>
                           </h5>
                         </div>
