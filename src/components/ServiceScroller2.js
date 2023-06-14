@@ -54,7 +54,6 @@ export default function Service(props) {
       ref: Ref1,
       active: content1,
       id: "design",
-      gif: <Design />,
     },
     {
       title: "Digital & Social",
@@ -71,7 +70,6 @@ export default function Service(props) {
       ref: Ref2,
       active: content2,
       id: "digital-social",
-      gif: <DigitalSocial />,
     },
     {
       title: " Advertising",
@@ -90,7 +88,6 @@ export default function Service(props) {
       ref: Ref3,
       active: content3,
       id: "advertising",
-      gif: <Advertise />,
     },
     {
       title: "Films & Production",
@@ -108,7 +105,6 @@ export default function Service(props) {
       ref: Ref4,
       active: content4,
       id: "films-production",
-      gif: <Film />,
     },
   ];
   useEffect(() => {
@@ -145,34 +141,25 @@ export default function Service(props) {
       const rect3 = Ref3.current.getBoundingClientRect();
       const rect4 = Ref4.current.getBoundingClientRect();
 
-      function isInViewport(rect) {
-        return (
-          rect.top < 350 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-      }
-
-      if (isInViewport(rect1)) {
-        setContent1(true);  
+      if (rect1.top < 200) {
+        setContent1(true);
       } else {
         setContent1(false);
       }
 
-      if (isInViewport(rect2)) {
+      if (rect2.top < 200) {
         setContent2(true);
       } else {
         setContent2(false);
       }
 
-      if (isInViewport(rect3)) {
+      if (rect3.top < 200) {
         setContent3(true);
       } else {
         setContent3(false);
       }
 
-      if (isInViewport(rect4)) {
+      if (rect4.top < 200) {
         setContent4(true);
       } else {
         setContent4(false);
@@ -190,7 +177,7 @@ export default function Service(props) {
           <div>
             <div
               ref={service.ref}
-              // style={{ position: "sticky", top: "5.5rem" }}
+              style={{ position: "sticky", top: "5.5rem" }}
             >
               <div className="row overallscrool">
                 <span
@@ -230,7 +217,7 @@ export default function Service(props) {
               <div
                 style={{
                   display: service.active ? "block" : "none",
-                  // marginBottom: "30rem",
+                  marginBottom: "30rem",
                 }}
               >
                 {props?.service && (
@@ -277,10 +264,10 @@ export default function Service(props) {
                 </div>
               </div>
             </div>
-            {/* <div
+            <div
               className="p-3"
               style={{ margin: service.active ? "0" : "-1rem" }}
-            ></div> */}
+            ></div>
           </div>
         ))}
       </div>

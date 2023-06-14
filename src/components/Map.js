@@ -38,7 +38,7 @@ const Map = () => {
         ></lottie-player> */}
         <img
           ref={gifRef}
-          data-src="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/map%2Fmap%20white.gif?alt=media&token=bc89e11f-27c2-4571-96bb-40a782447145"
+          data-src="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/map%2Fmap%20white.gif?alt=media&token=75e2c566-c245-49ea-a467-b6cc608d8c49"
           alt="Branch-Singapore, Chennai, Bangalore"
           className="img-fluid"
           // style={{ height: "70vh", width: "150vh" }}
