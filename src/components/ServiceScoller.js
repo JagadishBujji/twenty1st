@@ -155,19 +155,34 @@ export default function Service(props) {
       }
 
       if (isInViewport(rect1)) {
-        setContent1(true);  
+        if(rect1.top < 0) {
+          setContent2(true);
+          if(rect2.top > 0) return;
+        } else {
+          setContent1(true);  
+        }
       } else {
         setContent1(false);
       }
 
       if (isInViewport(rect2)) {
-        setContent2(true);
+        if(rect2.top < 0) {
+          setContent3(true);
+          if(rect3.top > 0) return;
+        } else {
+          setContent2(true);
+        }
       } else {
         setContent2(false);
       }
 
       if (isInViewport(rect3)) {
-        setContent3(true);
+        if(rect3.top < 0) {
+          setContent4(true);
+          if(rect4.top > 0) return;
+        } else {
+          setContent3(true);
+        }
       } else {
         setContent3(false);
       }
@@ -190,7 +205,7 @@ export default function Service(props) {
           <div>
             <div
               ref={service.ref}
-              // style={{ position: "sticky", top: "5.5rem" }}
+              style={{ position: "sticky", top: "5.5rem", visibility: services[index + 1]?.active ? 'hidden' : '' }}
             >
               <div className="row overallscrool">
                 <span
@@ -230,7 +245,7 @@ export default function Service(props) {
               <div
                 style={{
                   display: service.active ? "block" : "none",
-                  // marginBottom: "30rem",
+                  marginBottom: "10rem",
                 }}
               >
                 {props?.service && (
@@ -277,10 +292,10 @@ export default function Service(props) {
                 </div>
               </div>
             </div>
-            {/* <div
+            <div
               className="p-3"
               style={{ margin: service.active ? "0" : "-1rem" }}
-            ></div> */}
+            ></div>
           </div>
         ))}
       </div>
