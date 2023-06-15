@@ -205,7 +205,7 @@ export default function Service(props) {
           <div>
             <div
               ref={service.ref}
-              style={{ position: "sticky", top: "5.5rem", visibility: services[index + 1]?.active ? 'hidden' : '' }}
+              style={{ position: "sticky", top: "5.5rem", visibility: services[index + 1]?.active ? 'hidden' : 'visible' }}
             >
               <div className="row overallscrool">
                 <span
