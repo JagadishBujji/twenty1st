@@ -801,7 +801,7 @@ const ServicesListItems = ({ isDarkMode }) => {
                               </button>
                             </h5>
                           </div>
-                          <div
+                          {/* <div
                             id="collapse14"
                             class="collapse"
                             data-parent="#accordionExample3"
@@ -815,7 +815,7 @@ const ServicesListItems = ({ isDarkMode }) => {
                               that resonate with your audiences and give you
                               results.
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </li>
                       <li className="brandlist">
@@ -847,7 +847,7 @@ const ServicesListItems = ({ isDarkMode }) => {
                               </button>
                             </h5>
                           </div>
-                          <div
+                          {/* <div
                             id="collapse15"
                             class="collapse"
                             data-parent="#accordionExample3"
@@ -861,7 +861,7 @@ const ServicesListItems = ({ isDarkMode }) => {
                               that resonate with your audiences and give you
                               results.
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </li>
                       <li className="brandlist">
@@ -894,7 +894,7 @@ const ServicesListItems = ({ isDarkMode }) => {
                               </button>
                             </h5>
                           </div>
-                          <div
+                          {/* <div
                             id="collapse16"
                             class="collapse"
                             data-parent="#accordionExample3"
@@ -908,7 +908,7 @@ const ServicesListItems = ({ isDarkMode }) => {
                               that resonate with your audiences and give you
                               results.
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </li>
                       <li className="brandlist">
@@ -941,7 +941,7 @@ const ServicesListItems = ({ isDarkMode }) => {
                               </button>
                             </h5>
                           </div>
-                          <div
+                          {/* <div
                             id="collapse17"
                             class="collapse"
                             data-parent="#accordionExample3"
@@ -952,7 +952,7 @@ const ServicesListItems = ({ isDarkMode }) => {
                               your products with everything lights, camera and
                               action!
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </li>
                     </ul>

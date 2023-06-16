@@ -14,7 +14,9 @@ const ClientSlider = () => {
           loop
           margin={10}
           nav={false}
-          autoPlay={true}
+          autoplay={true}
+          autoplayTimeout={2000}
+          autoplaySpeed={500}
           responsive={{
             200: {
               items: 2,

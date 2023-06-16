@@ -31,8 +31,12 @@ const WorkGallery = () => {
     "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/KVP%20App-100.jpg?alt=media&token=1704c6de-1ad7-47eb-ae6f-1b4475567051",
     "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/KVP%20Packaging-100.jpg?alt=media&token=ade392f0-38a1-4ec2-ae73-633a8fb059a7",
   ];
-  const swipeImages = ["https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/Arte%20Makeup%20Academy-100.jpg?alt=media&token=1afdf850-6cf9-483a-a570-1ed77151e401"];
-  const hospitalImages = ["https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/AKH-100.jpg?alt=media&token=0810fc00-2f35-44db-8065-c6a7c7f11ec9"];
+  const swipeImages = [
+    "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/Arte%20Makeup%20Academy-100.jpg?alt=media&token=1afdf850-6cf9-483a-a570-1ed77151e401",
+  ];
+  const hospitalImages = [
+    "https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/AKH-100.jpg?alt=media&token=0810fc00-2f35-44db-8065-c6a7c7f11ec9",
+  ];
 
   return (
     <>
@@ -47,7 +51,7 @@ const WorkGallery = () => {
           />
         </div>
         <div className="col-md-6 bottom">
-          <h2 className="sun">Gsquare Housing</h2>
+          <h2 className="sun">G Square Housing</h2>
           <GalleryModal
             modalimage="https://firebasestorage.googleapis.com/v0/b/twentyone-st.appspot.com/o/work%2FGSH.png?alt=media&token=c5a87612-2059-4665-bc2a-4e45017c23df"
             title="Gsquare Housing"

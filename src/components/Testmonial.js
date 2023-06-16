@@ -32,21 +32,23 @@ const Testimonial = ({ isDarkMode }) => {
                 <span className="cir"></span>
                 <span className="cir"></span>
               </div>
-              <div className="row star">
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
+              <h3 className="say">What Client Says</h3>
+              {/* <div className="row star"> */}
+              <div className="row circle">
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
               </div>
-              <h3 className="say">
+              <p className="text-justify">
                 The pan-India branding conceptualized and designed by Twenty
                 Onest helped us connect with our target audience, leading to a
                 ₹30 crore (+75% increase) in our revenue!
-              </h3>
+              </p>
               <p className="founder">Jennifer Joseph</p>
               <p className="founder">
-                Deputy Manager - Corporate Communications, Sundaram Finance
+                Deputy Manager - Corporate Communications
               </p>
             </div>
           </div>
@@ -66,26 +68,23 @@ const Testimonial = ({ isDarkMode }) => {
                 <span className="cir"></span>
                 <span className="cir"></span>
               </div>
-              <div className="row star">
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
+              <h3 className="say">What Client Says</h3>
+              {/* <div className="row star"> */}
+              <div className="row circle">
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
               </div>
-              <h3 className="say">
+              <p className="text-justify">
                 I like the ingenuity that these folks bring to their work. They
                 are a young team, they think differently, keep up with the
                 trends, yet ensure that they highlight the essence of the brand.
-                Their turnaround is quick along with nearly flawless copy and
-                design. Their service is good, and they are great at building
-                relationships. I’d recommend them to anyone who wants to use
-                their services.
-              </h3>
-              <p className="founder">Sandhya Kumar</p>
-              <p className="founder">
-                Head - Corporate Communications, Sundaram Finance
+                I’d recommend them to anyone who wants to use their services.
               </p>
+              <p className="founder">Sandhya Kumar</p>
+              <p className="founder">Head - Corporate Communications</p>
             </div>
           </div>
         </div>
@@ -104,19 +103,21 @@ const Testimonial = ({ isDarkMode }) => {
                 <span className="cir"></span>
                 <span className="cir"></span>
               </div>
-              <div className="row star">
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
-                <i className="far fa-star"></i>
+              <h3 className="say">What Client Says</h3>
+              {/* <div className="row star"> */}
+              <div className="row circle">
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
               </div>
-              <h3 className="say">
+              <p className="text-justify">
                 Technically sound, professional with tremendous work ethics.
                 Knowledgeable in adapting to any field. A systematic manner of
                 work. Feeling proud to be associated with them. Looking forward
                 to our long journey!
-              </h3>
+              </p>
               <p className="founder">Santhosh Gopi</p>
               <p className="founder">ICC-Certified Cricket Coach</p>
             </div>

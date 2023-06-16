@@ -8,13 +8,15 @@ const ClientSliderDM = () => {
     <>
       <div className="silder-client">
         <OwlCarousel
-          className="owl-theme container "
+          className="owl-theme container"
           // items={5}
           dots={false}
           loop
           margin={10}
           nav={false}
-          autoPlay={true}
+          autoplay={true}
+          autoplayTimeout={2000}
+          autoplaySpeed={500}
           responsive={{
             200: {
               items: 2,

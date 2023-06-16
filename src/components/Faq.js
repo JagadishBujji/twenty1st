@@ -2,7 +2,7 @@ import React from "react";
 const Faq = ({ isDarkMode }) => {
   return (
     <>
-      <div className="row container-fluid faq-overall align-items-center">
+      <div className="row container faq-overall align-items-center m-auto">
         <div className="col-md-7 p-0">
           <section class="faq-main ">
             <section class="faq">
