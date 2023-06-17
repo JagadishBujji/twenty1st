@@ -65,7 +65,7 @@ body {
 
 .navbar {
   padding: 5px 80px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--text-primary);
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item {
@@ -487,8 +487,8 @@ button.owl-prev span {
   border: 1px solid #000000;
   border-radius: 20px;
   padding: 40px;
-  margin-bottom: 90px;
-  margin-top: 90px;
+  margin-bottom: 45px;
+  margin-top: 45px;
 }
 
 .cir {
@@ -673,7 +673,8 @@ button.owl-prev span {
 }
 
 .faq-overall {
-  margin: 100px 0;
+  /* margin: 100px 0; */
+  margin: auto;
 }
 
 /* Faq */
@@ -685,8 +686,13 @@ button.owl-prev span {
 .footer-logo {
   /* width: 231px;
   height: 192px; */
-  width: 30%;
+  width: 50%;
   margin-bottom: 15px;
+  /* margin-top: 20%; */
+}
+
+.logo-footer-align {
+  margin: auto;
 }
 
 .fa-copyright {

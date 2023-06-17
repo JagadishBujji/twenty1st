@@ -50,11 +50,22 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light container-fluid ">
         <Link className="navbar-brand" to={"/"}>
           {/* <a className="navbar-brand" href="/"> */}
-          <img
-            src="../images/twentyonestlogo.png"
-            alt="logo"
-            className="logo-img"
-          />
+          {isDarkMode ? (
+            <img
+              // src="../images/twentyonestlogo.png"
+              src="../images/twentyonelogo-b.png"
+              alt="logo"
+              className="logo-img"
+            />
+          ) : (
+            <img
+              // src="../images/twentyonestlogo.png"
+              src="../images/twentyonelogo-w.png"
+              alt="logo"
+              className="logo-img"
+            />
+          )}
+
           {/* </a> */}
         </Link>
         <button

@@ -7,11 +7,11 @@ const Footer = () => {
   return (
     <>
       <div className="row m-0 footer">
-        <div className="col-lg-3">
+        <div className="col-lg-3 logo-footer-align">
           {isDarkMode ? (
             <>
               <img
-                src="../images/Twentyblack (2).png"
+                src="../images/twentyonelogo-b.png"
                 alt=""
                 className="footer-logo"
               />
@@ -76,8 +76,8 @@ const Footer = () => {
           ) : (
             <>
               <img
-                src="../images/Twentyblack.png"
-                alt=""
+                src="../images/twentyonelogo-w.png"
+                alt="Twenty One"
                 className="footer-logo"
               />
               <div className="row social-row">

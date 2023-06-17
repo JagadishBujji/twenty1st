@@ -1,0 +1,20 @@
+.carousel {
+  height: 50vh;
+}
+
+.carousel-inner .carousel-item {
+  transition-duration: 1s !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .carousel {
+    height: 92vh; /* Adjust the height for smaller devices if needed */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    height: 90vh; /* Adjust the height for extra small devices if needed */
+  }
+}

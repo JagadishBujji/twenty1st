@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "./Testimonial.css";
 
 const Testimonial = ({ isDarkMode }) => {
+  useEffect(() => {
+    const carousel = document.getElementById("carouselExampleIndicators");
+    const carouselInstance = new window.bootstrap.Carousel(carousel, {
+      interval: 2000, // Adjust the interval (in milliseconds) as needed
+      pause: "hover", // Pause on hover
+    });
+
+    // Clean up the carousel instance on component unmount
+    return () => {
+      carouselInstance.dispose();
+    };
+  }, []);
+
   return (
     <div
       id="carouselExampleIndicators"
@@ -27,12 +41,12 @@ const Testimonial = ({ isDarkMode }) => {
               )}
             </div>
             <div className="col-md-7">
-              <div className="row circle">
+              {/* <div className="row circle">
                 <span className="cir"></span>
                 <span className="cir"></span>
                 <span className="cir"></span>
-              </div>
-              <h3 className="say">What Client Says</h3>
+              </div> */}
+              <h3 className="say">What Clients Say</h3>
               {/* <div className="row star"> */}
               <div className="row circle">
                 <i className="fas fa-star"></i>
@@ -41,7 +55,7 @@ const Testimonial = ({ isDarkMode }) => {
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>
               </div>
-              <p className="text-justify">
+              <p className="founder">
                 The pan-India branding conceptualized and designed by Twenty
                 Onest helped us connect with our target audience, leading to a
                 ₹30 crore (+75% increase) in our revenue!
@@ -63,12 +77,12 @@ const Testimonial = ({ isDarkMode }) => {
               )}
             </div>
             <div className="col-md-7">
-              <div className="row circle">
+              {/* <div className="row circle">
                 <span className="cir"></span>
                 <span className="cir"></span>
                 <span className="cir"></span>
-              </div>
-              <h3 className="say">What Client Says</h3>
+              </div> */}
+              <h3 className="say">What Clients Say</h3>
               {/* <div className="row star"> */}
               <div className="row circle">
                 <i className="fas fa-star"></i>
@@ -77,7 +91,7 @@ const Testimonial = ({ isDarkMode }) => {
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>
               </div>
-              <p className="text-justify">
+              <p className="founder">
                 I like the ingenuity that these folks bring to their work. They
                 are a young team, they think differently, keep up with the
                 trends, yet ensure that they highlight the essence of the brand.
@@ -92,18 +106,26 @@ const Testimonial = ({ isDarkMode }) => {
           <div className="row">
             <div className="col-md-4 image-square">
               {isDarkMode ? (
-                <img src="../images/icc.png" alt="" className="square" />
+                <img
+                  src="../images/CricTamizha-b.png"
+                  alt=""
+                  className="square"
+                />
               ) : (
-                <img src="../images/icc.png" alt="" className="square" />
+                <img
+                  src="../images/CricTamizha-w.png"
+                  alt=""
+                  className="square"
+                />
               )}
             </div>
             <div className="col-md-7">
-              <div className="row circle">
+              {/* <div className="row circle">
                 <span className="cir"></span>
                 <span className="cir"></span>
                 <span className="cir"></span>
-              </div>
-              <h3 className="say">What Client Says</h3>
+              </div> */}
+              <h3 className="say">What Clients Say</h3>
               {/* <div className="row star"> */}
               <div className="row circle">
                 <i className="fas fa-star"></i>
@@ -112,7 +134,7 @@ const Testimonial = ({ isDarkMode }) => {
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>
               </div>
-              <p className="text-justify">
+              <p className="founder">
                 Technically sound, professional with tremendous work ethics.
                 Knowledgeable in adapting to any field. A systematic manner of
                 work. Feeling proud to be associated with them. Looking forward
@@ -124,7 +146,7 @@ const Testimonial = ({ isDarkMode }) => {
           </div>
         </div>
       </div>
-      <a
+      {/* <a
         className="carousel-control-prev"
         href="#carouselExampleIndicators"
         role="button"
@@ -139,7 +161,7 @@ const Testimonial = ({ isDarkMode }) => {
         data-slide="next"
       >
         <i className="fas fa-chevron-right" aria-hidden="true"></i>
-      </a>
+      </a> */}
     </div>
   );
 };

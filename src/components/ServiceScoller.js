@@ -9,6 +9,7 @@ import DigitalSocialDark from "./services/DigitalSocialDark";
 import Film from "./services/Film";
 import FilmDark from "./services/FlimDark";
 import SkeletonChildren from "./skeleton/Skeleton";
+import "./ServiceScroller.css";
 
 export default function Service(props) {
   const Ref1 = useRef(null);
@@ -64,8 +65,10 @@ export default function Service(props) {
       footer:
         "We bring design to life through animation and motion graphics that can be leveraged for various applications such as training, marketing communications etc",
       contents: [
-        "Website & Mobile app development",
-        " Social media marketing",
+        "Website development",
+        "Android app development",
+        "iOS app development",
+        "Social media marketing",
         "Performance marketing",
       ],
       ref: Ref2,
@@ -137,7 +140,7 @@ export default function Service(props) {
     }, 2000);
     return () => clearTimeout(timer);
   }, []);
-  
+
   useEffect(() => {
     function handleScroll() {
       const rect1 = Ref1.current.getBoundingClientRect();
@@ -149,26 +152,28 @@ export default function Service(props) {
         return (
           rect.top < 350 &&
           rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
         );
       }
 
       if (isInViewport(rect1)) {
-        if(rect1.top < 0) {
+        if (rect1.top < 0) {
           setContent2(true);
-          if(rect2.top > 0) return;
+          if (rect2.top > 0) return;
         } else {
-          setContent1(true);  
+          setContent1(true);
         }
       } else {
         setContent1(false);
       }
 
       if (isInViewport(rect2)) {
-        if(rect2.top < 0) {
+        if (rect2.top < 0) {
           setContent3(true);
-          if(rect3.top > 0) return;
+          if (rect3.top > 0) return;
         } else {
           setContent2(true);
         }
@@ -177,9 +182,9 @@ export default function Service(props) {
       }
 
       if (isInViewport(rect3)) {
-        if(rect3.top < 0) {
+        if (rect3.top < 0) {
           setContent4(true);
-          if(rect4.top > 0) return;
+          if (rect4.top > 0) return;
         } else {
           setContent3(true);
         }
@@ -205,7 +210,8 @@ export default function Service(props) {
           <div>
             <div
               ref={service.ref}
-              style={{ position: "sticky", top: "5.5rem" }}
+              // style={{ position: "sticky", top: "5.5rem" }}
+              style={{ position: "sticky", top: "8.5rem" }}
             >
               <div className="row overallscrool">
                 <span
@@ -302,6 +308,7 @@ export default function Service(props) {
       {/* img container */}
       <div className={props.service ? "d-none" : "w-50 d-none d-lg-block"}>
         <div className="p-3" style={{ position: "sticky", top: "10%" }}>
+          {/* <div className="p-3" style={{ position: "sticky", top: "8.5rem" }}> */}
           {/* <img
             alt=""
             className="img-fluid"
@@ -388,78 +395,4 @@ export default function Service(props) {
       </div>
     </div>
   );
-}
-
-// desgin
-{
-  /* <lottie-player src="https://lottie.host/26b33a30-09be-4730-b2f9-dba267d3d8df/jMM7Ouv9Io.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player> */
-}
-// digital and social
-
-{
-  /* <lottie-player src="https://lottie.host/db5a654d-2414-4e58-a186-99349751129c/NvBXhoRM8b.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player> */
-}
-
-// adve
-
-{
-  /* <lottie-player src="https://lottie.host/7f43933e-42e5-4c1a-86e6-8c4b8e3f916f/JcSP2lyaSl.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player> */
-}
-
-// filim
-
-{
-  /* <lottie-player src="https://lottie.host/99712c59-6faf-4f57-b99f-a677ef072863/sK8I4xgucN.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player> */
-}
-
-// white
-
-{
-  /* <lottie-player
-  src="https://lottie.host/9f01ebd8-e4d8-472c-bcb8-20d01840475b/Q9myD1u5hJ.json"
-  background="transparent"
-  speed="1"
-  style={{ width: "100%", height: "100%" }}
-  loop
-  autoplay
-></lottie-player>; */
-}
-
-// digital
-
-{
-  /* <lottie-player
-  src="https://lottie.host/bc307ead-2453-494b-bc41-4243b49d769b/7NB4rMlcqM.json"
-  background="transparent"
-  speed="1"
-  style="width: 300px; height: 300px;"
-  loop
-  autoplay
-></lottie-player>; */
-}
-
-// ad
-
-{
-  /* <lottie-player
-  src="https://lottie.host/fcc3d30b-350a-41a0-8d93-525364b4991f/or8pRzUNA9.json"
-  background="transparent"
-  speed="1"
-  style="width: 300px; height: 300px;"
-  loop
-  autoplay
-></lottie-player>; */
-}
-
-// filim
-
-{
-  /* <lottie-player
-  src="https://lottie.host/ff671dcc-cfd8-49e8-bcc7-f177b83de89a/UPos21u6F6.json"
-  background="transparent"
-  speed="1"
-  style="width: 300px; height: 300px;"
-  loop
-  autoplay
-></lottie-player>; */
 }
