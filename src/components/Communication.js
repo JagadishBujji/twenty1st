@@ -12,7 +12,7 @@ const Communication = () => {
       <div className="row container-fluid card-img">
         <div className="col-md-4">
           <div className="card1">
-            <h4 className="card-head1">Gsquare</h4>
+            <h4 className="card-head1">G Square</h4>
             <p className="card-para1">
               Product-specific campaigns (digital
               <br /> and OOH) and marketing collateral for
