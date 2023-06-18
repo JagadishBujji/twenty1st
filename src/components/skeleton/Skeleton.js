@@ -9,7 +9,7 @@ const Image = styled("img")({
 });
 
 function SkeletonChildrenDemo(props) {
-  const { isLoading , imageSrc } = props;
+  const { isLoading, imageSrc } = props;
 
   return (
     <div>
@@ -33,6 +33,7 @@ SkeletonChildrenDemo.propTypes = {
 };
 
 export default function SkeletonChildren({ img, isLoading }) {
+  console.log("skeleton:", img);
   return (
     <Grid container spacing={8}>
       {/* <Grid item xs>

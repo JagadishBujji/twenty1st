@@ -39,7 +39,7 @@ export default function Service(props) {
 
   const services = [
     {
-      title: " Design",
+      title: "Design",
       para: "In this fast paced technology driven world, we believe in taking a step back in design as the way forward. We adopt a human approach to aesthetics and functional design that evokes an emotional response.",
       caption:
         "Our design expertise extends to the following services we offer",

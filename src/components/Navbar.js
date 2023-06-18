@@ -45,6 +45,15 @@ const Navbar = () => {
     });
   });
 
+  const closeNavbar = () => {
+    var dropdownMenu = document.querySelector(".dropdown-menu");
+    if (dropdownMenu.style.display === "none") {
+      dropdownMenu.style.display = "block";
+    } else {
+      dropdownMenu.style.display = "none";
+    }
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light container-fluid ">
@@ -113,6 +122,7 @@ const Navbar = () => {
                       style={{ textDecoration: "none" }}
                       smooth={true}
                       to="/services#design"
+                      onClick={closeNavbar}
                     >
                       <div className="submenu">
                         <div
@@ -139,6 +149,7 @@ const Navbar = () => {
                       style={{ textDecoration: "none" }}
                       smooth={true}
                       to="/services#digital-social"
+                      onClick={closeNavbar}
                     >
                       <div className="submenu ">
                         <div
@@ -165,6 +176,7 @@ const Navbar = () => {
                       style={{ textDecoration: "none" }}
                       smooth={true}
                       to="/services#advertising"
+                      onClick={closeNavbar}
                     >
                       <div className="submenu ">
                         <div
@@ -191,6 +203,7 @@ const Navbar = () => {
                       style={{ textDecoration: "none" }}
                       smooth={true}
                       to="/services#films-production"
+                      onClick={closeNavbar}
                     >
                       <div className="submenu ">
                         <div
