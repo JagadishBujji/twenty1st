@@ -142,7 +142,18 @@ export default function Service(props) {
   }, []);
 
   useEffect(() => {
+    var previousScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    var scrollingReverse = false;
     function handleScroll() {
+      var currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScrollPosition < previousScrollPosition) {
+        scrollingReverse = true;
+      } else {
+        scrollingReverse = false;
+      }
+      previousScrollPosition = currentScrollPosition;
+
       const rect1 = Ref1.current.getBoundingClientRect();
       const rect2 = Ref2.current.getBoundingClientRect();
       const rect3 = Ref3.current.getBoundingClientRect();
@@ -159,43 +170,69 @@ export default function Service(props) {
         );
       }
 
-      if (isInViewport(rect1)) {
-        if (rect1.top < 0) {
-          setContent2(true);
-          if (rect2.top > 0) return;
-        } else {
+      if(scrollingReverse) {
+        if (isInViewport(rect1)) {
           setContent1(true);
-        }
-      } else {
-        setContent1(false);
-      }
-
-      if (isInViewport(rect2)) {
-        if (rect2.top < 0) {
-          setContent3(true);
-          if (rect3.top > 0) return;
         } else {
+          setContent1(false);
+        }
+  
+        if (isInViewport(rect2)) {
           setContent2(true);
-        }
-      } else {
-        setContent2(false);
-      }
-
-      if (isInViewport(rect3)) {
-        if (rect3.top < 0) {
-          setContent4(true);
-          if (rect4.top > 0) return;
         } else {
+          setContent2(false);
+        }
+  
+        if (isInViewport(rect3)) {
           setContent3(true);
+        } else {
+          setContent3(false);
+        }
+  
+        if (isInViewport(rect4)) {
+          setContent4(true);
+        } else {
+          setContent4(false);
         }
       } else {
-        setContent3(false);
-      }
-
-      if (isInViewport(rect4)) {
-        setContent4(true);
-      } else {
-        setContent4(false);
+        if (isInViewport(rect1)) {
+          if (rect1.top < 0) {
+            setContent2(true);
+            if (rect2.top > 0) return;
+          } else {
+            setContent1(true);
+          }
+        } else {
+          setContent1(false);
+        }
+  
+        if (isInViewport(rect2)) {
+          if (rect2.top < 0) {
+            setContent3(true);
+            if (rect3.top > 0) return;
+          } else {
+            setContent2(true);
+          }
+        } else {
+          setContent2(false);
+        }
+  
+        if (isInViewport(rect3)) {
+          if (rect3.top < 0) {
+            setContent4(true);
+            if (rect4.top > 0) return;
+          } else {
+            setContent3(true);
+          }
+        } else {
+          setContent3(false);
+        }
+  
+        if (isInViewport(rect4)) {
+          setContent4(true);
+        } else {
+          setContent4(false);
+        }
       }
     }
     window.addEventListener("scroll", handleScroll);
