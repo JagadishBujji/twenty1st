@@ -603,7 +603,7 @@ button.owl-prev span {
 
 .faq .accordion .card .card-header h5 button {
   color: var(--text-primary);
-  font-size: 35px;
+  font-size: 28px;
   font-weight: 600;
   text-decoration: none;
   padding: 0 30px 15px 70px;
@@ -693,6 +693,7 @@ button.owl-prev span {
 
 .logo-footer-align {
   margin: auto;
+  padding-top: 10px;
 }
 
 .fa-copyright {

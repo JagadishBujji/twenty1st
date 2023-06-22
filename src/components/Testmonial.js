@@ -5,8 +5,8 @@ const Testimonial = ({ isDarkMode }) => {
   useEffect(() => {
     const carousel = document.getElementById("carouselExampleIndicators");
     const carouselInstance = new window.bootstrap.Carousel(carousel, {
-      interval: 2000, // Adjust the interval (in milliseconds) as needed
-      pause: "hover", // Pause on hover
+      interval: 5000, // Adjust the interval (in milliseconds) as needed
+      // pause: "hover", // Pause on hover
     });
 
     // Clean up the carousel instance on component unmount

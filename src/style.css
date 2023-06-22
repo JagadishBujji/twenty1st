@@ -504,7 +504,7 @@ input[type="submit"]:hover {
 .silder-client .item img {
   /* aspect-ratio: 8/1;
   object-fit: contain; */
-  max-width: 50%;
+  max-width: 100%;
   margin: auto;
 }
 .servicelist{

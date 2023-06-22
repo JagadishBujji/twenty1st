@@ -30,40 +30,61 @@ const ClientSlider = () => {
           }}
         >
           <div class="item">
-            <img className="" src="../images/zus.png" />
-            {/* <div style={{ backgroundImage: "url(../images/zus.png)" }}></div> */}
+            <img className="" src="../images/logo/arte.png" />
           </div>
           <div class="item">
-            <img className="" src="../images/wink.png" />
-            {/* <div style={{ backgroundImage: "url(../images/wink.png)" }}></div> */}
+            <img className="" src="../images/logo/diya.png" />
           </div>
           <div class="item">
-            <img className="" src="../images/wfs.png" />
-            {/* <div style={{ backgroundImage: "url(../images/wfs.png)" }}></div> */}
+            <img className="" src="../images/logo/cirkle.png" />
           </div>
           <div class="item">
-            <img className="" src="../images/testocean.png" />
+            <img className="" src="../images/logo/organic.png" />
           </div>
           <div class="item">
-            <img className="" src="../images/sf.png" />
+            <img className="" src="../images/logo/sf.png" />
           </div>
           <div class="item">
-            <img className="" src="../images/rkr.png" />
+            <img className="" src="../images/logo/gsquare.png" />
           </div>
           <div class="item">
-            <img className="" src="../images/organic.png" />
+            <img className="" src="../images/logo/casagrand.png" />
           </div>
           <div class="item">
-            <img className="" src="../images/murugan.png" />
+            <img className="" src="../images/logo/accupayd.png" />
           </div>
           <div class="item">
-            <img className="" src="../images/maamis.png" />
+            <img className="" src="../images/logo/testocean.png" />
           </div>
           <div class="item">
-            <img className="" src="../images/kvp2.png" />
+            <img className="" src="../images/logo/wink.png" />
           </div>
           <div class="item">
-            <img className="" src="../images/jarvis.png" />
+            <img className="" src="../images/logo/rkr.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/wfs.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/murugan.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/kvp.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/maamis.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/artisan.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/crown.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/zus.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/jarvisden.png" />
           </div>
         </OwlCarousel>
       </div>
