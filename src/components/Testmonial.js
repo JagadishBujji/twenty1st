@@ -6,7 +6,6 @@ const Testimonial = ({ isDarkMode }) => {
     const carousel = document.getElementById("carouselExampleIndicators");
     const carouselInstance = new window.bootstrap.Carousel(carousel, {
       interval: 5000, // Adjust the interval (in milliseconds) as needed
-      // pause: "hover", // Pause on hover
     });
 
     // Clean up the carousel instance on component unmount
@@ -146,7 +145,7 @@ const Testimonial = ({ isDarkMode }) => {
           </div>
         </div>
       </div>
-      {/* <a
+      <a
         className="carousel-control-prev"
         href="#carouselExampleIndicators"
         role="button"
@@ -161,7 +160,7 @@ const Testimonial = ({ isDarkMode }) => {
         data-slide="next"
       >
         <i className="fas fa-chevron-right" aria-hidden="true"></i>
-      </a> */}
+      </a>
     </div>
   );
 };
