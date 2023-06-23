@@ -60,6 +60,9 @@ const ClientSlider = () => {
             <img className="" src="../images/logo/wink.png" />
           </div>
           <div class="item">
+            <img className="" src="../images/logo/jallikattu.png" />
+          </div>
+          <div class="item">
             <img className="" src="../images/logo/rkr.png" />
           </div>
           <div class="item">

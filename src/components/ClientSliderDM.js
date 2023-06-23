@@ -30,37 +30,64 @@ const ClientSliderDM = () => {
           }}
         >
           <div class="item">
-            <img src="../images/zus_white.png" />
+            <img className="" src="../images/logo/arte_white.png" />
           </div>
           <div class="item">
-            <img src="../images/wink_white.png" />
+            <img className="" src="../images/logo/diya_white.png" />
           </div>
           <div class="item">
-            <img src="../images/wfs_white.png" />
+            <img className="" src="../images/logo/cirkle_white.png" />
           </div>
           <div class="item">
-            <img src="../images/testocean_white.png" />
+            <img className="" src="../images/logo/organic_white.png" />
           </div>
           <div class="item">
-            <img src="../images/sf_white.png" />
+            <img className="" src="../images/logo/sf_white.png" />
           </div>
           <div class="item">
-            <img src="../images/rkr_white.png" />
+            <img className="" src="../images/logo/gsquare_white.png" />
           </div>
           <div class="item">
-            <img src="../images/organic_white.png" />
+            <img className="" src="../images/logo/casagrand_white.png" />
           </div>
           <div class="item">
-            <img src="../images/murugan_white.png" />
+            <img className="" src="../images/logo/accupayd_white.png" />
           </div>
           <div class="item">
-            <img src="../images/maamis_white.png" />
+            <img className="" src="../images/logo/testocean_white.png" />
           </div>
           <div class="item">
-            <img src="../images/kvp2_white.png" />
+            <img className="" src="../images/logo/wink_white.png" />
           </div>
           <div class="item">
-            <img src="../images/jarvis_white.png" />
+            <img className="" src="../images/logo/jallikattu_white.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/rkr_white.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/wfs_white.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/murugan_white.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/kvp_white.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/maamis_white.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/artisan_white.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/crown_white.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/zus_white.png" />
+          </div>
+          <div class="item">
+            <img className="" src="../images/logo/jarvisden_white.png" />
           </div>
         </OwlCarousel>
       </div>
