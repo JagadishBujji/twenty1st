@@ -15,8 +15,8 @@ export default function Router() {
   const routes = useRoutes([
     {
       path: "/",
-      // element: <HomeLayout />,
-      element: <Maintenance />,
+      element: <HomeLayout />,
+      // element: <Maintenance />,
       children: [
         { path: "/", element: <Home /> },
         { path: "services", element: <Services /> },
